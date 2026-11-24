@@ -1,11 +1,14 @@
 ---
 import HeroArt from './HeroArt.astro';
+import { stars } from '../data/stars.ts';
 
 interface Props {
   compact?: boolean;
 }
 
 const { compact = false } = Astro.props;
+// The list only exists while some stars still lack notes.
+const hasRecent = stars.categories.some((category) => category.slug === 'recently-starred');
 ---
 
 <header class:list={['hero', { 'hero--compact': compact }]}>
@@ -15,7 +18,7 @@ const { compact = false } = Astro.props;
   <nav class="hero__nav" aria-label="Primary">
     <div class="hero__links">
       <a href="/#browse">Lists</a>
-      <a href="/c/recently-starred/">Recently starred</a>
+      {hasRecent && <a href="/c/recently-starred/">Recently starred</a>}
       <a href="https://github.com/zharmedia386?tab=stars" rel="noopener">GitHub ↗</a>
     </div>
     <a class="hero__brand" href="/" aria-label="The Agent Stack, home">
