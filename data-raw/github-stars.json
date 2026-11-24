@@ -119,7 +119,7 @@
     "html_url": "https://github.com/zhouxiaoka/autoclip",
     "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
     "language": "Python",
-    "stargazers_count": 14898,
+    "stargazers_count": 14899,
     "topics": [
       "ai-agent",
       "ai-video-editor",
@@ -171,7 +171,7 @@
     "html_url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
     "description": "The only downloader you need. 下载器的集大成者。",
     "language": "Python",
-    "stargazers_count": 16807,
+    "stargazers_count": 16809,
     "topics": [
       "async",
       "asyncio",
@@ -201,7 +201,7 @@
     "html_url": "https://github.com/elementalsouls/Claude-BugHunter",
     "description": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
     "language": "Python",
-    "stargazers_count": 20404,
+    "stargazers_count": 20406,
     "topics": [
       "ai-security",
       "anthropic",
@@ -392,7 +392,7 @@
     "html_url": "https://github.com/GoogleChrome/modern-web-guidance-src",
     "description": "Keep your coding agent up to date with the latest web best practices",
     "language": "TypeScript",
-    "stargazers_count": 10657,
+    "stargazers_count": 10658,
     "topics": [],
     "homepage": "https://goo.gle/modern-web-guidance"
   },
@@ -518,7 +518,7 @@
     "html_url": "https://github.com/milind-soni/OpenMausBot",
     "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
     "language": "TypeScript",
-    "stargazers_count": 27324,
+    "stargazers_count": 27325,
     "topics": [
       "ai-agents",
       "claude-code",
@@ -559,7 +559,7 @@
     "html_url": "https://github.com/storytold/craft-anything",
     "description": "Craft Anything: understand how any software works, and craft your own.",
     "language": "Rust",
-    "stargazers_count": 42429,
+    "stargazers_count": 42430,
     "topics": [],
     "homepage": ""
   },
@@ -808,7 +808,7 @@
     "html_url": "https://github.com/kaomei/stickman-video-director",
     "description": "AI Agent Skill (Claude Code, Codex & more): Turn any script into animated stickman videos for faceless YouTube, Shorts & TikTok. 20+ styles with voiceover, captions & SFX. Free & open-source (MIT).",
     "language": "JavaScript",
-    "stargazers_count": 7845,
+    "stargazers_count": 7846,
     "topics": [
       "agent-skills",
       "ai-animation-generator",
@@ -925,7 +925,7 @@
     "html_url": "https://github.com/Yuan1z0825/nature-skills",
     "description": "符合nature论文学术表达和科研绘图的Skill",
     "language": "Python",
-    "stargazers_count": 54827,
+    "stargazers_count": 54828,
     "topics": [
       "codex-skills",
       "nature",
@@ -1058,7 +1058,7 @@
     "html_url": "https://github.com/libracoder/kiri",
     "description": "A small, fast container runtime for macOS, Windows and Linux with free Ngrok alternative",
     "language": "Rust",
-    "stargazers_count": 12762,
+    "stargazers_count": 12763,
     "topics": [
       "containers",
       "docker",
@@ -1922,7 +1922,7 @@
     "html_url": "https://github.com/HKUDS/DeepTutor",
     "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
     "language": "Python",
-    "stargazers_count": 62093,
+    "stargazers_count": 62095,
     "topics": [
       "ai-agents",
       "ai-tutor",
@@ -2267,7 +2267,7 @@
     "html_url": "https://github.com/wheresryan22/anatomy",
     "description": "An agent skill for creating detailed, interactive isometric illustrations of real-world machines and complex systems. Generates polished SVGs with optional WebGL shaders and 3D effects.",
     "language": "JavaScript",
-    "stargazers_count": 28958,
+    "stargazers_count": 28960,
     "topics": [
       "agent-skill",
       "open-source",
@@ -2298,7 +2298,7 @@
     "html_url": "https://github.com/Vincentwei1021/video-shotcraft",
     "description": "AI video skill for Claude Code & Codex — cinematic, editable product promos with Remotion: 124 shot recipe cards, 150 motion previews, beat sync, sound design, Motion Workbench & JianYing (CapCut CN) export.",
     "language": "TypeScript",
-    "stargazers_count": 22350,
+    "stargazers_count": 22351,
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -2382,7 +2382,7 @@
     "html_url": "https://github.com/Jakeschincariol/youtube-agent-skill",
     "description": "Eleven Claude skills that run a YouTube channel: scripts off 21 hook formulas with a scored hook, title and thumbnail linted as one pairing, an edit decision list from your transcript, a retention reader that finds where viewers actually leave, a Shorts cutter, and a virality engine. Free, MIT.",
     "language": "Python",
-    "stargazers_count": 7187,
+    "stargazers_count": 7188,
     "topics": [],
     "homepage": null
   },
@@ -3010,7 +3010,7 @@
     "html_url": "https://github.com/lemomo-ai/lemo-opuscar",
     "description": "A toolbox of film styles made in code for Claude Code: 99 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：99 种现成风格，也能做出你自己的",
     "language": "JavaScript",
-    "stargazers_count": 20440,
+    "stargazers_count": 20441,
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -3061,7 +3061,7 @@
     "html_url": "https://github.com/NationalSecurityAgency/ghidra",
     "description": "Ghidra is a software reverse engineering (SRE) framework",
     "language": "Java",
-    "stargazers_count": 101157,
+    "stargazers_count": 101159,
     "topics": [
       "disassembler",
       "reverse-engineering",
@@ -3085,7 +3085,7 @@
     "html_url": "https://github.com/mvanhorn/last30days-skill",
     "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
     "language": "Python",
-    "stargazers_count": 73721,
+    "stargazers_count": 73722,
     "topics": [
       "agent-skills",
       "artificial-intelligence",
@@ -3116,7 +3116,7 @@
     "html_url": "https://github.com/Panniantong/Agent-Reach",
     "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
     "language": "Python",
-    "stargazers_count": 114369,
+    "stargazers_count": 114370,
     "topics": [
       "agent-infrastructure",
       "ai-agent",
@@ -3377,7 +3377,7 @@
     "html_url": "https://github.com/Egonex-AI/Understand-Anything",
     "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
     "language": "TypeScript",
-    "stargazers_count": 93892,
+    "stargazers_count": 93893,
     "topics": [
       "antigravity-skills",
       "business-knowledge",
@@ -3583,7 +3583,7 @@
     "html_url": "https://github.com/morluto/rea",
     "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
     "language": "TypeScript",
-    "stargazers_count": 476205,
+    "stargazers_count": 476207,
     "topics": [
       "agent-skills",
       "ai",
@@ -3712,7 +3712,7 @@
     "html_url": "https://github.com/cathrynlavery/diagram-design",
     "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
     "language": "HTML",
-    "stargazers_count": 71311,
+    "stargazers_count": 71312,
     "topics": [
       "agent-skills",
       "claude-code",
@@ -3775,7 +3775,7 @@
     "html_url": "https://github.com/nicobailon/visual-explainer",
     "description": "Agent skill that generates rich HTML pages or slide decks for diagrams, diff reviews, plan audits, data tables, and project recaps",
     "language": "JavaScript",
-    "stargazers_count": 11252,
+    "stargazers_count": 11253,
     "topics": [],
     "homepage": null
   },
@@ -3865,7 +3865,7 @@
     "html_url": "https://github.com/DietrichGebert/ponytail",
     "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
     "language": "JavaScript",
-    "stargazers_count": 197739,
+    "stargazers_count": 197740,
     "topics": [
       "agent-skills",
       "ai-agents",
@@ -3886,7 +3886,7 @@
     "html_url": "https://github.com/mastra-ai/mastra",
     "description": "Mastra is the modern TypeScript framework for AI-powered applications and agents.",
     "language": "TypeScript",
-    "stargazers_count": 29777,
+    "stargazers_count": 29778,
     "topics": [
       "agents",
       "ai",
@@ -3983,7 +3983,7 @@
     "html_url": "https://github.com/stablyai/orca",
     "description": "Orca lets you run a fleet of bots with your own subscription (e.g. Claude Code, Grok, Agy, Codex). Available on desktop, mobile and remote runtime.",
     "language": "TypeScript",
-    "stargazers_count": 135051,
+    "stargazers_count": 135053,
     "topics": [
       "agent-ide",
       "ai-agents",
@@ -4055,7 +4055,7 @@
     "html_url": "https://github.com/tw93/Mole",
     "description": "🐹 Open-source Mac and PC cleaner. Keep your machine clean, light, and running like new. Fast CLI, plus native Mac and Windows apps.",
     "language": "Shell",
-    "stargazers_count": 76034,
+    "stargazers_count": 76035,
     "topics": [
       "analyzer",
       "appcleaner",
@@ -4086,7 +4086,7 @@
     "html_url": "https://github.com/Nutlope/hallmark",
     "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
     "language": "CSS",
-    "stargazers_count": 60276,
+    "stargazers_count": 60277,
     "topics": [],
     "homepage": "https://www.usehallmark.com/"
   },
@@ -4293,7 +4293,7 @@
     "html_url": "https://github.com/blader/humanizer",
     "description": "Agent skill that removes signs of AI-generated writing from text",
     "language": "Python",
-    "stargazers_count": 72904,
+    "stargazers_count": 72905,
     "topics": [
       "agent-skills",
       "ai-humanizer",
@@ -4461,7 +4461,7 @@
     "html_url": "https://github.com/firecrawl/firecrawl",
     "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
     "language": "TypeScript",
-    "stargazers_count": 208288,
+    "stargazers_count": 208289,
     "topics": [
       "ai",
       "ai-agents",
@@ -4884,7 +4884,7 @@
     "html_url": "https://github.com/VoltAgent/awesome-design-md",
     "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
     "language": null,
-    "stargazers_count": 128843,
+    "stargazers_count": 128844,
     "topics": [
       "awesome-list",
       "design-md",
@@ -5073,7 +5073,7 @@
     "html_url": "https://github.com/p-e-w/heretic",
     "description": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more",
     "language": "Python",
-    "stargazers_count": 42893,
+    "stargazers_count": 42894,
     "topics": [
       "abliteration",
       "anti-censorship",
@@ -5101,7 +5101,7 @@
     "html_url": "https://github.com/beenuar/AiSOC",
     "description": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue.",
     "language": "Python",
-    "stargazers_count": 7639,
+    "stargazers_count": 7640,
     "topics": [
       "agentic-ai",
       "ai-security",
@@ -5239,7 +5239,7 @@
     "html_url": "https://github.com/heygen-com/hyperframes",
     "description": "Open-source AI video editor: edit your own footage, or create and remake any video with Claude Code, Codex or the free Studio app. Write HTML, render MP4. By HeyGen.",
     "language": "TypeScript",
-    "stargazers_count": 89193,
+    "stargazers_count": 89194,
     "topics": [
       "agent-skills",
       "ai",
@@ -5322,7 +5322,7 @@
     "html_url": "https://github.com/multica-ai/andrej-karpathy-skills",
     "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
     "language": null,
-    "stargazers_count": 235369,
+    "stargazers_count": 235370,
     "topics": [],
     "homepage": ""
   },
@@ -5332,7 +5332,7 @@
     "html_url": "https://github.com/NousResearch/hermes-agent",
     "description": "The agent that grows with you",
     "language": "Python",
-    "stargazers_count": 265752,
+    "stargazers_count": 265753,
     "topics": [
       "ai",
       "ai-agent",
@@ -5791,7 +5791,7 @@
     "html_url": "https://github.com/BerriAI/litellm",
     "description": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]",
     "language": "Python",
-    "stargazers_count": 63793,
+    "stargazers_count": 63794,
     "topics": [
       "ai-gateway",
       "anthropic",
@@ -6231,7 +6231,7 @@
     "html_url": "https://github.com/Comfy-Org/ComfyUI",
     "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
     "language": "Python",
-    "stargazers_count": 148373,
+    "stargazers_count": 148375,
     "topics": [
       "ai",
       "comfy",
