@@ -12,7 +12,7 @@ Requires Node ≥ 22.23.4 (Astro 7).
 npm install
 npm run dev        # local dev server
 npm test           # unit tests (node --test)
-npm run build      # static output in dist/
+npm run build      # parse data-raw/ into src/data/stars.json, then build dist/
 ```
 
 ## Refresh data
