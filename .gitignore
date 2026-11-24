@@ -27,3 +27,6 @@ pnpm-debug.log*
 .env.*
 .vercel
 .superpowers/
+
+# local design notes
+docs/
