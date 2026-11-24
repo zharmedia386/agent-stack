@@ -1,0 +1,133 @@
+---
+import type { Category, Repo } from '../data/types.ts';
+import { formatStars, plainText } from '../lib/format.ts';
+
+interface Props {
+  repo: Repo;
+  categories: Category[];
+  contextCategory?: string;
+}
+
+const { repo, categories, contextCategory } = Astro.props;
+const categoryTitle = categories.find((category) => category.slug === (contextCategory ?? repo.primaryCategory))?.title;
+const searchText = plainText(
+  [repo.slug, repo.oneLiner, repo.what, repo.reachFor, repo.lang ?? '', repo.topics.join(' ')].join(' '),
+).toLowerCase();
+---
+
+<a
+  class="card"
+  href={`/r/${repo.owner}/${repo.name}/`}
+  data-card
+  data-cats={repo.categories.join(',')}
+  data-group={contextCategory ? (repo.group[contextCategory] ?? '') : ''}
+  data-text={searchText}
+>
+  <div class="card__top">
+    <span class="mono-label">{categoryTitle}</span>
+    {repo.lang && <span class="card__lang">{repo.lang}</span>}
+  </div>
+  <h3 class="card__name"><span class="card__owner">{repo.owner}/</span>{repo.name}</h3>
+  {repo.oneLiner && <p class="card__one">{plainText(repo.oneLiner)}</p>}
+  {repo.reachFor && <p class="card__reach">{plainText(repo.reachFor)}</p>}
+  <div class="card__foot">
+    <span>@{repo.owner}</span>
+    <span class="card__stars" aria-label={`${repo.stars} stars`}>★ {formatStars(repo.stars)}</span>
+  </div>
+</a>
+
+<style>
+  .card {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 230px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    min-width: 0;
+    border-radius: var(--radius-tile);
+    border: 1px solid hsl(var(--border));
+    background: hsl(var(--surface));
+    text-decoration: none;
+    transition:
+      transform 200ms var(--ease-out),
+      border-color 200ms var(--ease-out),
+      box-shadow 200ms var(--ease-out);
+  }
+
+  .card:hover {
+    transform: translateY(-2px);
+    border-color: hsl(var(--foreground) / 0.18);
+    box-shadow: 0 12px 32px -12px rgb(0 0 0 / 0.18);
+  }
+
+  .card[hidden] {
+    display: none;
+  }
+
+  .card__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    min-width: 0;
+  }
+
+  .card__top .mono-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .card__lang {
+    flex-shrink: 0;
+    font: 400 12px/16px var(--font-mono);
+    padding: 2px 8px;
+    border-radius: var(--radius-pill);
+    background: hsl(var(--muted));
+    color: hsl(var(--muted-foreground));
+  }
+
+  .card__name {
+    font-size: 19px;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  .card__owner {
+    color: hsl(var(--muted-foreground));
+  }
+
+  .card__one,
+  .card__reach {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+
+  .card__one {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .card__reach {
+    font-size: 14px;
+    line-height: 20px;
+    color: hsl(var(--muted-foreground));
+  }
+
+  .card__foot {
+    margin-top: auto;
+    padding-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    font: 400 13px/16px var(--font-mono);
+    color: hsl(var(--muted-foreground));
+  }
+
+  .card__stars {
+    color: hsl(var(--foreground));
+  }
+</style>

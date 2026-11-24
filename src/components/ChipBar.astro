@@ -1,0 +1,159 @@
+---
+interface Chip {
+  key: string;
+  label: string;
+  count: number;
+  section?: string;
+}
+
+interface Props {
+  chips: Chip[];
+  kind: 'cat' | 'group';
+  total: number;
+  placeholder: string;
+}
+
+const { chips, kind, total, placeholder } = Astro.props;
+const sections = [...new Set(chips.map((chip) => chip.section ?? ''))];
+---
+
+<div class="chipbar">
+  <div class="chipbar__inner container">
+    <label class="chipbar__search">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+      <span class="visually-hidden">Search repos</span>
+      <input id="q" type="search" placeholder={placeholder} autocomplete="off" spellcheck="false" />
+    </label>
+    <div class="chipbar__scroll" role="toolbar" aria-label={kind === 'cat' ? 'Filter by list' : 'Filter by group'}>
+      <button type="button" class="chip" data-chip="all" data-chip-kind={kind} aria-pressed="true">
+        All <span class="chip__count" data-count>{total}</span>
+      </button>
+      {
+        sections.map((section) => (
+          <>
+            {section && <span class="chipbar__section mono-label">{section}</span>}
+            {chips
+              .filter((chip) => (chip.section ?? '') === section)
+              .map((chip) => (
+                <button type="button" class="chip" data-chip={chip.key} data-chip-kind={kind} aria-pressed="false">
+                  {chip.label} <span class="chip__count" data-count>{chip.count}</span>
+                </button>
+              ))}
+          </>
+        ))
+      }
+    </div>
+    <slot />
+  </div>
+</div>
+
+<style>
+  .chipbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: hsl(var(--background));
+    border-bottom: 1px solid hsl(var(--border));
+  }
+
+  .chipbar__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 0 12px;
+  }
+
+  .chipbar__search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 46px;
+    padding: 0 16px;
+    border-radius: var(--radius-pill);
+    border: 1px solid hsl(var(--border));
+    background: hsl(var(--surface));
+    color: hsl(var(--muted-foreground));
+  }
+
+  .chipbar__search:focus-within {
+    border-color: hsl(var(--ring));
+  }
+
+  .chipbar__search input {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: hsl(var(--foreground));
+    font: 400 16px/1 var(--font-body);
+  }
+
+  .chipbar__scroll {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-inline: -16px;
+    padding: 2px 16px;
+    mask-image: linear-gradient(90deg, transparent 0, #000 16px, #000 calc(100% - 24px), transparent);
+  }
+
+  .chipbar__scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .chipbar__section {
+    flex-shrink: 0;
+    padding-left: 10px;
+    margin-left: 4px;
+    border-left: 1px solid hsl(var(--border));
+    font-size: 11px;
+  }
+
+  .chip {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 38px;
+    padding: 0 14px;
+    border-radius: var(--radius-pill);
+    border: 1px solid hsl(var(--border));
+    background: hsl(var(--surface));
+    color: hsl(var(--foreground));
+    font: 400 14px/1 var(--font-display);
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background-color 160ms var(--ease-out), transform 160ms var(--ease-out);
+  }
+
+  .chip:hover {
+    background: hsl(var(--muted));
+  }
+
+  .chip:active {
+    transform: scale(0.97);
+  }
+
+  .chip[aria-pressed='true'] {
+    background: hsl(var(--foreground));
+    border-color: hsl(var(--foreground));
+    color: hsl(var(--background));
+  }
+
+  .chip__count {
+    font: 400 12px/1 var(--font-mono);
+    opacity: 0.6;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+</style>

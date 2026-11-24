@@ -1,0 +1,243 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Card from '../../../components/Card.astro';
+import CodeBlock from '../../../components/CodeBlock.astro';
+import { stars } from '../../../data/stars.ts';
+import type { Repo } from '../../../data/types.ts';
+import { formatStars, plainText } from '../../../lib/format.ts';
+import { inlineMd } from '../../../lib/inline-md.ts';
+
+export function getStaticPaths() {
+  return stars.repos.map((repo) => ({ params: { owner: repo.owner, repo: repo.name }, props: { repo } }));
+}
+
+interface Props {
+  repo: Repo;
+}
+
+const { repo } = Astro.props;
+const { repos, categories } = stars;
+const categoryOf = (slug: string) => categories.find((category) => category.slug === slug)!;
+const primary = categoryOf(repo.primaryCategory);
+const paragraphs = (text: string) => text.split(/\n\s*\n/).filter(Boolean);
+const related = repo.categories.map((slug) => {
+  const group = repo.group[slug];
+  const peers = repos
+    .filter((other) => other.slug !== repo.slug && other.categories.includes(slug) && (!group || other.group[slug] === group))
+    .slice(0, 6);
+  return { slug, label: group || categoryOf(slug).title, peers };
+});
+---
+
+<Base title={`${repo.slug} · The Agent Stack`} description={plainText(repo.oneLiner) || `${repo.slug} on The Agent Stack`}>
+  <article class="container detail">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">The Agent Stack</a>
+      <span aria-hidden="true">/</span>
+      <a href={`/c/${primary.slug}/`}>{primary.emoji} {primary.title}</a>
+    </nav>
+
+    <header class="head">
+      <h1><span class="owner">{repo.owner}/</span>{repo.name}</h1>
+      {repo.oneLiner && <p class="one" set:html={inlineMd(repo.oneLiner)} />}
+      <div class="meta">
+        {repo.lang && <span class="tag">{repo.lang}</span>}
+        <span class="tag">★ {formatStars(repo.stars)}</span>
+        {
+          repo.categories.map((slug) => (
+            <a class="tag tag--link" href={`/c/${slug}/`}>
+              {categoryOf(slug).emoji} {categoryOf(slug).title}
+            </a>
+          ))
+        }
+      </div>
+      <div class="links">
+        <a class="pill pill--dark" href={repo.url} rel="noopener">GitHub ↗</a>
+        {
+          repo.links.map((link) => (
+            <a class="pill pill--outline" href={link.url} rel="noopener">
+              {link.label} ↗
+            </a>
+          ))
+        }
+      </div>
+    </header>
+
+    <div class="sections">
+      {
+        repo.what && (
+          <section>
+            <h2 class="mono-label">What</h2>
+            {paragraphs(repo.what).map((text) => <p set:html={inlineMd(text)} />)}
+          </section>
+        )
+      }
+      {
+        repo.howTo.length > 0 && (
+          <section>
+            <h2 class="mono-label">How to use</h2>
+            {repo.howTo.map((block) =>
+              block.type === 'code' ? <CodeBlock code={block.value} lang={block.lang} /> : <p set:html={inlineMd(block.value)} />,
+            )}
+          </section>
+        )
+      }
+      {
+        repo.reachFor && (
+          <section>
+            <h2 class="mono-label">Reach for it when</h2>
+            <p class="reach" set:html={inlineMd(repo.reachFor)} />
+          </section>
+        )
+      }
+      {
+        !repo.hasNotes && (
+          <section>
+            <h2 class="mono-label">Notes coming soon</h2>
+            <p>Starred recently, not yet annotated in the Notion list.</p>
+            {repo.topics.length > 0 && (
+              <div class="meta">
+                {repo.topics.map((topic) => (
+                  <span class="tag">{topic}</span>
+                ))}
+              </div>
+            )}
+          </section>
+        )
+      }
+    </div>
+
+    {
+      related
+        .filter((block) => block.peers.length > 0)
+        .map((block) => (
+          <section class="related reveal">
+            <h2>More in {block.label}</h2>
+            <div class="grid">
+              {block.peers.map((peer) => (
+                <Card repo={peer} categories={categories} contextCategory={block.slug} />
+              ))}
+            </div>
+          </section>
+        ))
+    }
+  </article>
+</Base>
+
+<style>
+  .detail {
+    padding-top: 32px;
+  }
+
+  .crumbs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font: 400 14px/20px var(--font-display);
+    color: hsl(var(--muted-foreground));
+  }
+
+  .crumbs a {
+    text-decoration: none;
+  }
+
+  .crumbs a:hover {
+    color: hsl(var(--foreground));
+  }
+
+  .head {
+    padding: 40px 0 32px;
+    border-bottom: 1px solid hsl(var(--border));
+  }
+
+  h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    overflow-wrap: anywhere;
+  }
+
+  .owner {
+    color: hsl(var(--muted-foreground));
+  }
+
+  .one {
+    margin: 16px 0 0;
+    max-width: 60ch;
+    font: 400 19px/1.45 var(--font-display);
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 0 12px;
+    border-radius: var(--radius-pill);
+    background: hsl(var(--muted));
+    color: hsl(var(--muted-foreground));
+    font: 400 13px/1 var(--font-mono);
+    text-decoration: none;
+  }
+
+  .tag--link:hover {
+    color: hsl(var(--foreground));
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .pill--dark {
+    background: hsl(var(--foreground));
+    color: hsl(var(--background));
+  }
+
+  .sections {
+    display: grid;
+    gap: 40px;
+    max-width: 760px;
+    padding: 40px 0 16px;
+  }
+
+  .sections section {
+    display: grid;
+    gap: 14px;
+    min-width: 0;
+  }
+
+  .sections h2 {
+    font-family: var(--font-mono);
+  }
+
+  .sections p {
+    white-space: pre-line;
+    margin: 0;
+    font-size: 17px;
+    line-height: 28px;
+  }
+
+  .reach {
+    padding-left: 16px;
+    border-left: 2px solid hsl(var(--foreground));
+  }
+
+  .related {
+    padding-top: 56px;
+  }
+
+  .related h2 {
+    font-size: var(--text-h2);
+    line-height: 1.3;
+    margin-bottom: 18px;
+  }
+</style>

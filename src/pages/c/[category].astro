@@ -1,0 +1,103 @@
+---
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import ChipBar from '../../components/ChipBar.astro';
+import Card from '../../components/Card.astro';
+import { stars } from '../../data/stars.ts';
+import type { Category } from '../../data/types.ts';
+import { inlineMd } from '../../lib/inline-md.ts';
+import { plainText } from '../../lib/format.ts';
+
+export function getStaticPaths() {
+  return stars.categories.map((category) => ({ params: { category: category.slug }, props: { category } }));
+}
+
+interface Props {
+  category: Category;
+}
+
+const { category } = Astro.props;
+const { repos, categories } = stars;
+const members = repos
+  .filter((repo) => repo.categories.includes(category.slug))
+  .sort((a, b) => category.groups.indexOf(a.group[category.slug] ?? '') - category.groups.indexOf(b.group[category.slug] ?? '') || b.stars - a.stars);
+const chips = category.groups.map((group) => ({
+  key: group,
+  label: group,
+  count: members.filter((repo) => repo.group[category.slug] === group).length,
+}));
+---
+
+<Base
+  title={`${category.title} · The Agent Stack`}
+  description={plainText(category.intro)}
+  canonical={`/c/${category.slug}/`}
+>
+  <Hero compact>
+    <a class="crumb" href="/#browse">← All lists</a>
+    <p class="section mono-label">{category.section}</p>
+    <h1 class="title"><span aria-hidden="true">{category.emoji}</span> {category.title}</h1>
+    <p class="intro" set:html={inlineMd(category.intro)} />
+    <p class="count" slot="foot">{members.length} repos{category.groups.length > 0 && ` · ${category.groups.length} groups`}</p>
+  </Hero>
+
+  <section id="browse" aria-label={`Repos in ${category.title}`}>
+    <ChipBar chips={chips} kind="group" total={members.length} placeholder={`Search ${members.length} repos in ${category.title}…`} />
+    <div class="container results reveal">
+      <div class="grid">
+        {members.map((repo) => <Card repo={repo} categories={categories} contextCategory={category.slug} />)}
+      </div>
+      <div id="empty" class="empty" hidden>
+        <p>No repos match.</p>
+        <button type="button" id="clear-filters" class="pill pill--outline">Clear search</button>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<script>
+  import '../../scripts/browse.ts';
+</script>
+
+<style>
+  .crumb {
+    align-self: flex-start;
+    color: var(--glass-78);
+    font: 400 14px/1 var(--font-display);
+    text-decoration: none;
+    margin-bottom: 28px;
+  }
+
+  .crumb:hover {
+    color: #fff;
+  }
+
+  .section {
+    color: var(--glass-78);
+    margin: 0 0 12px;
+  }
+
+  .title {
+    font-size: clamp(36px, 5vw, 56px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  .intro {
+    margin: 16px 0 0;
+    max-width: 62ch;
+    font: 400 17px/1.5 var(--font-display);
+    color: var(--glass-92);
+  }
+
+  .intro :global(code) {
+    background: var(--glass-10);
+    color: #fff;
+  }
+
+  .count {
+    margin: 0;
+    font: 400 14px/1 var(--font-mono);
+    color: var(--glass-78);
+  }
+</style>

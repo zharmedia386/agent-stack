@@ -1,0 +1,146 @@
+---
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import ChipBar from '../components/ChipBar.astro';
+import Card from '../components/Card.astro';
+import { stars } from '../data/stars.ts';
+import { formatStars } from '../lib/format.ts';
+
+const { repos, categories, generatedAt } = stars;
+const lists = categories.filter((category) => category.slug !== 'recently-starred').length;
+const top = repos.reduce((best, repo) => (repo.stars > best.stars ? repo : best));
+const newest = repos.reduce((latest, repo) => (repo.starredAt > latest.starredAt ? repo : latest));
+const updated = new Date(generatedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+const subtitle = `${repos.length} agent skills, MCP servers & open-source tools, hand-picked and annotated by zharmedia386`;
+const chips = categories.map((category) => ({
+  key: category.slug,
+  label: `${category.emoji} ${category.title}`,
+  count: category.count,
+  section: category.section,
+}));
+---
+
+<Base title="The Agent Stack · Agent Skills, MCP Servers & Open-Source Tools" description={subtitle}>
+  <p class="announce">
+    <span>{repos.length} repos</span><span aria-hidden="true">·</span><span>{lists} lists</span><span aria-hidden="true">·</span><span class="announce__muted">updated {updated}</span>
+  </p>
+  <Hero>
+    <h1 class="title">The Agent Stack</h1>
+    <p class="subtitle">
+      {repos.length} agent skills, MCP servers &amp; open-source tools, hand-picked and annotated by{' '}
+      <a href="https://github.com/zharmedia386" rel="noopener">zharmedia386</a>
+    </p>
+    <div class="actions">
+      <a class="pill pill--light" href="#browse">Browse all {repos.length}</a>
+      <a class="pill pill--glass" href="https://github.com/zharmedia386?tab=stars" rel="noopener">Starred on GitHub ↗</a>
+    </div>
+    <dl class="stats" slot="foot">
+      <div><dt>{repos.length}</dt><dd>Starred repos</dd></div>
+      <div><dt>{lists}</dt><dd>Curated lists</dd></div>
+      <div>
+        <dt>★ {formatStars(top.stars)}</dt>
+        <dd>Most starred · <a href={`/r/${top.slug}/`}>{top.name}</a></dd>
+      </div>
+      <div>
+        <dt>New</dt>
+        <dd>Latest star · <a href={`/r/${newest.slug}/`}>{newest.name}</a></dd>
+      </div>
+    </dl>
+  </Hero>
+
+  <section id="browse" aria-label="Browse repos">
+    <ChipBar chips={chips} kind="cat" total={repos.length} placeholder={`Search ${repos.length} repos…`}>
+      <a class="open-list" data-open-list hidden href="/">Open list →</a>
+    </ChipBar>
+    <div class="container results reveal">
+      <div class="grid">
+        {repos.map((repo) => <Card repo={repo} categories={categories} />)}
+      </div>
+      <div id="empty" class="empty" hidden>
+        <p>No repos match.</p>
+        <button type="button" id="clear-filters" class="pill pill--outline">Clear search</button>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<script>
+  import '../scripts/browse.ts';
+</script>
+
+<style>
+  .announce {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    margin: 0;
+    padding: 14px 16px 2px;
+    font: 400 14px/20px var(--font-display);
+  }
+
+  .announce__muted {
+    color: hsl(var(--muted-foreground));
+  }
+
+  .title {
+    font-size: var(--text-display);
+    line-height: 1;
+    letter-spacing: -0.025em;
+    max-width: 12ch;
+  }
+
+  .subtitle {
+    margin: 18px 0 0;
+    max-width: 46ch;
+    font: 400 clamp(16px, 1.6vw, 18px) / 1.45 var(--font-display);
+    color: var(--glass-92);
+  }
+
+  .subtitle a {
+    color: #fff;
+    text-underline-offset: 3px;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    margin: 0;
+  }
+
+  .stats div {
+    min-width: 0;
+  }
+
+  .stats dt {
+    font: 400 22px/1.1 var(--font-display);
+  }
+
+  .stats dd {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: var(--glass-78);
+  }
+
+  .stats a {
+    color: #fff;
+  }
+
+  .open-list {
+    align-self: flex-start;
+    font: 400 14px/1 var(--font-display);
+    color: hsl(var(--muted-foreground));
+  }
+
+  .open-list[hidden] {
+    display: none;
+  }
+</style>

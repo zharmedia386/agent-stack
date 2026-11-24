@@ -1,0 +1,66 @@
+---
+// Seeded so every build draws the same sky.
+let seed = 386;
+const random = () => ((seed = (seed * 16807) % 2147483647) - 1) / 2147483646;
+
+const stars = Array.from({ length: 260 }, () => {
+  const y = random() ** 1.6 * 620;
+  return {
+    x: random() * 1600,
+    y,
+    r: random() < 0.06 ? 1.6 + random() * 0.8 : 0.4 + random() * 0.9,
+    o: (0.35 + random() * 0.65) * (1 - y / 900),
+  };
+});
+---
+
+<svg class="hero-art" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05060f"></stop>
+      <stop offset="0.38" stop-color="#121433"></stop>
+      <stop offset="0.62" stop-color="#3a2a5c"></stop>
+      <stop offset="0.8" stop-color="#9a5a6e"></stop>
+      <stop offset="0.92" stop-color="#e0956a"></stop>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.62" cy="0.86" r="0.45">
+      <stop offset="0" stop-color="#ffc58a" stop-opacity="0.55"></stop>
+      <stop offset="1" stop-color="#ffc58a" stop-opacity="0"></stop>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"></feTurbulence>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0"></feColorMatrix>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"></rect>
+  <rect width="1600" height="900" fill="url(#glow)"></rect>
+  <g fill="#fff">
+    {
+      stars.map((star) => (
+        <circle
+          cx={star.x.toFixed(1)}
+          cy={star.y.toFixed(1)}
+          r={star.r.toFixed(2)}
+          opacity={star.o.toFixed(2)}
+        />
+      ))
+    }
+  </g>
+  <path
+    d="M0 760 L120 712 L210 738 L330 668 L450 724 L560 690 L680 742 L820 676 L930 718 L1050 660 L1180 716 L1290 684 L1420 730 L1600 694 L1600 900 L0 900 Z"
+    fill="#2a1f3d"
+    opacity="0.9"></path>
+  <path
+    d="M0 812 L140 778 L260 800 L400 760 L540 806 L700 770 L860 812 L1000 774 L1150 808 L1300 772 L1460 804 L1600 780 L1600 900 L0 900 Z"
+    fill="#140f22"></path>
+  <rect width="1600" height="900" filter="url(#grain)"></rect>
+</svg>
+
+<style>
+  .hero-art {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>

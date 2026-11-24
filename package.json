@@ -1,0 +1,21 @@
+{
+  "name": "agent-stack",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "test": "node --test 'scripts/**/*.test.ts' 'src/**/*.test.ts'",
+    "parse": "node scripts/parse.ts",
+    "scan": "node scripts/scan.ts"
+  },
+  "dependencies": {
+    "astro": "^7.4.13"
+  }
+}

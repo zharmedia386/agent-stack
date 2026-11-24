@@ -1,0 +1,210 @@
+:root {
+  --background: 0 0% 100%;
+  --foreground: 240 5.9% 10%;
+  --surface: 0 0% 100%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --border: 220 13% 91%;
+  --ring: 215 25% 27%;
+  --code-bg: 240 4.8% 97%;
+
+  --glass-08: rgb(255 255 255 / 0.08);
+  --glass-10: rgb(255 255 255 / 0.1);
+  --glass-24: rgb(255 255 255 / 0.24);
+  --glass-48: rgb(255 255 255 / 0.48);
+  --glass-78: rgb(255 255 255 / 0.78);
+  --glass-92: rgb(255 255 255 / 0.92);
+
+  --radius-card: 24px;
+  --radius-tile: 16px;
+  --radius-pill: 999px;
+  --page-inset: 12px;
+  --content: 1200px;
+
+  --font-display: 'Inter Tight', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --text-display: clamp(40px, 6vw, 66px);
+  --text-h2: 22px;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --surface: 240 5.9% 10%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --border: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --code-bg: 240 6% 7%;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --surface: 240 5.9% 10%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --border: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+  --code-bg: 240 6% 7%;
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 88px;
+}
+
+body {
+  margin: 0;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font: 400 16px/24px var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: hsl(var(--muted));
+  padding: 0.1em 0.35em;
+  border-radius: 6px;
+}
+
+.container {
+  width: min(100% - 32px, var(--content));
+  margin-inline: auto;
+}
+
+.mono-label {
+  font: 500 12px/16px var(--font-mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: hsl(var(--muted-foreground));
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: var(--radius-pill);
+  font: 400 15px/1 var(--font-display);
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: transform 160ms var(--ease-out), background-color 160ms var(--ease-out);
+}
+
+.pill:active {
+  transform: scale(0.97);
+}
+
+.pill--light {
+  background: #fff;
+  color: #18181b;
+}
+
+.pill--glass {
+  background: var(--glass-10);
+  border-color: var(--glass-24);
+  color: #fff;
+}
+
+.pill--glass:hover {
+  background: var(--glass-24);
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -60px;
+  z-index: 100;
+  background: hsl(var(--foreground));
+  color: hsl(var(--background));
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+.js .reveal {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 300ms var(--ease-out), transform 300ms var(--ease-out);
+}
+
+.js .reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  gap: 14px;
+}
+
+.results {
+  padding-top: 24px;
+}
+
+.empty {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  padding: 64px 0;
+  color: hsl(var(--muted-foreground));
+}
+
+.empty[hidden] {
+  display: none;
+}
+
+.pill--outline {
+  border-color: hsl(var(--border));
+  background: hsl(var(--surface));
+  color: hsl(var(--foreground));
+  cursor: pointer;
+}

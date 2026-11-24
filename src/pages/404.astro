@@ -1,0 +1,32 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Not found · The Agent Stack" description="This page is not in the stack.">
+  <div class="container missing">
+    <p class="mono-label">404</p>
+    <h1>Not in the stack</h1>
+    <p>That repo or list isn't here. It may have been unstarred or renamed.</p>
+    <a class="pill pill--outline" href="/">Back to The Agent Stack</a>
+  </div>
+</Base>
+
+<style>
+  .missing {
+    display: grid;
+    justify-items: start;
+    gap: 16px;
+    padding: 18vh 0 8vh;
+  }
+
+  h1 {
+    font-size: var(--text-display);
+    line-height: 1;
+    letter-spacing: -0.025em;
+  }
+
+  p {
+    margin: 0;
+    color: hsl(var(--muted-foreground));
+  }
+</style>

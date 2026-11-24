@@ -1,0 +1,129 @@
+---
+import HeroArt from './HeroArt.astro';
+
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+---
+
+<header class:list={['hero', { 'hero--compact': compact }]}>
+  <HeroArt />
+  <div class="hero__scrim"></div>
+  <nav class="hero__nav" aria-label="Primary">
+    <div class="hero__links">
+      <a href="/#browse">Lists</a>
+      <a href="/c/recently-starred/">Recently starred</a>
+      <a href="https://github.com/zharmedia386?tab=stars" rel="noopener">GitHub ↗</a>
+    </div>
+    <a class="hero__brand" href="/" aria-label="The Agent Stack, home">
+      <svg viewBox="0 0 28 28" width="26" height="26" aria-hidden="true">
+        <path d="M14 3 25 9 14 15 3 9Z" fill="#fff"></path>
+        <path d="M3 14l11 6 11-6M3 19l11 6 11-6" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round" opacity="0.7"></path>
+      </svg>
+      <span>The Agent Stack</span>
+    </a>
+    <a class="pill pill--light hero__cta" href="/#browse">Browse all</a>
+  </nav>
+  <div class="hero__body">
+    <slot />
+  </div>
+  <div class="hero__foot">
+    <slot name="foot" />
+  </div>
+</header>
+
+<style>
+  .hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    margin: var(--page-inset);
+    min-height: min(88vh, 820px);
+    border-radius: var(--radius-card);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    background: #121433;
+  }
+
+  .hero--compact {
+    min-height: 0;
+  }
+
+  .hero__scrim {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgb(5 6 15 / 0.45) 0%, transparent 30%),
+      linear-gradient(0deg, rgb(10 8 20 / 0.7) 0%, transparent 45%);
+  }
+
+  .hero__nav {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 16px;
+    padding: 20px clamp(16px, 4.5vw, 60px);
+  }
+
+  .hero__links {
+    display: flex;
+    gap: 24px;
+    font: 400 14px/1 var(--font-display);
+  }
+
+  .hero__links a {
+    color: var(--glass-92);
+    text-decoration: none;
+  }
+
+  .hero__links a:hover {
+    color: #fff;
+  }
+
+  .hero__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    font: 500 22px/1 var(--font-display);
+    letter-spacing: -0.01em;
+  }
+
+  .hero__cta {
+    justify-self: end;
+    min-height: 40px;
+  }
+
+  .hero__body {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px clamp(16px, 4.5vw, 60px);
+  }
+
+  .hero__foot {
+    position: relative;
+    padding: 0 clamp(16px, 4.5vw, 60px) 32px;
+  }
+
+  @media (max-width: 760px) {
+    .hero__nav {
+      grid-template-columns: 1fr auto;
+    }
+
+    .hero__links {
+      display: none;
+    }
+
+    .hero__brand {
+      font-size: 18px;
+    }
+  }
+</style>
