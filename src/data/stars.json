@@ -41,7 +41,7 @@
       "name": "andrej-karpathy-skills",
       "url": "https://github.com/multica-ai/andrej-karpathy-skills",
       "lang": null,
-      "stars": 235368,
+      "stars": 235369,
       "topics": [],
       "starredAt": "2026-04-20T23:28:07Z",
       "links": [],
@@ -101,7 +101,7 @@
       "name": "ponytail",
       "url": "https://github.com/DietrichGebert/ponytail",
       "lang": "JavaScript",
-      "stars": 197738,
+      "stars": 197739,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -447,7 +447,7 @@
       "name": "archify",
       "url": "https://github.com/tt-a1i/archify",
       "lang": "JavaScript",
-      "stars": 99299,
+      "stars": 99300,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -535,7 +535,7 @@
       "name": "last30days-skill",
       "url": "https://github.com/mvanhorn/last30days-skill",
       "lang": "Python",
-      "stars": 73720,
+      "stars": 73721,
       "topics": [
         "agent-skills",
         "artificial-intelligence",
@@ -633,7 +633,7 @@
       "name": "diagram-design",
       "url": "https://github.com/cathrynlavery/diagram-design",
       "lang": "HTML",
-      "stars": 71310,
+      "stars": 71311,
       "topics": [
         "agent-skills",
         "claude-code",
@@ -711,7 +711,7 @@
       "name": "marketingskills",
       "url": "https://github.com/coreyhaines31/marketingskills",
       "lang": "JavaScript",
-      "stars": 62326,
+      "stars": 62328,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -802,7 +802,7 @@
       "name": "skills",
       "url": "https://github.com/emilkowalski/skills",
       "lang": "Markdown",
-      "stars": 59162,
+      "stars": 59163,
       "topics": [
         "agent-skills",
         "animation",
@@ -999,7 +999,7 @@
       "name": "craft-anything",
       "url": "https://github.com/storytold/craft-anything",
       "lang": "Rust",
-      "stars": 42428,
+      "stars": 42429,
       "topics": [],
       "starredAt": "2026-11-18T01:58:19Z",
       "links": [],
@@ -1237,7 +1237,7 @@
       "name": "anatomy",
       "url": "https://github.com/wheresryan22/anatomy",
       "lang": "JavaScript",
-      "stars": 28957,
+      "stars": 28958,
       "topics": [
         "agent-skill",
         "open-source",
@@ -1471,7 +1471,7 @@
       "name": "unslop",
       "url": "https://github.com/heydamir/unslop",
       "lang": "JavaScript",
-      "stars": 21012,
+      "stars": 21013,
       "topics": [],
       "starredAt": "2026-11-16T04:39:20Z",
       "links": [],
@@ -1502,7 +1502,7 @@
       "name": "lemo-opuscar",
       "url": "https://github.com/lemomo-ai/lemo-opuscar",
       "lang": "JavaScript",
-      "stars": 20439,
+      "stars": 20440,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -1559,7 +1559,7 @@
       "name": "Claude-BugHunter",
       "url": "https://github.com/elementalsouls/Claude-BugHunter",
       "lang": "Python",
-      "stars": 20399,
+      "stars": 20404,
       "topics": [
         "ai-security",
         "anthropic",
@@ -1948,7 +1948,7 @@
       "name": "replica-skill",
       "url": "https://github.com/Jakeschincariol/replica-skill",
       "lang": "Python",
-      "stars": 10480,
+      "stars": 10481,
       "topics": [
         "agent",
         "agent-skills",
@@ -1992,7 +1992,7 @@
       "name": "ffmpeg-skill",
       "url": "https://github.com/kajisho5/ffmpeg-skill",
       "lang": "Python",
-      "stars": 10425,
+      "stars": 10426,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -2583,7 +2583,7 @@
       "name": "raea",
       "url": "https://github.com/shinyobjectz/raea",
       "lang": "TypeScript",
-      "stars": 4811,
+      "stars": 4812,
       "topics": [
         "3d",
         "agent-skills",
@@ -2774,7 +2774,7 @@
       "name": "skills",
       "url": "https://github.com/expo/skills",
       "lang": "TypeScript",
-      "stars": 4224,
+      "stars": 4225,
       "topics": [],
       "starredAt": "2026-10-12T00:49:10Z",
       "links": [],
@@ -2805,7 +2805,7 @@
       "name": "teardown",
       "url": "https://github.com/elvarofficial/teardown",
       "lang": "JavaScript",
-      "stars": 4106,
+      "stars": 4107,
       "topics": [],
       "starredAt": "2026-11-15T13:04:07Z",
       "links": [],
@@ -4381,7 +4381,7 @@
       "name": "orca",
       "url": "https://github.com/stablyai/orca",
       "lang": "TypeScript",
-      "stars": 135047,
+      "stars": 135051,
       "topics": [
         "agent-ide",
         "ai-agents",
@@ -4795,7 +4795,7 @@
       "name": "CLIProxyAPI",
       "url": "https://github.com/router-for-me/CLIProxyAPI",
       "lang": "Go",
-      "stars": 59375,
+      "stars": 59376,
       "topics": [
         "antigravity",
         "claude",
@@ -4839,7 +4839,7 @@
       "name": "multica",
       "url": "https://github.com/multica-ai/multica",
       "lang": "Go",
-      "stars": 57650,
+      "stars": 57651,
       "topics": [],
       "starredAt": "2026-11-16T01:45:01Z",
       "links": [
@@ -4881,7 +4881,7 @@
       "name": "herdr",
       "url": "https://github.com/herdrdev/herdr",
       "lang": "Rust",
-      "stars": 52557,
+      "stars": 52559,
       "topics": [
         "agent",
         "agent-orchestration",
@@ -5170,7 +5170,7 @@
       "name": "cmux",
       "url": "https://github.com/manaflow-ai/cmux",
       "lang": "Swift",
-      "stars": 28933,
+      "stars": 28935,
       "topics": [
         "amp",
         "claude-code",
@@ -6014,7 +6014,7 @@
       "name": "obscura",
       "url": "https://github.com/h4ckf0r0day/obscura",
       "lang": "Rust",
-      "stars": 37178,
+      "stars": 37179,
       "topics": [
         "antidetect",
         "antidetect-browser",
@@ -7659,7 +7659,7 @@
       "name": "claude-mem",
       "url": "https://github.com/thedotmack/claude-mem",
       "lang": "TypeScript",
-      "stars": 119410,
+      "stars": 119411,
       "topics": [
         "ai",
         "ai-agents",
@@ -8177,7 +8177,7 @@
       "name": "OpenViking",
       "url": "https://github.com/volcengine/OpenViking",
       "lang": "Python",
-      "stars": 42679,
+      "stars": 42678,
       "topics": [
         "agent-context",
         "agent-memory",
@@ -9317,7 +9317,7 @@
       "name": "hypit",
       "url": "https://github.com/hypit-ai/hypit",
       "lang": "TypeScript",
-      "stars": 31299,
+      "stars": 31300,
       "topics": [
         "agentic-ai",
         "ai",
@@ -9452,7 +9452,7 @@
       "name": "autoclip",
       "url": "https://github.com/zhouxiaoka/autoclip",
       "lang": "Python",
-      "stars": 14897,
+      "stars": 14898,
       "topics": [
         "ai-agent",
         "ai-video-editor",
@@ -9880,7 +9880,7 @@
       "name": "Understand-Anything",
       "url": "https://github.com/Egonex-AI/Understand-Anything",
       "lang": "TypeScript",
-      "stars": 93890,
+      "stars": 93892,
       "topics": [
         "antigravity-skills",
         "business-knowledge",
@@ -10424,7 +10424,7 @@
       "name": "Ghost-Downloader-3",
       "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
       "lang": "Python",
-      "stars": 16802,
+      "stars": 16807,
       "topics": [
         "async",
         "asyncio",
@@ -12330,7 +12330,7 @@
       "name": "OpenMAIC",
       "url": "https://github.com/THU-MAIC/OpenMAIC",
       "lang": "TypeScript",
-      "stars": 44336,
+      "stars": 44337,
       "topics": [],
       "starredAt": "2026-11-11T09:20:03Z",
       "links": [],
@@ -12361,7 +12361,7 @@
       "name": "awesome-ai-research-writing",
       "url": "https://github.com/Leey21/awesome-ai-research-writing",
       "lang": null,
-      "stars": 36293,
+      "stars": 36294,
       "topics": [],
       "starredAt": "2026-11-16T05:19:49Z",
       "links": [],
@@ -12770,7 +12770,7 @@
       "name": "uptime-kuma",
       "url": "https://github.com/louislam/uptime-kuma",
       "lang": "JavaScript",
-      "stars": 94817,
+      "stars": 94818,
       "topics": [
         "docker",
         "monitor",
@@ -13630,7 +13630,7 @@
       "name": "opensre",
       "url": "https://github.com/Tracer-Cloud/opensre",
       "lang": "Python",
-      "stars": 14962,
+      "stars": 14964,
       "topics": [
         "alerting",
         "ci-cd",
@@ -15633,7 +15633,7 @@
       "name": "rea",
       "url": "https://github.com/morluto/rea",
       "lang": "TypeScript",
-      "stars": 476203,
+      "stars": 476205,
       "topics": [
         "agent-skills",
         "ai",
