@@ -27,6 +27,17 @@ const matchKey = (slug: string) => {
   return ALIASES[key] ?? key;
 };
 
+// Link targets come from Notion text and from repo owners' GitHub metadata, so only http(s) may reach an href.
+export function safeUrl(raw: string): string | null {
+  const candidate = /^[a-z][a-z\d+.-]*:/i.test(raw) ? raw : `https://${raw}`;
+  try {
+    const url = new URL(candidate);
+    return url.protocol === 'http:' || url.protocol === 'https:' ? candidate : null;
+  } catch {
+    return null;
+  }
+}
+
 export const slugify = (title: string) => title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 export function parseStarLabel(label: string): number {
@@ -84,8 +95,11 @@ function parseHowTo(chunk: string): Block[] {
 function parseDetail(body: string) {
   const linkLine = body.split('\n').find((line) => line.startsWith('- ') && line.includes('[github](')) ?? '';
   const links: Link[] = [...linkLine.matchAll(/\[([^\]]+)\]\(([^)]+)\)/g)]
-    .map((match) => ({ label: match[1], url: match[2] }))
-    .filter((link) => link.label.toLowerCase() !== 'github');
+    .filter((match) => match[1].toLowerCase() !== 'github')
+    .flatMap((match) => {
+      const url = safeUrl(match[2]);
+      return url ? [{ label: match[1], url }] : [];
+    });
 
   // Notion entries use "- <b>Label:</b>" bullets in varying order; each section runs to the next label.
   const sections: Record<string, string> = {};
@@ -165,13 +179,14 @@ export function merge(pages: ParsedPage[], stars: GhStar[], generatedAt: string)
   const repos: Repo[] = stars.map((star) => {
     const [owner, name] = star.full_name.split('/');
     const note = notes.get(star.full_name.toLowerCase());
+    const homepage = star.homepage ? safeUrl(star.homepage) : null;
     const base = {
       slug: star.full_name, owner, name, url: star.html_url,
       lang: star.language, stars: star.stargazers_count, topics: star.topics ?? [], starredAt: star.starred_at,
     };
     if (!note) {
       return {
-        ...base, links: star.homepage ? [{ label: 'site', url: star.homepage }] : [],
+        ...base, links: homepage ? [{ label: 'site', url: homepage }] : [],
         oneLiner: star.description ?? '', what: '', howTo: [], reachFor: '',
         categories: [RECENT], primaryCategory: RECENT, group: {}, hasNotes: false,
       };

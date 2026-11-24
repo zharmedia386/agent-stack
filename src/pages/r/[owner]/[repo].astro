@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import Card from '../../../components/Card.astro';
 import CodeBlock from '../../../components/CodeBlock.astro';
+import SplitWords from '../../../components/SplitWords.astro';
 import { stars } from '../../../data/stars.ts';
 import type { Repo } from '../../../data/types.ts';
 import { formatStars, plainText } from '../../../lib/format.ts';
@@ -112,7 +113,7 @@ const related = repo.categories.map((slug) => {
         .filter((block) => block.peers.length > 0)
         .map((block) => (
           <section class="related reveal">
-            <h2>More in {block.label}</h2>
+            <h2 class="split"><SplitWords text={`More in ${block.label}`} /></h2>
             <div class="grid">
               {block.peers.map((peer) => (
                 <Card repo={peer} categories={categories} contextCategory={block.slug} />

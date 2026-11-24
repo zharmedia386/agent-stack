@@ -1,0 +1,160 @@
+---
+import type { Repo } from '../data/types.ts';
+import { formatStars, plainText } from '../lib/format.ts';
+
+interface Props {
+  repos: Repo[];
+}
+
+const { repos } = Astro.props;
+---
+
+<div class="corridor" data-corridor aria-hidden="true">
+  {
+    repos.map((repo, index) => (
+      <a class="tile" href={`/r/${repo.owner}/${repo.name}/`} tabindex="-1" data-tile style={`--n:${index}`}>
+        <span class="tile__top">
+          <span class="tile__lang">{repo.lang ?? 'repo'}</span>
+          <span class="tile__stars">★ {formatStars(repo.stars)}</span>
+        </span>
+        <span class="tile__name">
+          <span class="tile__owner">{repo.owner}/</span>
+          {repo.name}
+        </span>
+        <span class="tile__one">{plainText(repo.oneLiner)}</span>
+      </a>
+    ))
+  }
+</div>
+
+<script>
+  import { tilePose } from '../lib/corridor.ts';
+
+  const corridor = document.querySelector<HTMLElement>('[data-corridor]');
+  const tiles = [...document.querySelectorAll<HTMLElement>('[data-tile]')];
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (corridor && tiles.length) {
+    const loopMs = 80_000;
+    let phase = 0;
+    let last = performance.now();
+    let running = false;
+    let frame = 0;
+    const mouse = { x: 0, y: 0, tx: 0, ty: 0 };
+    let box = corridor.getBoundingClientRect();
+
+    const draw = () => {
+      tiles.forEach((tile, index) => {
+        const progress = (index / tiles.length + phase) % 1;
+        const pose = tilePose(progress, box.width, box.height, mouse.x, mouse.y);
+        tile.style.transform = pose.transform;
+        tile.style.opacity = String(pose.opacity);
+        tile.style.zIndex = String(pose.z);
+      });
+    };
+
+    const tick = (now: number) => {
+      phase = (phase + (now - last) / loopMs) % 1;
+      last = now;
+      mouse.x += (mouse.tx - mouse.x) * 0.06;
+      mouse.y += (mouse.ty - mouse.y) * 0.06;
+      draw();
+      frame = requestAnimationFrame(tick);
+    };
+
+    const setRunning = (next: boolean) => {
+      if (reduced || next === running) return;
+      running = next;
+      if (running) {
+        last = performance.now();
+        frame = requestAnimationFrame(tick);
+      } else cancelAnimationFrame(frame);
+    };
+
+    // Only animate while the hero is on screen and the tab is visible.
+    new IntersectionObserver(([entry]) => setRunning(entry.isIntersecting && !document.hidden)).observe(corridor);
+    document.addEventListener('visibilitychange', () => setRunning(!document.hidden && corridor.getBoundingClientRect().bottom > 0));
+    addEventListener('resize', () => {
+      box = corridor.getBoundingClientRect();
+      draw();
+    });
+    corridor.closest('.hero')?.addEventListener('pointermove', (event) => {
+      const { clientX, clientY } = event as PointerEvent;
+      mouse.tx = (clientX / innerWidth) * 2 - 1;
+      mouse.ty = (clientY / innerHeight) * 2 - 1;
+    });
+
+    phase = 0.04;
+    draw();
+    corridor.classList.add('is-ready');
+  }
+</script>
+
+<style>
+  .corridor {
+    position: absolute;
+    inset: 0 0 0 42%;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .tile {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: rgb(255 255 255 / 0.96);
+    color: #18181b;
+    text-decoration: none;
+    box-shadow: 0 18px 40px -16px rgb(0 0 0 / 0.55);
+    opacity: 0;
+    will-change: transform, opacity;
+    pointer-events: auto;
+  }
+
+  :global(.js) .corridor:not(.is-ready) .tile {
+    visibility: hidden;
+  }
+
+  .tile__top {
+    display: flex;
+    justify-content: space-between;
+    font: 400 11px/14px var(--font-mono);
+    color: #71717a;
+  }
+
+  .tile__stars {
+    color: #18181b;
+  }
+
+  .tile__name {
+    font: 400 16px/1.2 var(--font-display);
+    overflow-wrap: anywhere;
+  }
+
+  .tile__owner {
+    color: #71717a;
+  }
+
+  .tile__one {
+    font-size: 12px;
+    line-height: 17px;
+    color: #52525b;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+
+  @media (max-width: 900px) {
+    .corridor {
+      display: none;
+    }
+  }
+</style>

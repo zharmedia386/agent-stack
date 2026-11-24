@@ -3,6 +3,10 @@ import Base from '../layouts/Base.astro';
 import Hero from '../components/Hero.astro';
 import ChipBar from '../components/ChipBar.astro';
 import Card from '../components/Card.astro';
+import Corridor from '../components/Corridor.astro';
+import Marquee from '../components/Marquee.astro';
+import Odometer from '../components/Odometer.astro';
+import SplitWords from '../components/SplitWords.astro';
 import { stars } from '../data/stars.ts';
 import { formatStars } from '../lib/format.ts';
 
@@ -11,6 +15,7 @@ const lists = categories.filter((category) => category.slug !== 'recently-starre
 const top = repos.reduce((best, repo) => (repo.stars > best.stars ? repo : best));
 const newest = repos.reduce((latest, repo) => (repo.starredAt > latest.starredAt ? repo : latest));
 const updated = new Date(generatedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+const corridorRepos = [...repos].sort((a, b) => b.stars - a.stars).slice(0, 8);
 const subtitle = `${repos.length} agent skills, MCP servers & open-source tools, hand-picked and annotated by zharmedia386`;
 const chips = categories.map((category) => ({
   key: category.slug,
@@ -25,20 +30,25 @@ const chips = categories.map((category) => ({
     <span>{repos.length} repos</span><span aria-hidden="true">·</span><span>{lists} lists</span><span aria-hidden="true">·</span><span class="announce__muted">updated {updated}</span>
   </p>
   <Hero>
-    <h1 class="title">The Agent Stack</h1>
-    <p class="subtitle">
+    <Corridor slot="art" repos={corridorRepos} />
+    <p class="live" data-in data-pause-offscreen style="--in:0">
+      <span class="live__dot" aria-hidden="true"></span>
+      {repos.length} stars · updated {updated}
+    </p>
+    <h1 class="title split"><SplitWords text="The Agent Stack" /></h1>
+    <p class="subtitle" data-in style="--in:3">
       {repos.length} agent skills, MCP servers &amp; open-source tools, hand-picked and annotated by{' '}
       <a href="https://github.com/zharmedia386" rel="noopener">zharmedia386</a>
     </p>
-    <div class="actions">
+    <div class="actions" data-in style="--in:4">
       <a class="pill pill--light" href="#browse">Browse all {repos.length}</a>
       <a class="pill pill--glass" href="https://github.com/zharmedia386?tab=stars" rel="noopener">Starred on GitHub ↗</a>
     </div>
-    <dl class="stats" slot="foot">
-      <div><dt>{repos.length}</dt><dd>Starred repos</dd></div>
-      <div><dt>{lists}</dt><dd>Curated lists</dd></div>
+    <dl class="stats" slot="foot" data-in style="--in:5">
+      <div><dt><Odometer value={String(repos.length)} /></dt><dd>Starred repos</dd></div>
+      <div><dt><Odometer value={String(lists)} /></dt><dd>Curated lists</dd></div>
       <div>
-        <dt>★ {formatStars(top.stars)}</dt>
+        <dt>★ <Odometer value={formatStars(top.stars)} /></dt>
         <dd>Most starred · <a href={`/r/${top.slug}/`}>{top.name}</a></dd>
       </div>
       <div>
@@ -47,6 +57,8 @@ const chips = categories.map((category) => ({
       </div>
     </dl>
   </Hero>
+
+  <Marquee categories={categories} />
 
   <section id="browse" aria-label="Browse repos">
     <ChipBar chips={chips} kind="cat" total={repos.length} placeholder={`Search ${repos.length} repos…`}>
@@ -83,7 +95,63 @@ const chips = categories.map((category) => ({
     color: hsl(var(--muted-foreground));
   }
 
+  .live {
+    display: inline-flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 22px;
+    padding: 6px 12px;
+    border-radius: var(--radius-pill);
+    background: var(--glass-10);
+    border: 1px solid var(--glass-24);
+    font: 500 12px/1 var(--font-mono);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .live__dot {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22a05c;
+  }
+
+  /* Pulse with transform/opacity so it stays on the compositor (box-shadow repaints every frame). */
+  .live__dot::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: #22a05c;
+    animation: live-dot 2.4s ease-out infinite;
+  }
+
+  @keyframes live-dot {
+    from {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+
+    to {
+      opacity: 0;
+      transform: scale(2.6);
+    }
+  }
+
+  .live.is-off .live__dot::after {
+    animation-play-state: paused;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .live__dot::after {
+      animation: none;
+    }
+  }
+
   .title {
+    --split-delay: 220ms;
     font-size: var(--text-display);
     line-height: 1;
     letter-spacing: -0.025em;

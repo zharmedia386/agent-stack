@@ -208,3 +208,21 @@ code {
   color: hsl(var(--foreground));
   cursor: pointer;
 }
+
+.js [data-in] {
+  animation: hero-in 900ms var(--ease-out) both;
+  animation-delay: calc(var(--in, 0) * 90ms + 120ms);
+}
+
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 12px, 0) scale(0.985);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js [data-in] {
+    animation: none;
+  }
+}

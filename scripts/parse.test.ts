@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { parseCategoryPage, parseIndex, parseStarLabel, merge, type GhStar } from './parse.ts';
+import { parseCategoryPage, parseIndex, parseStarLabel, merge, safeUrl, type GhStar } from './parse.ts';
 
 const mini = readFileSync(new URL('./fixtures/mini.md', import.meta.url), 'utf8');
 const page = parseCategoryPage(mini, 'mcp-servers', 'AI & Agents', 3);
@@ -129,4 +129,19 @@ test('the last entry of a group does not swallow the next group heading', () => 
   const twoGroups = mini.replace('#### oraios/serena', '### Another group\n\n#### oraios/serena');
   const context7 = parseCategoryPage(twoGroups, 'x', 'S', 0).entries[0];
   assert.equal(context7.reachFor, 'the agent writes code against a library whose API changed recently.');
+});
+
+test('safeUrl keeps http(s), adds https to bare domains and rejects other schemes', () => {
+  assert.equal(safeUrl('https://x.dev/a'), 'https://x.dev/a');
+  assert.equal(safeUrl('example.com'), 'https://example.com');
+  assert.equal(safeUrl('javascript:alert(1)'), null);
+  assert.equal(safeUrl('data:text/html,hi'), null);
+  assert.equal(safeUrl(''), null);
+});
+
+test('merge drops unsafe GitHub homepages and Notion links', () => {
+  const evil = parseCategoryPage(mini.replace('[context7.com](https://context7.com)', '[x](javascript:alert(1))'), 'x', 'S', 0);
+  const data = merge([evil], [gh('upstash/context7'), gh('new/repo', { homepage: 'javascript:alert(1)' })], '2026-11-24');
+  assert.deepEqual(data.repos.find((r) => r.slug === 'upstash/context7')?.links, []);
+  assert.deepEqual(data.repos.find((r) => r.slug === 'new/repo')?.links, []);
 });

@@ -1,0 +1,46 @@
+---
+interface Props {
+  text: string;
+}
+
+const words = Astro.props.text.split(/\s+/).filter(Boolean);
+---
+
+{
+  words.map((word, index) => (
+    <>
+      <span class="w" style={`--i:${index}`}>
+        {word}
+      </span>{' '}
+    </>
+  ))
+}
+
+<style>
+  :global(.js .split) .w {
+    display: inline-block;
+    opacity: 0.12;
+    filter: blur(6px);
+    transform: translateY(0.18em);
+    transition:
+      opacity 700ms var(--ease-out),
+      filter 700ms var(--ease-out),
+      transform 700ms var(--ease-out);
+    transition-delay: calc(var(--i) * 70ms + var(--split-delay, 0ms));
+  }
+
+  :global(.js .split.is-in) .w {
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :global(.js .split) .w {
+      opacity: 1;
+      filter: none;
+      transform: none;
+      transition: none;
+    }
+  }
+</style>

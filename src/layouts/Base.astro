@@ -88,7 +88,13 @@ const canonicalUrl = new URL(canonical ?? Astro.url.pathname, Astro.site);
         },
         { rootMargin: '0px 0px -40px 0px' },
       );
-      document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+      document.querySelectorAll('.reveal, .split, .odo').forEach((element) => observer.observe(element));
+
+      // Looping animations stop while off screen so scrolling the grid has nothing running.
+      const pauser = new IntersectionObserver((entries) =>
+        entries.forEach((entry) => entry.target.classList.toggle('is-off', !entry.isIntersecting)),
+      );
+      document.querySelectorAll('[data-pause-offscreen]').forEach((element) => pauser.observe(element));
     </script>
   </body>
 </html>

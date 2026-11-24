@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Hero from '../../components/Hero.astro';
 import ChipBar from '../../components/ChipBar.astro';
 import Card from '../../components/Card.astro';
+import SplitWords from '../../components/SplitWords.astro';
 import { stars } from '../../data/stars.ts';
 import type { Category } from '../../data/types.ts';
 import { inlineMd } from '../../lib/inline-md.ts';
@@ -35,9 +36,9 @@ const chips = category.groups.map((group) => ({
 >
   <Hero compact>
     <a class="crumb" href="/#browse">← All lists</a>
-    <p class="section mono-label">{category.section}</p>
-    <h1 class="title"><span aria-hidden="true">{category.emoji}</span> {category.title}</h1>
-    <p class="intro" set:html={inlineMd(category.intro)} />
+    <p class="section mono-label" data-in style="--in:0">{category.section}</p>
+    <h1 class="title split"><span aria-hidden="true">{category.emoji}</span> <SplitWords text={category.title} /></h1>
+    <p class="intro" data-in style="--in:3" set:html={inlineMd(category.intro)} />
     <p class="count" slot="foot">{members.length} repos{category.groups.length > 0 && ` · ${category.groups.length} groups`}</p>
   </Hero>
 
