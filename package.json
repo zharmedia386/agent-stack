@@ -13,7 +13,8 @@
     "astro": "astro",
     "test": "node --test 'scripts/**/*.test.ts' 'src/**/*.test.ts'",
     "parse": "node scripts/parse.ts",
-    "scan": "node scripts/scan.ts"
+    "scan": "node scripts/scan.ts",
+    "fetch:stars": "bash scripts/fetch-stars.sh"
   },
   "dependencies": {
     "astro": "^7.4.13"

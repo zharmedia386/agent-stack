@@ -17,13 +17,10 @@ npm run build      # static output in dist/
 
 ## Refresh data
 
-1. Snapshot Notion pages into `data-raw/<list>.md` and stars into `data-raw/github-stars.json`:
-   ```bash
-   gh api --paginate -H "Accept: application/vnd.github.star+json" "user/starred?per_page=100" \
-     | jq -s 'add | map({starred_at, full_name: .repo.full_name, html_url: .repo.html_url, description: .repo.description, language: .repo.language, stargazers_count: .repo.stargazers_count, topics: .repo.topics, homepage: .repo.homepage})' \
-     > data-raw/github-stars.json
-   ```
+1. Snapshot Notion pages into `data-raw/<list>.md` (by hand, via Notion MCP) and stars with `npm run fetch:stars`.
 2. `npm run parse` rebuilds `src/data/stars.json` and fails if counts don't line up.
 3. `npm run scan` checks the snapshots for tokens, local paths and private IPs.
+
+The `Sync GitHub stars` workflow runs this daily (fetch, parse, test, build) and pushes only when something changed; Vercel deploys the push.
 
 Stars without Notion notes show under "Recently starred". Renamed repos go in `ALIASES` in `scripts/parse.ts`.
