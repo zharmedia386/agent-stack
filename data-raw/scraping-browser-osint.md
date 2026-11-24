@@ -8,7 +8,7 @@ Here is the result of "fetch" for the Page with URL https://app.notion.com/p/41c
 </properties>
 <iconMetadata>{"type":"emoji","emoji":"🕸️"}</iconMetadata>
 <content>
-Browser automation for agents, scrapers and crawlers, OSINT recon tools, and a couple of Sci-Hub helpers. 24 repos.
+Browser automation for agents, scrapers and crawlers, OSINT recon tools, and a couple of Sci-Hub helpers. 26 repos.
 
 ## Overview
 
@@ -35,8 +35,10 @@ Browser automation for agents, scrapers and crawlers, OSINT recon tools, and a c
 | [Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach) · [Details ↓](https://app.notion.com/p/41ce82f897e5813aab14ff852701a247#41ce82f897e58122aad5e031ae073acb) | One CLI for agents to read Twitter, Reddit, YouTube, Bilibili etc. | Python | 112.9k |
 | [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) · [Details ↓](https://app.notion.com/p/41ce82f897e5813aab14ff852701a247#41ce82f897e5818ab33aff82a88051d6) | Python scraping framework with stealth fetchers and spiders | Python | 104k |
 | [every-app/open-seo](https://github.com/every-app/open-seo) · [Details ↓](https://app.notion.com/p/41ce82f897e5813aab14ff852701a247#41ce82f897e581bbbba9d18fbdb2f3ec) | Self-hosted Semrush/Ahrefs alternative | TypeScript | 28.1k |
+| [mikf/gallery-dl](https://github.com/mikf/gallery-dl) · [Details ↓](https://app.notion.com/p/41ce82f897e5813aab14ff852701a247) | Download image galleries and collections from many sites | Python | 20.6k |
 | [getmaxun/maxun](https://github.com/getmaxun/maxun) · [Details ↓](https://app.notion.com/p/41ce82f897e5813aab14ff852701a247#41ce82f897e581a7b54ed64b0a0d1349) | No-code platform that turns sites into structured APIs | TypeScript | 18.5k |
 | [apify/apify-mcp-server](https://github.com/apify/apify-mcp-server) · [Details ↓](https://app.notion.com/p/41ce82f897e5813aab14ff852701a247#41ce82f897e5813ba869cf4de8332af7) | MCP server exposing thousands of Apify scrapers | TypeScript | 16.8k |
+| [subzeroid/instagrapi](https://github.com/subzeroid/instagrapi) · [Details ↓](https://app.notion.com/p/41ce82f897e5813aab14ff852701a247) | Unofficial Python client for the Instagram private API | Python | 7.2k |
 | [kalil0321/reverse-api-engineer](https://github.com/kalil0321/reverse-api-engineer) · [Details ↓](https://app.notion.com/p/41ce82f897e5813aab14ff852701a247#41ce82f897e581c2b118d8a57beff7d4) | Record browsing, get a typed API client for the site | Python | 3.9k |
 
 <b>OSINT</b>
@@ -292,6 +294,20 @@ everyapp install https://github.com/every-app/open-seo
 
 - <b>Reach for it when:</b> you need SEO research without paying for Semrush.
 
+#### mikf/gallery-dl
+
+- Link: [github](https://github.com/mikf/gallery-dl) · [discord](https://discord.gg/rSzQwRvGnE)
+- ⭐ 20.6k · Python
+- <b>What:</b> Command-line program that downloads image galleries and collections from many image hosting sites (Danbooru, DeviantArt, Pixiv, Tumblr, MangaDex and more). Has JSON config and file-naming templates. The README now points to a Codeberg mirror for dev installs.
+- <b>How to use:</b>
+
+```bash
+python -m pip install -U gallery-dl
+gallery-dl "https://danbooru.donmai.us/posts?tags=bonocho"
+```
+
+- <b>Reach for it when:</b> you want to bulk-download or archive images from a gallery site, like yt-dlp but for images.
+
 #### getmaxun/maxun
 
 - Link: [github](https://github.com/getmaxun/maxun) · [maxun.dev](https://www.maxun.dev)
@@ -312,6 +328,29 @@ claude mcp add apify "https://mcp.apify.com" -t http
 ```
 
 - <b>Reach for it when:</b> you want a ready scraper for a big platform instead of writing one.
+
+#### subzeroid/instagrapi
+
+- Link: [github](https://github.com/subzeroid/instagrapi) · [docs](https://subzeroid.github.io/instagrapi/)
+- ⭐ 7.2k · Python
+- <b>What:</b> Unofficial Python wrapper for the Instagram web and private mobile APIs. Covers users, media, stories, DMs, comments and uploads, with session save/load. The README warns that private API automation is fragile (accounts, proxies, challenges) and suggests official APIs for business use.
+- <b>How to use:</b>
+
+```bash
+pip install instagrapi
+```
+
+```py
+from instagrapi import Client
+
+cl = Client()
+cl.login(ACCOUNT_USERNAME, ACCOUNT_PASSWORD)
+
+user_id = cl.user_id_from_username(ACCOUNT_USERNAME)
+medias = cl.user_medias(user_id, 20)
+```
+
+- <b>Reach for it when:</b> you need scripted access to Instagram for research or internal tooling and there is no official API for it.
 
 #### kalil0321/reverse-api-engineer
 
