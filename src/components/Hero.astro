@@ -1,5 +1,6 @@
 ---
 import HeroArt from './HeroArt.astro';
+import ThemeToggle from './ThemeToggle.astro';
 import { stars } from '../data/stars.ts';
 
 interface Props {
@@ -28,6 +29,7 @@ const hasRecent = stars.categories.some((category) => category.slug === 'recentl
       </svg>
       <span>The Agent Stack</span>
     </a>
+    <div class="hero__tools"><ThemeToggle onImage /></div>
   </nav>
   <div class="hero__body">
     <slot />
@@ -95,6 +97,10 @@ const hasRecent = stars.categories.some((category) => category.slug === 'recentl
     text-decoration: none;
     font: 500 22px/1 var(--font-display);
     letter-spacing: -0.01em;
+  }
+
+  .hero__tools {
+    justify-self: end;
   }
 
   .hero__body {

@@ -1,0 +1,58 @@
+---
+interface Props {
+  onImage?: boolean;
+}
+
+const { onImage = false } = Astro.props;
+---
+
+<div class:list={['theme-toggle', { 'theme-toggle--image': onImage }]} role="group" aria-label="Color theme">
+  <button type="button" data-set-theme="light" aria-label="Light theme">
+    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+  </button>
+  <button type="button" data-set-theme="dark" aria-label="Dark theme">
+    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z"></path></svg>
+  </button>
+</div>
+
+<style>
+  .theme-toggle {
+    display: inline-flex;
+    gap: 2px;
+    padding: 3px;
+    border-radius: var(--radius-pill);
+    background: hsl(var(--surface));
+    border: 1px solid hsl(var(--border));
+  }
+
+  .theme-toggle button {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: hsl(var(--muted-foreground));
+    cursor: pointer;
+  }
+
+  .theme-toggle button[aria-pressed='true'] {
+    background: hsl(var(--foreground));
+    color: hsl(var(--background));
+  }
+
+  .theme-toggle--image {
+    background: var(--glass-10);
+    border-color: var(--glass-24);
+  }
+
+  .theme-toggle--image button {
+    color: var(--glass-78);
+  }
+
+  .theme-toggle--image button[aria-pressed='true'] {
+    background: #fff;
+    color: #18181b;
+  }
+</style>

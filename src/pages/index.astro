@@ -34,7 +34,7 @@ const chips = categories.map((category) => ({
     <Corridor slot="art" repos={corridorRepos} />
     <p class="live" data-in data-pause-offscreen style="--in:0">
       <span class="live__dot" aria-hidden="true"></span>
-      {repos.length} stars · synced daily · {updated}
+      {repos.length} stars · synced daily<span class="live__date"> · {updated}</span>
     </p>
     <h1 class="title split"><SplitWords text="The Agent Stack" /></h1>
     <p class="subtitle" data-in style="--in:3">
@@ -138,6 +138,12 @@ const chips = categories.map((category) => ({
     to {
       opacity: 0;
       transform: scale(2.6);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .live__date {
+      display: none;
     }
   }
 

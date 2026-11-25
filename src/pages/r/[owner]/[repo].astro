@@ -1,6 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import Card from '../../../components/Card.astro';
+import ThemeToggle from '../../../components/ThemeToggle.astro';
 import CodeBlock from '../../../components/CodeBlock.astro';
 import SplitWords from '../../../components/SplitWords.astro';
 import { stars } from '../../../data/stars.ts';
@@ -32,11 +33,14 @@ const related = repo.categories.map((slug) => {
 
 <Base title={`${repo.slug} · The Agent Stack`} description={plainText(repo.oneLiner) || `${repo.slug} on The Agent Stack`}>
   <article class="container detail">
-    <nav class="crumbs" aria-label="Breadcrumb">
-      <a href="/">The Agent Stack</a>
-      <span aria-hidden="true">/</span>
-      <a href={`/c/${primary.slug}/`}>{primary.emoji} {primary.title}</a>
-    </nav>
+    <div class="topline">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">The Agent Stack</a>
+        <span aria-hidden="true">/</span>
+        <a class="crumbs__list" href={`/c/${primary.slug}/`}><span aria-hidden="true">{primary.emoji}</span>{primary.title}</a>
+      </nav>
+      <ThemeToggle />
+    </div>
 
     <header class="head">
       <h1><span class="owner">{repo.owner}/</span>{repo.name}</h1>
@@ -138,8 +142,20 @@ const related = repo.categories.map((slug) => {
     color: hsl(var(--muted-foreground));
   }
 
+  .topline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
   .crumbs a {
     text-decoration: none;
+  }
+
+  .crumbs__list {
+    display: inline-flex;
+    gap: 6px;
   }
 
   .crumbs a:hover {
