@@ -8,7 +8,7 @@ Here is the result of "fetch" for the Page with URL https://app.notion.com/p/41c
 </properties>
 <iconMetadata>{"type":"emoji","emoji":"🎬"}</iconMetadata>
 <content>
-Tools for making video, voice, motion and images: local apps, agent skills that turn Claude Code into a video studio, code-made animation kits, image-generation skills, 3D/Blender helpers and prompt collections. 55 repos.
+Tools for making video, voice, motion and images: local apps, agent skills that turn Claude Code into a video studio, code-made animation kits, image-generation skills, 3D/Blender helpers and prompt collections. 56 repos.
 
 ## Overview
 
@@ -27,6 +27,7 @@ Tools for making video, voice, motion and images: local apps, agent skills that 
 | [OpenWhispr/openwhispr](https://github.com/OpenWhispr/openwhispr) · [Details ↓](https://app.notion.com/p/41ce82f897e581d8b023c60e41b8d04c#41ce82f897e58168a655c070eb633279) | Hotkey voice dictation with local Whisper/Parakeet or BYOK cloud | JavaScript | 11.8k |
 | [Leonxlnx/earshot](https://github.com/Leonxlnx/earshot) · [Details ↓](https://app.notion.com/p/41ce82f897e581d8b023c60e41b8d04c#41ce82f897e58124af8de8894d3e42e5) | Lets coding agents hear, score and synthesize sound | Python | 5.1k |
 | [shinyobjectz/raea](https://github.com/shinyobjectz/raea) · [Details ↓](https://app.notion.com/p/41ce82f897e581d8b023c60e41b8d04c#41ce82f897e581b0ac2ccf4cbe8dfe10) | Render video, motion graphics, 3D and games from React/TS on your GPU | TypeScript | 2.8k |
+| [GuanYixuan/pyCapCut](https://github.com/GuanYixuan/pyCapCut) · [Details ↓](https://app.notion.com/p/41ce82f897e581d8b023c60e41b8d04c) | Python library that generates CapCut drafts for automated editing | Python | 788 |
 | [Nutlope/ai-subtitles](https://github.com/Nutlope/ai-subtitles) · [Details ↓](https://app.notion.com/p/41ce82f897e581d8b023c60e41b8d04c#41ce82f897e581769435c50b8a61ff5d) | Next.js app that generates and styles subtitles with Whisper | TypeScript | 481 |
 | [miqdadbadjuber/luna](https://github.com/miqdadbadjuber/luna) | Local video downloader and AI clipper for YouTube, Reels, TikTok | Python | 69 |
 
@@ -257,6 +258,21 @@ raea render hello.tsx -o hello.mp4
 ```
 
 - <b>Reach for it when:</b> You like Remotion-style code video but want GPU rendering and 3D/game output too.
+
+#### GuanYixuan/pyCapCut
+
+- Link: [github](https://github.com/GuanYixuan/pyCapCut)
+- ⭐ 788 · Python
+- <b>What:</b> Python library that writes CapCut draft projects (video, audio, text, stickers, keyframes, animations, effects, transitions, SRT import) so you can script editing or remix pipelines. It can also load a draft as a template and swap its media or text. You open the draft in CapCut and export by hand; it cannot export automatically. README is in Chinese, with an English version linked. The README warns that 0.1.0 will change the track API.
+- <b>How to use:</b>
+
+```bash
+pip install pycapcut
+```
+
+Then follow <code>demo.py</code> in the repo: set your CapCut drafts folder path, run it, and open the new <code>demo</code> draft in CapCut.
+
+- <b>Reach for it when:</b> you want to generate many CapCut timelines from code, for example batch subtitles or templated videos.
 
 #### Nutlope/ai-subtitles
 

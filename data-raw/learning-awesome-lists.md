@@ -8,7 +8,7 @@ Here is the result of "fetch" for the Page with URL https://app.notion.com/p/41c
 </properties>
 <iconMetadata>{"type":"emoji","emoji":"📚"}</iconMetadata>
 <content>
-AI/LLM learning material, awesome lists and API directories, algorithm collections, and courses or tutorial repos. 31 repos.
+AI/LLM learning material, awesome lists and API directories, algorithm collections, and courses or tutorial repos. 34 repos.
 
 ## Overview
 
@@ -33,8 +33,11 @@ AI/LLM learning material, awesome lists and API directories, algorithm collectio
 | [public-apis/public-apis](https://github.com/public-apis/public-apis) · [Details ↓](https://app.notion.com/p/41ce82f897e5811fbef6e58ad8a26fc5#41ce82f897e581419c5eed9ad66433c2) | Free public APIs by category | Python | 500k |
 | [vinta/awesome-python](https://github.com/vinta/awesome-python) · [Details ↓](https://app.notion.com/p/41ce82f897e5811fbef6e58ad8a26fc5#41ce82f897e581889ac3c85c2d30ecb8) | Python libraries and tools by task | Python | 335.6k |
 | [avelino/awesome-go](https://github.com/avelino/awesome-go) · [Details ↓](https://app.notion.com/p/41ce82f897e5811fbef6e58ad8a26fc5#41ce82f897e58190af2cc9dfd481780d) | Go libraries and frameworks | Go | 194.6k |
+| [jaywcjlove/awesome-mac](https://github.com/jaywcjlove/awesome-mac) · [Details ↓](https://app.notion.com/p/41ce82f897e5811fbef6e58ad8a26fc5) | Curated macOS apps by category, with open source and free marks | Swift | 119.3k |
 | [DopplerHQ/awesome-interview-questions](https://github.com/DopplerHQ/awesome-interview-questions) · [Details ↓](https://app.notion.com/p/41ce82f897e5811fbef6e58ad8a26fc5#41ce82f897e581cf9c0fe93dc1d69e66) | Interview question lists per tech | - | 85.6k |
+| [serhii-londar/open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps) · [Details ↓](https://app.notion.com/p/41ce82f897e5811fbef6e58ad8a26fc5) | Open source macOS apps by category | n/a | 51.5k |
 | [farizdotid/DAFTAR-API-LOKAL-INDONESIA](https://github.com/farizdotid/DAFTAR-API-LOKAL-INDONESIA) · [Details ↓](https://app.notion.com/p/41ce82f897e5811fbef6e58ad8a26fc5#41ce82f897e5816bbacbfc6eb0765e70) | Indonesian public APIs | TypeScript | 5.3k |
+| [punkpeye/awesome-remote-mcp-servers](https://github.com/punkpeye/awesome-remote-mcp-servers) · [Details ↓](https://app.notion.com/p/41ce82f897e5811fbef6e58ad8a26fc5) | Hosted remote MCP servers you connect to by URL | n/a | 4.0k |
 | [every-app/every-app](https://github.com/every-app/every-app) | Self-host open-source SaaS alternatives on Cloudflare | TypeScript | 1.1k |
 | [afdalrdh/DAFTAR-API-LOKAL-INDONESIA](https://github.com/afdalrdh/DAFTAR-API-LOKAL-INDONESIA) · [Details ↓](https://app.notion.com/p/41ce82f897e5811fbef6e58ad8a26fc5#41ce82f897e5814f84e8fb6d8544f29f) | Older copy of the list above | - | 1 |
 
@@ -178,6 +181,14 @@ docker compose up --build               # then open http://localhost:3000
 - <b>What's inside:</b> sections for web frameworks, database drivers, CLI, logging, testing, networking, auth, config, messaging, and more.
 - <b>Reach for it when:</b> choosing a Go library for a task.
 
+#### jaywcjlove/awesome-mac
+
+- Link: [github](https://github.com/jaywcjlove/awesome-mac) · [site](https://git.io/macx)
+- ⭐ 119.3k · Swift
+- <b>What:</b> Large curated list of macOS software, sorted by category. Items are marked as open source, free, App Store, native app or linked to their own awesome list. README is also available in Chinese, Japanese, Korean and Portuguese.
+- <b>What's inside:</b> sections such as Developer Tools, Terminal Apps, Design and Product, AI Tools, Communication, Audio and Video Tools, Download Management Tools, Cloud Storage and Input Methods.
+- <b>Reach for it when:</b> you set up a Mac and want a vetted app for a job.
+
 #### DopplerHQ/awesome-interview-questions
 
 - Link: [github](https://github.com/DopplerHQ/awesome-interview-questions)
@@ -186,6 +197,14 @@ docker compose up --build               # then open http://localhost:3000
 - <b>What's inside:</b> links grouped by language/framework (JS, Python, Go, Java, React, Angular, Docker, Kubernetes...), databases, and general topics like algorithms and system design.
 - <b>Reach for it when:</b> preparing for a technical interview in a specific stack.
 
+#### serhii-londar/open-source-mac-os-apps
+
+- Link: [github](https://github.com/serhii-londar/open-source-mac-os-apps) · [site](https://serhii-londar.github.io/open-source-mac-os-apps/)
+- ⭐ 51.5k · no code
+- <b>What:</b> Curated list of open source macOS apps, native and cross-platform. The README states 1,411 apps in 49 categories, mostly Swift. The goal is to find free open source apps and contribute to them.
+- <b>What's inside:</b> categories such as Audio, Backup, Browser, Chat, Cryptocurrency, Database, Dev, Editors, Graphics, Productivity and Utilities.
+- <b>Reach for it when:</b> you want an open source Mac app, or a Swift project to read or contribute to.
+
 #### farizdotid/DAFTAR-API-LOKAL-INDONESIA
 
 - Link: [github](https://github.com/farizdotid/DAFTAR-API-LOKAL-INDONESIA) · [site](https://farizdotid.github.io/DAFTAR-API-LOKAL-INDONESIA/)
@@ -193,6 +212,14 @@ docker compose up --build               # then open http://localhost:3000
 - <b>What:</b> List of APIs with Indonesian data or made by Indonesian developers (README in Indonesian, English version available).
 - <b>What's inside:</b> Islamic (prayer times, Quran), news, books, weather, e-commerce, finance, shipping/courier, health, crypto, location (regions), music, government, education, social media, utilities.
 - <b>Reach for it when:</b> building an app that needs Indonesian data like regions, couriers or prayer times.
+
+#### punkpeye/awesome-remote-mcp-servers
+
+- Link: [github](https://github.com/punkpeye/awesome-remote-mcp-servers) · [glama.ai](https://glama.ai/mcp/connectors)
+- ⭐ 4.0k · no code
+- <b>What:</b> Curated list of remote MCP servers: hosted endpoints you connect to over a URL, with no local install. Entries are listed only after the endpoint answers an MCP <code>initialize</code> handshake, and are marked for OAuth or API key auth. For servers you run yourself, the README points to awesome-mcp-servers.
+- <b>What's inside:</b> a "How to connect" section (for example <code>claude mcp add --transport http linear https://mcp.linear.app/mcp</code>, or a URL in <code>mcp.json</code>) and a long servers list.
+- <b>Reach for it when:</b> you want a hosted MCP server for a SaaS tool and would rather not run one locally.
 
 #### every-app/every-app
 
