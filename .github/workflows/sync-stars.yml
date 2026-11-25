@@ -2,7 +2,7 @@ name: Sync GitHub stars
 
 on:
   schedule:
-    - cron: '17 0 * * *' # daily, 07:17 WIB
+    - cron: '43 0 * * *' # daily, 07:43 WIB; off the busy top-of-hour slots
   workflow_dispatch:
 
 permissions:
