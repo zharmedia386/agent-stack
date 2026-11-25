@@ -30,7 +30,7 @@ const allLabel = kind === 'cat' ? 'All lists' : 'All groups';
       </summary>
       <script is:inline>
         // Start collapsed on small screens before first paint; desktop keeps the list open.
-        if (!matchMedia('(min-width: 1024px)').matches) document.currentScript.parentElement.open = false;
+        if (!matchMedia('(min-width: 1200px)').matches) document.currentScript.parentElement.open = false;
       </script>
       <nav class="side__nav" aria-label={kind === 'cat' ? 'Filter by list' : 'Filter by group'}>
         {back && <a class="side__back" href={back.href}>{back.label}</a>}
@@ -225,7 +225,7 @@ const allLabel = kind === 'cat' ? 'All lists' : 'All groups';
     font: 400 16px/1 var(--font-body);
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1200px) {
     .browse {
       display: grid;
       grid-template-columns: 240px minmax(0, 1fr);

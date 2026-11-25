@@ -7,7 +7,7 @@ const empty = document.querySelector<HTMLElement>('#empty');
 const openList = document.querySelector<HTMLAnchorElement>('[data-open-list]');
 const panel = document.querySelector<HTMLDetailsElement>('[data-side-panel]');
 const current = document.querySelector<HTMLElement>('[data-current]');
-const desktop = matchMedia('(min-width: 1024px)');
+const desktop = matchMedia('(min-width: 1200px)');
 
 const metas: CardMeta[] = cards.map((card) => ({
   cats: (card.dataset.cats ?? '').split(','),
