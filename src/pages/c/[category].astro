@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Hero from '../../components/Hero.astro';
-import ChipBar from '../../components/ChipBar.astro';
+import Browse from '../../components/Browse.astro';
 import Card from '../../components/Card.astro';
 import SplitWords from '../../components/SplitWords.astro';
 import { stars } from '../../data/stars.ts';
@@ -43,16 +43,23 @@ const chips = category.groups.map((group) => ({
   </Hero>
 
   <section id="browse" aria-label={`Repos in ${category.title}`}>
-    <ChipBar chips={chips} kind="group" total={members.length} placeholder={`Search ${members.length} repos in ${category.title}…`} />
-    <div class="container results reveal">
-      <div class="grid">
-        {members.map((repo) => <Card repo={repo} categories={categories} contextCategory={category.slug} />)}
+    <Browse
+      chips={chips}
+      kind="group"
+      total={members.length}
+      placeholder={`Search ${members.length} repos in ${category.title}…`}
+      back={{ href: '/#browse', label: '← All lists' }}
+    >
+      <div class="results reveal">
+        <div class="grid">
+          {members.map((repo) => <Card repo={repo} categories={categories} contextCategory={category.slug} />)}
+        </div>
+        <div id="empty" class="empty" hidden>
+          <p>No repos match.</p>
+          <button type="button" id="clear-filters" class="pill pill--outline">Clear search</button>
+        </div>
       </div>
-      <div id="empty" class="empty" hidden>
-        <p>No repos match.</p>
-        <button type="button" id="clear-filters" class="pill pill--outline">Clear search</button>
-      </div>
-    </div>
+    </Browse>
   </section>
 </Base>
 

@@ -5,6 +5,9 @@ const cards = [...document.querySelectorAll<HTMLElement>('[data-card]')];
 const chips = [...document.querySelectorAll<HTMLButtonElement>('[data-chip]')];
 const empty = document.querySelector<HTMLElement>('#empty');
 const openList = document.querySelector<HTMLAnchorElement>('[data-open-list]');
+const panel = document.querySelector<HTMLDetailsElement>('[data-side-panel]');
+const current = document.querySelector<HTMLElement>('[data-current]');
+const desktop = matchMedia('(min-width: 1024px)');
 
 const metas: CardMeta[] = cards.map((card) => ({
   cats: (card.dataset.cats ?? '').split(','),
@@ -42,7 +45,9 @@ function render() {
   const active = chipKind === 'cat' ? state.cat : state.group;
   chips.forEach((chip) => {
     const key = chip.dataset.chip ?? 'all';
-    chip.setAttribute('aria-pressed', String(key === (active ?? 'all')));
+    const pressed = key === (active ?? 'all');
+    chip.setAttribute('aria-pressed', String(pressed));
+    if (pressed && current) current.textContent = chip.dataset.label ?? '';
     const badge = chip.querySelector('[data-count]');
     if (badge) badge.textContent = String(counts[key] ?? 0);
   });
@@ -71,6 +76,8 @@ chips.forEach((chip) => {
     if (chipKind === 'cat') state.cat = key;
     else state.group = key;
     render();
+    // On phones the list is a dropdown: close it so the results are visible.
+    if (panel && !desktop.matches) panel.open = false;
   });
 });
 
@@ -83,4 +90,6 @@ document.querySelector('#clear-filters')?.addEventListener('click', () => {
 });
 
 if (search) search.value = state.q;
+// The sidebar list must always be visible on desktop, whatever its mobile state was.
+desktop.addEventListener('change', () => panel && (panel.open = desktop.matches));
 render();

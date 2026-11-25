@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Hero from '../components/Hero.astro';
-import ChipBar from '../components/ChipBar.astro';
+import Browse from '../components/Browse.astro';
 import Card from '../components/Card.astro';
 import Corridor from '../components/Corridor.astro';
 import Marquee from '../components/Marquee.astro';
@@ -19,7 +19,8 @@ const corridorRepos = [...repos].sort((a, b) => b.stars - a.stars).slice(0, 8);
 const subtitle = `${repos.length} agent skills, MCP servers & open-source tools, hand-picked and annotated by zharmedia386`;
 const chips = categories.map((category) => ({
   key: category.slug,
-  label: `${category.emoji} ${category.title}`,
+  label: category.title,
+  emoji: category.emoji,
   count: category.count,
   section: category.section,
 }));
@@ -61,18 +62,18 @@ const chips = categories.map((category) => ({
   <Marquee categories={categories} />
 
   <section id="browse" aria-label="Browse repos">
-    <ChipBar chips={chips} kind="cat" total={repos.length} placeholder={`Search ${repos.length} repos…`}>
-      <a class="open-list" data-open-list hidden href="/">Open list →</a>
-    </ChipBar>
-    <div class="container results reveal">
-      <div class="grid">
-        {repos.map((repo) => <Card repo={repo} categories={categories} />)}
+    <Browse chips={chips} kind="cat" total={repos.length} placeholder={`Search ${repos.length} repos…`}>
+      <a slot="bar" class="open-list" data-open-list hidden href="/">Open list →</a>
+      <div class="results reveal">
+        <div class="grid">
+          {repos.map((repo) => <Card repo={repo} categories={categories} />)}
+        </div>
+        <div id="empty" class="empty" hidden>
+          <p>No repos match.</p>
+          <button type="button" id="clear-filters" class="pill pill--outline">Clear search</button>
+        </div>
       </div>
-      <div id="empty" class="empty" hidden>
-        <p>No repos match.</p>
-        <button type="button" id="clear-filters" class="pill pill--outline">Clear search</button>
-      </div>
-    </div>
+    </Browse>
   </section>
 </Base>
 
