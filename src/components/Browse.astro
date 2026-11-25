@@ -12,10 +12,9 @@ interface Props {
   kind: 'cat' | 'group';
   total: number;
   placeholder: string;
-  back?: { href: string; label: string };
 }
 
-const { chips, kind, total, placeholder, back } = Astro.props;
+const { chips, kind, total, placeholder } = Astro.props;
 const sections = [...new Set(chips.map((chip) => chip.section ?? ''))];
 const allLabel = kind === 'cat' ? 'All lists' : 'All groups';
 ---
@@ -33,7 +32,6 @@ const allLabel = kind === 'cat' ? 'All lists' : 'All groups';
         if (!matchMedia('(min-width: 1200px)').matches) document.currentScript.parentElement.open = false;
       </script>
       <nav class="side__nav" aria-label={kind === 'cat' ? 'Filter by list' : 'Filter by group'}>
-        {back && <a class="side__back" href={back.href}>{back.label}</a>}
         <button type="button" class="opt" data-chip="all" data-chip-kind={kind} data-label={allLabel} aria-pressed="true">
           <span>{allLabel}</span>
           <span class="opt__count" data-count>{total}</span>
@@ -132,17 +130,6 @@ const allLabel = kind === 'cat' ? 'All lists' : 'All groups';
   .side__section {
     margin: 16px 12px 6px;
     font-size: 11px;
-  }
-
-  .side__back {
-    margin: 0 12px 10px;
-    font: 400 14px/20px var(--font-display);
-    color: hsl(var(--muted-foreground));
-    text-decoration: none;
-  }
-
-  .side__back:hover {
-    color: hsl(var(--foreground));
   }
 
   .opt {
