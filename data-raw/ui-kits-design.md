@@ -8,7 +8,7 @@ Here is the result of "fetch" for the Page with URL https://app.notion.com/p/41c
 </properties>
 <iconMetadata>{"type":"emoji","emoji":"🎨"}</iconMetadata>
 <content>
-Design skills for coding agents, UI component libraries, animation libraries and starter templates. 50 repos.
+Design skills for coding agents, UI component libraries, animation libraries and starter templates. 52 repos.
 
 ## Overview
 
@@ -32,6 +32,7 @@ Design skills for coding agents, UI component libraries, animation libraries and
 | [Motionsites-AI/claude-skill](https://github.com/Motionsites-AI/claude-skill) · [Details ↓](https://app.notion.com/p/41ce82f897e5815f9874f7eaa9e8e5d1#41ce82f897e5813eb9dadbb4544c4c25) | Claude skill for cinematic landing pages | Python | 2.2k |
 | [cloveric/claude-drawing-skill](https://github.com/cloveric/claude-drawing-skill) | Claude paints illustrations in code, 83 styles, no image model | Python | 369 |
 | [rubenhassid1/remake](https://github.com/rubenhassid1/remake) · [Details ↓](https://app.notion.com/p/41ce82f897e5815f9874f7eaa9e8e5d1#41ce82f897e581e090bece985dfdca44) | Clone any website pixel-for-pixel with Claude Code | JavaScript | 367 |
+| [arvindrk/extract-design-system](https://github.com/arvindrk/extract-design-system) · [Details ↓](https://app.notion.com/p/41ce82f897e5815f9874f7eaa9e8e5d1) | Skill + CLI that pulls design tokens from a public site | TypeScript | 296 |
 | [kosta4a/tactile-design](https://github.com/kosta4a/tactile-design) · [Details ↓](https://app.notion.com/p/41ce82f897e5815f9874f7eaa9e8e5d1#41ce82f897e581beae45e98e085652ab) | Skill for tactile, layered, quiet product UI | n/a | 100 |
 
 <b>AI design tools & references</b>
@@ -56,6 +57,7 @@ Design skills for coding agents, UI component libraries, animation libraries and
 | [tailark/blocks](https://github.com/tailark/blocks) · [Details ↓](https://app.notion.com/p/41ce82f897e5815f9874f7eaa9e8e5d1#41ce82f897e581968aa0e1a0f1c32c26) | shadcn registry of marketing blocks | TypeScript | 2.3k |
 | [subhadeeproy3902/mvpblocks](https://github.com/subhadeeproy3902/mvpblocks) · [Details ↓](https://app.notion.com/p/41ce82f897e5815f9874f7eaa9e8e5d1#41ce82f897e581d3ac76da1e5cf9c677) | Copy-paste Next.js + Tailwind blocks for MVPs | TypeScript | 835 |
 | [catchspider2002/svelte-svg-patterns](https://github.com/catchspider2002/svelte-svg-patterns) · [Details ↓](https://app.notion.com/p/41ce82f897e5815f9874f7eaa9e8e5d1#41ce82f897e58177a2f7f28f46e77257) | Pattern Monster: seamless SVG pattern generator | Svelte | 752 |
+| [zakisheriff/Liquid-Glass](https://github.com/zakisheriff/Liquid-Glass) · [Details ↓](https://app.notion.com/p/41ce82f897e5815f9874f7eaa9e8e5d1) | Refracting iOS 26 style Liquid Glass components for React | TypeScript | 326 |
 | [subhadeeproy3902/shadcnthemes](https://github.com/subhadeeproy3902/shadcnthemes) · [Details ↓](https://app.notion.com/p/41ce82f897e5815f9874f7eaa9e8e5d1#41ce82f897e5815ea7dcfe83fe03f388) | Harmonized shadcn/ui theme generator | TypeScript | 40 |
 | [YashNK/react-glass-ui](https://github.com/YashNK/react-glass-ui) · [Details ↓](https://app.notion.com/p/41ce82f897e5815f9874f7eaa9e8e5d1#41ce82f897e581d3a977df4913c0d43d) | Glassmorphism React components via SVG filters | TypeScript | 7 |
 
@@ -316,6 +318,23 @@ pip install -r ~/.claude/skills/claude-drawing/requirements.txt
 - Then prompt: <code>/goal Remake https://example.com with github.com/rubenhassid1/remake until its report says REMAKE COMPLETE, or stop after 100 turns.</code>
 - <b>Reach for it when:</b> you want a faithful starting copy of a reference site to customize.
 
+#### arvindrk/extract-design-system
+
+- Link: [github](https://github.com/arvindrk/extract-design-system) · [npm](https://www.npmjs.com/package/extract-design-system)
+- ⭐ 296 · TypeScript
+- <b>What:</b> Agent skill with a bundled CLI that reads colors, typography, spacing, border radius and shadows from one public website. It writes a W3C-style <code>tokens.json</code> and a <code>tokens.css</code> of CSS custom properties into your project. It also ships an MCP server with the same workflow.
+- <b>How to use:</b>
+
+```bash
+npx skills add arvindrk/extract-design-system
+```
+
+```text
+Extract the design system from https://stripe.com and generate starter token files for this project.
+```
+
+- <b>Reach for it when:</b> you want starter design tokens from a reference site. It handles public, single-page sites only, and dynamic or script-heavy sites may come out incomplete.
+
 #### kosta4a/tactile-design
 
 - Link: [github](https://github.com/kosta4a/tactile-design)
@@ -485,6 +504,30 @@ npx shadcn@latest add @tailark-oss/dusk-hero-section-one
 - <b>What:</b> Source of [pattern.monster](http://pattern.monster), a Svelte app with 320+ seamless SVG patterns; tweak colors, stroke and angle, then copy CSS/SVG or download PNG.
 - <b>How to use:</b> open [pattern.monster](http://pattern.monster), pick a pattern, adjust, copy the CSS background.
 - <b>Reach for it when:</b> you need a subtle tiled background or header pattern.
+
+#### zakisheriff/Liquid-Glass
+
+- Link: [github](https://github.com/zakisheriff/Liquid-Glass) · [site](https://liquidglass.theatom.lk)
+- ⭐ 326 · TypeScript
+- <b>What:</b> React component library (<code>@zakisheriff/liquid-glass</code>) that ray-traces a refraction map for each surface instead of just blurring. It has a button, switch, slider, segmented control, tab bar, menu, input, card and sheet. Zero dependencies, works with Next.js, Vite and CRA.
+- <b>How to use:</b>
+
+```bash
+npm i @zakisheriff/liquid-glass
+```
+
+```tsx
+import { useState } from 'react';
+import { GlassSwitch } from '@zakisheriff/liquid-glass';
+import '@zakisheriff/liquid-glass/styles.css';
+
+export function Settings() {
+  const [on, setOn] = useState(true);
+  return <GlassSwitch checked={on} onChange={setOn} aria-label="Wi-Fi" />;
+}
+```
+
+- <b>Reach for it when:</b> you want iOS 26 style glass controls in a React or Next.js app.
 
 #### subhadeeproy3902/shadcnthemes
 
