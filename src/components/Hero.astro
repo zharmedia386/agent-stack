@@ -28,7 +28,6 @@ const hasRecent = stars.categories.some((category) => category.slug === 'recentl
       </svg>
       <span>The Agent Stack</span>
     </a>
-    <a class="pill pill--light hero__cta" href="/#browse">Browse all</a>
   </nav>
   <div class="hero__body">
     <slot />
@@ -96,11 +95,6 @@ const hasRecent = stars.categories.some((category) => category.slug === 'recentl
     text-decoration: none;
     font: 500 22px/1 var(--font-display);
     letter-spacing: -0.01em;
-  }
-
-  .hero__cta {
-    justify-self: end;
-    min-height: 40px;
   }
 
   .hero__body {
