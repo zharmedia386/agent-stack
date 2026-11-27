@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26",
+  "generatedAt": "2026-11-27",
   "repos": [
     {
       "slug": "mattpocock/skills",
@@ -7,7 +7,7 @@
       "name": "skills",
       "url": "https://github.com/mattpocock/skills",
       "lang": "Shell",
-      "stars": 333150,
+      "stars": 333875,
       "topics": [],
       "starredAt": "2026-11-09T09:10:34Z",
       "links": [
@@ -41,7 +41,7 @@
       "name": "andrej-karpathy-skills",
       "url": "https://github.com/multica-ai/andrej-karpathy-skills",
       "lang": null,
-      "stars": 235795,
+      "stars": 236002,
       "topics": [],
       "starredAt": "2026-04-20T23:28:07Z",
       "links": [],
@@ -70,7 +70,7 @@
       "name": "skills",
       "url": "https://github.com/anthropics/skills",
       "lang": "Python",
-      "stars": 200725,
+      "stars": 201224,
       "topics": [
         "agent-skills"
       ],
@@ -101,7 +101,7 @@
       "name": "ponytail",
       "url": "https://github.com/DietrichGebert/ponytail",
       "lang": "JavaScript",
-      "stars": 198959,
+      "stars": 199579,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -146,7 +146,7 @@
       "name": "agency-agents",
       "url": "https://github.com/msitarzewski/agency-agents",
       "lang": "Shell",
-      "stars": 170312,
+      "stars": 170523,
       "topics": [],
       "starredAt": "2026-05-14T07:40:29Z",
       "links": [],
@@ -175,7 +175,7 @@
       "name": "ui-ux-pro-max-skill",
       "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
       "lang": "Python",
-      "stars": 154377,
+      "stars": 154798,
       "topics": [
         "ai-skills",
         "antigravity",
@@ -231,7 +231,7 @@
       "name": "awesome-design-md",
       "url": "https://github.com/VoltAgent/awesome-design-md",
       "lang": null,
-      "stars": 129132,
+      "stars": 129306,
       "topics": [
         "awesome-list",
         "design-md",
@@ -271,7 +271,7 @@
       "name": "caveman",
       "url": "https://github.com/JuliusBrussee/caveman",
       "lang": "Go",
-      "stars": 122947,
+      "stars": 123177,
       "topics": [
         "ai",
         "anthropic",
@@ -316,7 +316,7 @@
       "name": "taste-skill",
       "url": "https://github.com/Leonxlnx/taste-skill",
       "lang": "JavaScript",
-      "stars": 121723,
+      "stars": 122120,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -364,7 +364,7 @@
       "name": "agent-skills",
       "url": "https://github.com/addyosmani/agent-skills",
       "lang": "JavaScript",
-      "stars": 120500,
+      "stars": 120679,
       "topics": [
         "agent-skills",
         "antigravity",
@@ -405,7 +405,7 @@
       "name": "impeccable",
       "url": "https://github.com/pbakaus/impeccable",
       "lang": "Rust",
-      "stars": 117145,
+      "stars": 117724,
       "topics": [
         "agent-skills",
         "ai",
@@ -447,7 +447,7 @@
       "name": "archify",
       "url": "https://github.com/tt-a1i/archify",
       "lang": "JavaScript",
-      "stars": 100171,
+      "stars": 100742,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -504,7 +504,7 @@
       "name": "security-audit-skill",
       "url": "https://github.com/cloudflare/security-audit-skill",
       "lang": "JavaScript",
-      "stars": 78501,
+      "stars": 78993,
       "topics": [],
       "starredAt": "2026-10-23T01:20:57Z",
       "links": [],
@@ -535,7 +535,7 @@
       "name": "last30days-skill",
       "url": "https://github.com/mvanhorn/last30days-skill",
       "lang": "Python",
-      "stars": 75368,
+      "stars": 76015,
       "topics": [
         "agent-skills",
         "artificial-intelligence",
@@ -580,12 +580,57 @@
       "hasNotes": true
     },
     {
+      "slug": "cathrynlavery/diagram-design",
+      "owner": "cathrynlavery",
+      "name": "diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "lang": "HTML",
+      "stars": 74139,
+      "topics": [
+        "agent-skills",
+        "claude-code",
+        "codex",
+        "data-visualization",
+        "diagrams",
+        "drawio",
+        "mermaid",
+        "svg"
+      ],
+      "starredAt": "2026-08-27T05:10:12Z",
+      "links": [
+        {
+          "label": "homepage",
+          "url": "https://diagramdesign.dev"
+        }
+      ],
+      "oneLiner": "Editorial HTML+SVG diagrams in your brand",
+      "what": "Draws dozens of diagram types (45+) as one self-contained HTML/SVG file with a clean editorial look, in your brand, no Mermaid.",
+      "howTo": [
+        {
+          "type": "code",
+          "lang": "bash",
+          "value": "npx skills add cathrynlavery/diagram-design\n# or: /plugin marketplace add cathrynlavery/diagram-design && /plugin install diagram-design@diagram-design"
+        }
+      ],
+      "reachFor": "You need a polished diagram for docs or a deck.",
+      "categories": [
+        "agent-skills-rules",
+        "diagrams-visuals"
+      ],
+      "primaryCategory": "agent-skills-rules",
+      "group": {
+        "agent-skills-rules": "Design, UI & diagrams",
+        "diagrams-visuals": ""
+      },
+      "hasNotes": true
+    },
+    {
       "slug": "blader/humanizer",
       "owner": "blader",
       "name": "humanizer",
       "url": "https://github.com/blader/humanizer",
       "lang": "Python",
-      "stars": 73734,
+      "stars": 74128,
       "topics": [
         "agent-skills",
         "ai-humanizer",
@@ -628,57 +673,12 @@
       "hasNotes": true
     },
     {
-      "slug": "cathrynlavery/diagram-design",
-      "owner": "cathrynlavery",
-      "name": "diagram-design",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "lang": "HTML",
-      "stars": 73387,
-      "topics": [
-        "agent-skills",
-        "claude-code",
-        "codex",
-        "data-visualization",
-        "diagrams",
-        "drawio",
-        "mermaid",
-        "svg"
-      ],
-      "starredAt": "2026-08-27T05:10:12Z",
-      "links": [
-        {
-          "label": "homepage",
-          "url": "https://diagramdesign.dev"
-        }
-      ],
-      "oneLiner": "Editorial HTML+SVG diagrams in your brand",
-      "what": "Draws dozens of diagram types (45+) as one self-contained HTML/SVG file with a clean editorial look, in your brand, no Mermaid.",
-      "howTo": [
-        {
-          "type": "code",
-          "lang": "bash",
-          "value": "npx skills add cathrynlavery/diagram-design\n# or: /plugin marketplace add cathrynlavery/diagram-design && /plugin install diagram-design@diagram-design"
-        }
-      ],
-      "reachFor": "You need a polished diagram for docs or a deck.",
-      "categories": [
-        "agent-skills-rules",
-        "diagrams-visuals"
-      ],
-      "primaryCategory": "agent-skills-rules",
-      "group": {
-        "agent-skills-rules": "Design, UI & diagrams",
-        "diagrams-visuals": ""
-      },
-      "hasNotes": true
-    },
-    {
       "slug": "gsd-build/get-shit-done",
       "owner": "gsd-build",
       "name": "get-shit-done",
       "url": "https://github.com/gsd-build/get-shit-done",
       "lang": "JavaScript",
-      "stars": 64120,
+      "stars": 64116,
       "topics": [
         "claude-code",
         "context-engineering",
@@ -711,7 +711,7 @@
       "name": "marketingskills",
       "url": "https://github.com/coreyhaines31/marketingskills",
       "lang": "JavaScript",
-      "stars": 62722,
+      "stars": 62927,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -766,7 +766,7 @@
       "name": "hallmark",
       "url": "https://github.com/Nutlope/hallmark",
       "lang": "CSS",
-      "stars": 61288,
+      "stars": 61824,
       "topics": [],
       "starredAt": "2026-07-16T22:59:18Z",
       "links": [
@@ -802,7 +802,7 @@
       "name": "skills",
       "url": "https://github.com/emilkowalski/skills",
       "lang": "Markdown",
-      "stars": 59763,
+      "stars": 60218,
       "topics": [
         "agent-skills",
         "animation",
@@ -845,7 +845,7 @@
       "name": "academic-research-skills",
       "url": "https://github.com/Imbad0202/academic-research-skills",
       "lang": "Python",
-      "stars": 58617,
+      "stars": 58773,
       "topics": [
         "academic-pipeline",
         "academic-writing",
@@ -885,7 +885,7 @@
       "name": "nature-skills",
       "url": "https://github.com/Yuan1z0825/nature-skills",
       "lang": "Python",
-      "stars": 55105,
+      "stars": 55274,
       "topics": [
         "codex-skills",
         "nature",
@@ -920,7 +920,7 @@
       "name": "awesome-openclaw-skills",
       "url": "https://github.com/VoltAgent/awesome-openclaw-skills",
       "lang": null,
-      "stars": 53994,
+      "stars": 54007,
       "topics": [
         "agent-skills",
         "awesome",
@@ -961,7 +961,7 @@
       "name": "claude-plugins-official",
       "url": "https://github.com/anthropics/claude-plugins-official",
       "lang": "Python",
-      "stars": 48255,
+      "stars": 48404,
       "topics": [
         "claude-code",
         "mcp",
@@ -999,7 +999,7 @@
       "name": "craft-anything",
       "url": "https://github.com/storytold/craft-anything",
       "lang": "Rust",
-      "stars": 43781,
+      "stars": 44332,
       "topics": [],
       "starredAt": "2026-11-18T01:58:19Z",
       "links": [],
@@ -1028,7 +1028,7 @@
       "name": "awesome-cursorrules",
       "url": "https://github.com/PatrickJS/awesome-cursorrules",
       "lang": "JavaScript",
-      "stars": 41194,
+      "stars": 41203,
       "topics": [
         "awesome",
         "awesome-list",
@@ -1057,7 +1057,7 @@
       "name": "Anthropic-Cybersecurity-Skills",
       "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
       "lang": "Python",
-      "stars": 36800,
+      "stars": 36841,
       "topics": [
         "ai-agents",
         "claude-code",
@@ -1114,7 +1114,7 @@
       "name": "claude-code-templates",
       "url": "https://github.com/davila7/claude-code-templates",
       "lang": "Python",
-      "stars": 34219,
+      "stars": 34236,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -1161,7 +1161,7 @@
       "name": "claude-seo",
       "url": "https://github.com/AgriciDaniel/claude-seo",
       "lang": "Python",
-      "stars": 32488,
+      "stars": 32736,
       "topics": [
         "ai",
         "ai-seo",
@@ -1203,7 +1203,7 @@
       "name": "awesome-openclaw-usecases",
       "url": "https://github.com/hesamsheikh/awesome-openclaw-usecases",
       "lang": null,
-      "stars": 31637,
+      "stars": 31638,
       "topics": [
         "awesome-list",
         "clawdbot",
@@ -1237,7 +1237,7 @@
       "name": "anatomy",
       "url": "https://github.com/wheresryan22/anatomy",
       "lang": "JavaScript",
-      "stars": 29277,
+      "stars": 29437,
       "topics": [
         "agent-skill",
         "open-source",
@@ -1278,7 +1278,7 @@
       "name": "SkillSpector",
       "url": "https://github.com/NVIDIA/SkillSpector",
       "lang": "Python",
-      "stars": 27725,
+      "stars": 27856,
       "topics": [
         "agent-security",
         "agent-skills",
@@ -1326,7 +1326,7 @@
       "name": "Claude-BugHunter",
       "url": "https://github.com/elementalsouls/Claude-BugHunter",
       "lang": "Python",
-      "stars": 23551,
+      "stars": 25170,
       "topics": [
         "ai-security",
         "anthropic",
@@ -1379,7 +1379,7 @@
       "name": "elephant-goldfish-model",
       "url": "https://github.com/google/elephant-goldfish-model",
       "lang": "Python",
-      "stars": 23092,
+      "stars": 23263,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -1430,7 +1430,7 @@
       "name": "video-shotcraft",
       "url": "https://github.com/Vincentwei1021/video-shotcraft",
       "lang": "TypeScript",
-      "stars": 22670,
+      "stars": 22962,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -1481,7 +1481,7 @@
       "name": "brag",
       "url": "https://github.com/latent-spaces/brag",
       "lang": "Python",
-      "stars": 22614,
+      "stars": 22693,
       "topics": [
         "agent-skills",
         "claude-code",
@@ -1524,7 +1524,7 @@
       "name": "unslop",
       "url": "https://github.com/heydamir/unslop",
       "lang": "JavaScript",
-      "stars": 21878,
+      "stars": 22342,
       "topics": [],
       "starredAt": "2026-11-16T04:39:20Z",
       "links": [],
@@ -1555,7 +1555,7 @@
       "name": "lemo-opuscar",
       "url": "https://github.com/lemomo-ai/lemo-opuscar",
       "lang": "JavaScript",
-      "stars": 21313,
+      "stars": 21747,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -1612,7 +1612,7 @@
       "name": "notebooklm-py",
       "url": "https://github.com/teng-lin/notebooklm-py",
       "lang": "Python",
-      "stars": 20373,
+      "stars": 20398,
       "topics": [
         "agentic-skill",
         "claude-skills",
@@ -1658,7 +1658,7 @@
       "name": "gsap-skills",
       "url": "https://github.com/greensock/gsap-skills",
       "lang": null,
-      "stars": 19082,
+      "stars": 19143,
       "topics": [],
       "starredAt": "2026-11-11T12:42:25Z",
       "links": [],
@@ -1686,43 +1686,12 @@
       "hasNotes": true
     },
     {
-      "slug": "elayadesign/ai-design-skills",
-      "owner": "elayadesign",
-      "name": "ai-design-skills",
-      "url": "https://github.com/elayadesign/ai-design-skills",
-      "lang": "Python",
-      "stars": 16741,
-      "topics": [],
-      "starredAt": "2026-10-29T01:12:12Z",
-      "links": [],
-      "oneLiner": "Collection of design skills (landing pages etc.)",
-      "what": "Self-contained design skill folders for agents, e.g. landing-page-design. A separate redesign-skill repo covers upgrading existing sites.",
-      "howTo": [
-        {
-          "type": "code",
-          "lang": "bash",
-          "value": "npx skills add elayadesign/ai-design-skills --list\nnpx skills add elayadesign/ai-design-skills --skill landing-page-design"
-        }
-      ],
-      "reachFor": "Picking a single focused design skill.",
-      "categories": [
-        "agent-skills-rules",
-        "ui-kits-design"
-      ],
-      "primaryCategory": "agent-skills-rules",
-      "group": {
-        "agent-skills-rules": "Design, UI & diagrams",
-        "ui-kits-design": "Agent design skills"
-      },
-      "hasNotes": true
-    },
-    {
       "slug": "nexu-io/openmotion",
       "owner": "nexu-io",
       "name": "openmotion",
       "url": "https://github.com/nexu-io/openmotion",
       "lang": "TypeScript",
-      "stars": 16508,
+      "stars": 16828,
       "topics": [
         "agent-skills",
         "ai",
@@ -1774,12 +1743,43 @@
       "hasNotes": true
     },
     {
+      "slug": "elayadesign/ai-design-skills",
+      "owner": "elayadesign",
+      "name": "ai-design-skills",
+      "url": "https://github.com/elayadesign/ai-design-skills",
+      "lang": "Python",
+      "stars": 16803,
+      "topics": [],
+      "starredAt": "2026-10-29T01:12:12Z",
+      "links": [],
+      "oneLiner": "Collection of design skills (landing pages etc.)",
+      "what": "Self-contained design skill folders for agents, e.g. landing-page-design. A separate redesign-skill repo covers upgrading existing sites.",
+      "howTo": [
+        {
+          "type": "code",
+          "lang": "bash",
+          "value": "npx skills add elayadesign/ai-design-skills --list\nnpx skills add elayadesign/ai-design-skills --skill landing-page-design"
+        }
+      ],
+      "reachFor": "Picking a single focused design skill.",
+      "categories": [
+        "agent-skills-rules",
+        "ui-kits-design"
+      ],
+      "primaryCategory": "agent-skills-rules",
+      "group": {
+        "agent-skills-rules": "Design, UI & diagrams",
+        "ui-kits-design": "Agent design skills"
+      },
+      "hasNotes": true
+    },
+    {
       "slug": "YouMind-OpenLab/awesome-nano-banana-pro-prompts",
       "owner": "YouMind-OpenLab",
       "name": "awesome-nano-banana-pro-prompts",
       "url": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
       "lang": "TypeScript",
-      "stars": 13872,
+      "stars": 13881,
       "topics": [
         "ai-image-generation",
         "ai-prompts",
@@ -1826,7 +1826,7 @@
       "name": "rea-video",
       "url": "https://github.com/JuneYaooo/rea-video",
       "lang": "Python",
-      "stars": 13512,
+      "stars": 13804,
       "topics": [
         "agent-skills",
         "ai-video",
@@ -1876,43 +1876,12 @@
       "hasNotes": true
     },
     {
-      "slug": "nicobailon/visual-explainer",
-      "owner": "nicobailon",
-      "name": "visual-explainer",
-      "url": "https://github.com/nicobailon/visual-explainer",
-      "lang": "JavaScript",
-      "stars": 11280,
-      "topics": [],
-      "starredAt": "2026-08-17T02:20:05Z",
-      "links": [],
-      "oneLiner": "Render terminal explanations as styled HTML pages",
-      "what": "Instead of ASCII diagrams, the agent writes a self-contained HTML page (or slides) for architecture diagrams, diff reviews, plan audits and data tables, then opens it.",
-      "howTo": [
-        {
-          "type": "code",
-          "lang": "bash",
-          "value": "/plugin marketplace add nicobailon/visual-explainer\n/plugin install visual-explainer@visual-explainer-marketplace\n# then: \"draw a diagram of our auth flow\" or /plan-review plan.md"
-        }
-      ],
-      "reachFor": "Reviewing a diff or plan visually instead of in the terminal.",
-      "categories": [
-        "agent-skills-rules",
-        "diagrams-visuals"
-      ],
-      "primaryCategory": "agent-skills-rules",
-      "group": {
-        "agent-skills-rules": "Design, UI & diagrams",
-        "diagrams-visuals": ""
-      },
-      "hasNotes": true
-    },
-    {
       "slug": "kajisho5/ffmpeg-skill",
       "owner": "kajisho5",
       "name": "ffmpeg-skill",
       "url": "https://github.com/kajisho5/ffmpeg-skill",
       "lang": "Python",
-      "stars": 11271,
+      "stars": 11684,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -1971,7 +1940,7 @@
       "name": "modern-web-guidance-src",
       "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
       "lang": "TypeScript",
-      "stars": 11134,
+      "stars": 11336,
       "topics": [],
       "starredAt": "2026-11-18T23:27:55Z",
       "links": [
@@ -2002,12 +1971,43 @@
       "hasNotes": true
     },
     {
+      "slug": "nicobailon/visual-explainer",
+      "owner": "nicobailon",
+      "name": "visual-explainer",
+      "url": "https://github.com/nicobailon/visual-explainer",
+      "lang": "JavaScript",
+      "stars": 11299,
+      "topics": [],
+      "starredAt": "2026-08-17T02:20:05Z",
+      "links": [],
+      "oneLiner": "Render terminal explanations as styled HTML pages",
+      "what": "Instead of ASCII diagrams, the agent writes a self-contained HTML page (or slides) for architecture diagrams, diff reviews, plan audits and data tables, then opens it.",
+      "howTo": [
+        {
+          "type": "code",
+          "lang": "bash",
+          "value": "/plugin marketplace add nicobailon/visual-explainer\n/plugin install visual-explainer@visual-explainer-marketplace\n# then: \"draw a diagram of our auth flow\" or /plan-review plan.md"
+        }
+      ],
+      "reachFor": "Reviewing a diff or plan visually instead of in the terminal.",
+      "categories": [
+        "agent-skills-rules",
+        "diagrams-visuals"
+      ],
+      "primaryCategory": "agent-skills-rules",
+      "group": {
+        "agent-skills-rules": "Design, UI & diagrams",
+        "diagrams-visuals": ""
+      },
+      "hasNotes": true
+    },
+    {
       "slug": "Jakeschincariol/replica-skill",
       "owner": "Jakeschincariol",
       "name": "replica-skill",
       "url": "https://github.com/Jakeschincariol/replica-skill",
       "lang": "Python",
-      "stars": 10696,
+      "stars": 10774,
       "topics": [
         "agent",
         "agent-skills",
@@ -2046,59 +2046,12 @@
       "hasNotes": true
     },
     {
-      "slug": "miqdadbadjuber/anti-slop",
-      "owner": "miqdadbadjuber",
-      "name": "anti-slop",
-      "url": "https://github.com/miqdadbadjuber/anti-slop",
-      "lang": "JavaScript",
-      "stars": 10193,
-      "topics": [
-        "accessibility",
-        "agent-skills",
-        "ai-agents",
-        "ai-coding-agent",
-        "ai-slop",
-        "anti-slop",
-        "claude-code",
-        "copywriting",
-        "design-rules",
-        "ui-design"
-      ],
-      "starredAt": "2026-09-17T04:31:24Z",
-      "links": [
-        {
-          "label": "homepage",
-          "url": "https://antislop.ai.id"
-        }
-      ],
-      "oneLiner": "Rules to filter generic AI UI, copy and code",
-      "what": "Core rule set plus sub-skills (ui, copywriting, code comments, accessibility, mobile layout) that block common AI-slop patterns.",
-      "howTo": [
-        {
-          "type": "code",
-          "lang": "bash",
-          "value": "npx skills add miqdadbadjuber/anti-slop\n# or: /plugin marketplace add https://github.com/miqdadbadjuber/anti-slop && /plugin install antislop@anti-slop"
-        }
-      ],
-      "reachFor": "Any UI or copy task where you want an always-on quality filter.",
-      "categories": [
-        "agent-skills-rules",
-        "ui-kits-design"
-      ],
-      "primaryCategory": "agent-skills-rules",
-      "group": {
-        "agent-skills-rules": "Design, UI & diagrams",
-        "ui-kits-design": "Agent design skills"
-      },
-      "hasNotes": true
-    },
-    {
       "slug": "erkamyaman/rust-anything",
       "owner": "erkamyaman",
       "name": "rust-anything",
       "url": "https://github.com/erkamyaman/rust-anything",
       "lang": "Rust",
-      "stars": 9766,
+      "stars": 10459,
       "topics": [
         "agent-skills",
         "claude-code",
@@ -2150,12 +2103,59 @@
       "hasNotes": true
     },
     {
+      "slug": "miqdadbadjuber/anti-slop",
+      "owner": "miqdadbadjuber",
+      "name": "anti-slop",
+      "url": "https://github.com/miqdadbadjuber/anti-slop",
+      "lang": "JavaScript",
+      "stars": 10266,
+      "topics": [
+        "accessibility",
+        "agent-skills",
+        "ai-agents",
+        "ai-coding-agent",
+        "ai-slop",
+        "anti-slop",
+        "claude-code",
+        "copywriting",
+        "design-rules",
+        "ui-design"
+      ],
+      "starredAt": "2026-09-17T04:31:24Z",
+      "links": [
+        {
+          "label": "homepage",
+          "url": "https://antislop.ai.id"
+        }
+      ],
+      "oneLiner": "Rules to filter generic AI UI, copy and code",
+      "what": "Core rule set plus sub-skills (ui, copywriting, code comments, accessibility, mobile layout) that block common AI-slop patterns.",
+      "howTo": [
+        {
+          "type": "code",
+          "lang": "bash",
+          "value": "npx skills add miqdadbadjuber/anti-slop\n# or: /plugin marketplace add https://github.com/miqdadbadjuber/anti-slop && /plugin install antislop@anti-slop"
+        }
+      ],
+      "reachFor": "Any UI or copy task where you want an always-on quality filter.",
+      "categories": [
+        "agent-skills-rules",
+        "ui-kits-design"
+      ],
+      "primaryCategory": "agent-skills-rules",
+      "group": {
+        "agent-skills-rules": "Design, UI & diagrams",
+        "ui-kits-design": "Agent design skills"
+      },
+      "hasNotes": true
+    },
+    {
       "slug": "Jakeschincariol/instagram-agent-skill",
       "owner": "Jakeschincariol",
       "name": "instagram-agent-skill",
       "url": "https://github.com/Jakeschincariol/instagram-agent-skill",
       "lang": "Python",
-      "stars": 9402,
+      "stars": 9698,
       "topics": [],
       "starredAt": "2026-11-19T00:39:33Z",
       "links": [],
@@ -2181,45 +2181,12 @@
       "hasNotes": true
     },
     {
-      "slug": "trailofbits/skills",
-      "owner": "trailofbits",
-      "name": "skills",
-      "url": "https://github.com/trailofbits/skills",
-      "lang": "Python",
-      "stars": 8440,
-      "topics": [
-        "agent-skills"
-      ],
-      "starredAt": "2026-11-13T03:59:33Z",
-      "links": [],
-      "oneLiner": "Trail of Bits security plugins marketplace",
-      "what": "Trail of Bits marketplace of skills/plugins for security research, vulnerability detection and audit workflows.",
-      "howTo": [
-        {
-          "type": "code",
-          "lang": "bash",
-          "value": "/plugin marketplace add trailofbits/skills\n/plugin menu"
-        }
-      ],
-      "reachFor": "Audits or security analysis with professional methodology.",
-      "categories": [
-        "agent-skills-rules",
-        "cybersecurity"
-      ],
-      "primaryCategory": "agent-skills-rules",
-      "group": {
-        "agent-skills-rules": "Security & skill vetting",
-        "cybersecurity": "Code scanning and AppSec review"
-      },
-      "hasNotes": true
-    },
-    {
       "slug": "kaomei/stickman-video-director",
       "owner": "kaomei",
       "name": "stickman-video-director",
       "url": "https://github.com/kaomei/stickman-video-director",
       "lang": "JavaScript",
-      "stars": 8395,
+      "stars": 8613,
       "topics": [
         "agent-skills",
         "ai-animation-generator",
@@ -2265,12 +2232,45 @@
       "hasNotes": true
     },
     {
+      "slug": "trailofbits/skills",
+      "owner": "trailofbits",
+      "name": "skills",
+      "url": "https://github.com/trailofbits/skills",
+      "lang": "Python",
+      "stars": 8464,
+      "topics": [
+        "agent-skills"
+      ],
+      "starredAt": "2026-11-13T03:59:33Z",
+      "links": [],
+      "oneLiner": "Trail of Bits security plugins marketplace",
+      "what": "Trail of Bits marketplace of skills/plugins for security research, vulnerability detection and audit workflows.",
+      "howTo": [
+        {
+          "type": "code",
+          "lang": "bash",
+          "value": "/plugin marketplace add trailofbits/skills\n/plugin menu"
+        }
+      ],
+      "reachFor": "Audits or security analysis with professional methodology.",
+      "categories": [
+        "agent-skills-rules",
+        "cybersecurity"
+      ],
+      "primaryCategory": "agent-skills-rules",
+      "group": {
+        "agent-skills-rules": "Security & skill vetting",
+        "cybersecurity": "Code scanning and AppSec review"
+      },
+      "hasNotes": true
+    },
+    {
       "slug": "kaankiziltug/logo-design-skill",
       "owner": "kaankiziltug",
       "name": "logo-design-skill",
       "url": "https://github.com/kaankiziltug/logo-design-skill",
       "lang": "HTML",
-      "stars": 7808,
+      "stars": 7903,
       "topics": [
         "agent-skills",
         "branding",
@@ -2310,7 +2310,7 @@
       "name": "defending-code-reference-harness",
       "url": "https://github.com/anthropics/defending-code-reference-harness",
       "lang": "Python",
-      "stars": 7790,
+      "stars": 7796,
       "topics": [
         "security"
       ],
@@ -2347,7 +2347,7 @@
       "name": "youtube-agent-skill",
       "url": "https://github.com/Jakeschincariol/youtube-agent-skill",
       "lang": "Python",
-      "stars": 7515,
+      "stars": 7691,
       "topics": [],
       "starredAt": "2026-11-08T05:08:58Z",
       "links": [],
@@ -2378,7 +2378,7 @@
       "name": "transitions.dev",
       "url": "https://github.com/Jakubantalik/transitions.dev",
       "lang": "HTML",
-      "stars": 6520,
+      "stars": 6539,
       "topics": [
         "design",
         "motion",
@@ -2423,7 +2423,7 @@
       "name": "skills",
       "url": "https://github.com/browser-act/skills",
       "lang": "Python",
-      "stars": 6429,
+      "stars": 6433,
       "topics": [
         "agent-infrastructure",
         "ai-agents",
@@ -2479,7 +2479,7 @@
       "name": "Agentic-Bug-Hunter",
       "url": "https://github.com/awarexone/Agentic-Bug-Hunter",
       "lang": "Python",
-      "stars": 6073,
+      "stars": 6082,
       "topics": [
         "agentic-ai",
         "ai-security",
@@ -2536,7 +2536,7 @@
       "name": "scroll-craft",
       "url": "https://github.com/nateherkai/scroll-craft",
       "lang": "JavaScript",
-      "stars": 5488,
+      "stars": 5515,
       "topics": [
         "accessibility",
         "agent-skills",
@@ -2583,7 +2583,7 @@
       "name": "raea",
       "url": "https://github.com/shinyobjectz/raea",
       "lang": "TypeScript",
-      "stars": 5245,
+      "stars": 5314,
       "topics": [
         "3d",
         "agent-skills",
@@ -2639,7 +2639,7 @@
       "name": "claude-animated-shorts",
       "url": "https://github.com/mromidev/claude-animated-shorts",
       "lang": "TypeScript",
-      "stars": 5002,
+      "stars": 5135,
       "topics": [],
       "starredAt": "2026-11-16T08:00:43Z",
       "links": [],
@@ -2669,7 +2669,7 @@
       "name": "blender-skills",
       "url": "https://github.com/arjun988/blender-skills",
       "lang": "TypeScript",
-      "stars": 4982,
+      "stars": 5093,
       "topics": [
         "3d-models",
         "agent",
@@ -2717,7 +2717,7 @@
       "name": "SkillEvaluator",
       "url": "https://github.com/NVIDIA/SkillEvaluator",
       "lang": "Python",
-      "stars": 4566,
+      "stars": 4597,
       "topics": [
         "agent-evaluation",
         "agent-plugins",
@@ -2769,43 +2769,12 @@
       "hasNotes": true
     },
     {
-      "slug": "expo/skills",
-      "owner": "expo",
-      "name": "skills",
-      "url": "https://github.com/expo/skills",
-      "lang": "TypeScript",
-      "stars": 4244,
-      "topics": [],
-      "starredAt": "2026-10-12T00:49:10Z",
-      "links": [],
-      "oneLiner": "Official Expo / EAS skills",
-      "what": "Expo team's skills for building, deploying, upgrading and debugging Expo / React Native apps (Expo Router, EAS, SDK upgrades).",
-      "howTo": [
-        {
-          "type": "code",
-          "lang": "bash",
-          "value": "claude plugin install expo@claude-plugins-official\n# other agents\nnpx skills@latest add expo/skills --skill '*'"
-        }
-      ],
-      "reachFor": "Working on an Expo app and want the agent to follow current Expo practice.",
-      "categories": [
-        "agent-skills-rules",
-        "flutter-mobile"
-      ],
-      "primaryCategory": "agent-skills-rules",
-      "group": {
-        "agent-skills-rules": "Engineering workflow & agent behavior",
-        "flutter-mobile": ""
-      },
-      "hasNotes": true
-    },
-    {
       "slug": "elvarofficial/teardown",
       "owner": "elvarofficial",
       "name": "teardown",
       "url": "https://github.com/elvarofficial/teardown",
       "lang": "JavaScript",
-      "stars": 4201,
+      "stars": 4298,
       "topics": [],
       "starredAt": "2026-11-15T13:04:07Z",
       "links": [],
@@ -2831,12 +2800,43 @@
       "hasNotes": true
     },
     {
+      "slug": "expo/skills",
+      "owner": "expo",
+      "name": "skills",
+      "url": "https://github.com/expo/skills",
+      "lang": "TypeScript",
+      "stars": 4247,
+      "topics": [],
+      "starredAt": "2026-10-12T00:49:10Z",
+      "links": [],
+      "oneLiner": "Official Expo / EAS skills",
+      "what": "Expo team's skills for building, deploying, upgrading and debugging Expo / React Native apps (Expo Router, EAS, SDK upgrades).",
+      "howTo": [
+        {
+          "type": "code",
+          "lang": "bash",
+          "value": "claude plugin install expo@claude-plugins-official\n# other agents\nnpx skills@latest add expo/skills --skill '*'"
+        }
+      ],
+      "reachFor": "Working on an Expo app and want the agent to follow current Expo practice.",
+      "categories": [
+        "agent-skills-rules",
+        "flutter-mobile"
+      ],
+      "primaryCategory": "agent-skills-rules",
+      "group": {
+        "agent-skills-rules": "Engineering workflow & agent behavior",
+        "flutter-mobile": ""
+      },
+      "hasNotes": true
+    },
+    {
       "slug": "benjitaylor/skills",
       "owner": "benjitaylor",
       "name": "skills",
       "url": "https://github.com/benjitaylor/skills",
       "lang": "TypeScript",
-      "stars": 4199,
+      "stars": 4228,
       "topics": [],
       "starredAt": "2026-11-11T12:40:14Z",
       "links": [],
@@ -2865,7 +2865,7 @@
       "name": "motion-design-skill",
       "url": "https://github.com/LottieFiles/motion-design-skill",
       "lang": null,
-      "stars": 3700,
+      "stars": 3776,
       "topics": [
         "agent-skills",
         "animation",
@@ -2904,7 +2904,7 @@
       "name": "huashu-motion",
       "url": "https://github.com/alchaincyf/huashu-motion",
       "lang": "JavaScript",
-      "stars": 3216,
+      "stars": 3251,
       "topics": [
         "agent-skills",
         "animation",
@@ -2949,7 +2949,7 @@
       "name": "Claude-OSINT",
       "url": "https://github.com/elementalsouls/Claude-OSINT",
       "lang": "Python",
-      "stars": 3153,
+      "stars": 3165,
       "topics": [
         "agentskills",
         "claude",
@@ -2986,7 +2986,7 @@
       "name": "bang-motion",
       "url": "https://github.com/bangtutorial/bang-motion",
       "lang": "HTML",
-      "stars": 3063,
+      "stars": 3095,
       "topics": [],
       "starredAt": "2026-11-15T23:38:10Z",
       "links": [],
@@ -3017,7 +3017,7 @@
       "name": "stack-diagram",
       "url": "https://github.com/caru-ini/stack-diagram",
       "lang": "TypeScript",
-      "stars": 2936,
+      "stars": 2964,
       "topics": [
         "agent-skills",
         "architecture-diagram",
@@ -3062,7 +3062,7 @@
       "name": "skill-scanner",
       "url": "https://github.com/cisco-ai-defense/skill-scanner",
       "lang": "Python",
-      "stars": 2774,
+      "stars": 2778,
       "topics": [
         "agent",
         "agent-skills",
@@ -3097,48 +3097,12 @@
       "hasNotes": true
     },
     {
-      "slug": "Motionsites-AI/claude-skill",
-      "owner": "Motionsites-AI",
-      "name": "claude-skill",
-      "url": "https://github.com/Motionsites-AI/claude-skill",
-      "lang": "Python",
-      "stars": 2598,
-      "topics": [],
-      "starredAt": "2026-11-09T16:16:36Z",
-      "links": [
-        {
-          "label": "homepage",
-          "url": "https://motionsites.ai"
-        }
-      ],
-      "oneLiner": "Cinematic landing page builder",
-      "what": "Studies top MotionSites designs, picks real cinematic media, writes a build spec, builds the page, then screenshots and fixes its own result.",
-      "howTo": [
-        {
-          "type": "code",
-          "lang": "bash",
-          "value": "/plugin marketplace add Motionsites-AI/claude-skill\n/plugin install motionsites-web-builder@motionsites\npip install playwright && python -m playwright install chromium"
-        }
-      ],
-      "reachFor": "A landing page that should feel high-end and video-heavy.",
-      "categories": [
-        "agent-skills-rules",
-        "ui-kits-design"
-      ],
-      "primaryCategory": "agent-skills-rules",
-      "group": {
-        "agent-skills-rules": "Design, UI & diagrams",
-        "ui-kits-design": "Agent design skills"
-      },
-      "hasNotes": true
-    },
-    {
       "slug": "NiazMorshed2007/reanimate",
       "owner": "NiazMorshed2007",
       "name": "reanimate",
       "url": "https://github.com/NiazMorshed2007/reanimate",
       "lang": "JavaScript",
-      "stars": 2582,
+      "stars": 2647,
       "topics": [
         "agent-skills",
         "animation",
@@ -3172,12 +3136,48 @@
       "hasNotes": true
     },
     {
+      "slug": "Motionsites-AI/claude-skill",
+      "owner": "Motionsites-AI",
+      "name": "claude-skill",
+      "url": "https://github.com/Motionsites-AI/claude-skill",
+      "lang": "Python",
+      "stars": 2646,
+      "topics": [],
+      "starredAt": "2026-11-09T16:16:36Z",
+      "links": [
+        {
+          "label": "homepage",
+          "url": "https://motionsites.ai"
+        }
+      ],
+      "oneLiner": "Cinematic landing page builder",
+      "what": "Studies top MotionSites designs, picks real cinematic media, writes a build spec, builds the page, then screenshots and fixes its own result.",
+      "howTo": [
+        {
+          "type": "code",
+          "lang": "bash",
+          "value": "/plugin marketplace add Motionsites-AI/claude-skill\n/plugin install motionsites-web-builder@motionsites\npip install playwright && python -m playwright install chromium"
+        }
+      ],
+      "reachFor": "A landing page that should feel high-end and video-heavy.",
+      "categories": [
+        "agent-skills-rules",
+        "ui-kits-design"
+      ],
+      "primaryCategory": "agent-skills-rules",
+      "group": {
+        "agent-skills-rules": "Design, UI & diagrams",
+        "ui-kits-design": "Agent design skills"
+      },
+      "hasNotes": true
+    },
+    {
       "slug": "achimala/dream-loop",
       "owner": "achimala",
       "name": "dream-loop",
       "url": "https://github.com/achimala/dream-loop",
       "lang": "JavaScript",
-      "stars": 2568,
+      "stars": 2584,
       "topics": [],
       "starredAt": "2026-11-09T13:38:24Z",
       "links": [],
@@ -3208,7 +3208,7 @@
       "name": "animate",
       "url": "https://github.com/cth9191/animate",
       "lang": "JavaScript",
-      "stars": 2299,
+      "stars": 2315,
       "topics": [
         "animation",
         "canvas",
@@ -3250,7 +3250,7 @@
       "name": "cc-safety-net",
       "url": "https://github.com/kenryu42/cc-safety-net",
       "lang": "TypeScript",
-      "stars": 2103,
+      "stars": 2109,
       "topics": [
         "ai-agents",
         "ai-safety",
@@ -3307,7 +3307,7 @@
       "name": "bama",
       "url": "https://github.com/daveebbelaar/bama",
       "lang": "Swift",
-      "stars": 1979,
+      "stars": 1989,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -3352,7 +3352,7 @@
       "name": "motionmaxxing",
       "url": "https://github.com/Tejashmakwana/motionmaxxing",
       "lang": "JavaScript",
-      "stars": 1842,
+      "stars": 1863,
       "topics": [
         "agent-skills",
         "ai",
@@ -3392,7 +3392,7 @@
       "name": "clawflows",
       "url": "https://github.com/nikilster/clawflows",
       "lang": "Shell",
-      "stars": 1725,
+      "stars": 1726,
       "topics": [],
       "starredAt": "2026-03-25T07:48:18Z",
       "links": [],
@@ -3420,7 +3420,7 @@
       "name": "skills",
       "url": "https://github.com/jsmastery-pro/skills",
       "lang": "JavaScript",
-      "stars": 1668,
+      "stars": 1667,
       "topics": [
         "agentic-ai",
         "agentic-development",
@@ -3458,7 +3458,7 @@
       "name": "3dviz-pro-max",
       "url": "https://github.com/viettranx/3dviz-pro-max",
       "lang": "JavaScript",
-      "stars": 1508,
+      "stars": 1521,
       "topics": [
         "3d",
         "agent-skill",
@@ -3503,7 +3503,7 @@
       "name": "Threejs-Awesome-Graphics-Agent-Skills",
       "url": "https://github.com/scottstts/Threejs-Awesome-Graphics-Agent-Skills",
       "lang": "JavaScript",
-      "stars": 1029,
+      "stars": 1034,
       "topics": [],
       "starredAt": "2026-11-11T12:47:23Z",
       "links": [],
@@ -3534,7 +3534,7 @@
       "name": "rossark-motion-skill",
       "url": "https://github.com/rossark0/rossark-motion-skill",
       "lang": "Swift",
-      "stars": 943,
+      "stars": 953,
       "topics": [],
       "starredAt": "2026-11-09T15:36:03Z",
       "links": [],
@@ -3565,7 +3565,7 @@
       "name": "ghost-editor",
       "url": "https://github.com/kurbaitaev/ghost-editor",
       "lang": "Python",
-      "stars": 776,
+      "stars": 807,
       "topics": [
         "agent-skills",
         "ai-video-editor",
@@ -3621,7 +3621,7 @@
       "name": "grim-prompter",
       "url": "https://github.com/jmanico/grim-prompter",
       "lang": null,
-      "stars": 675,
+      "stars": 680,
       "topics": [
         "ai-agents",
         "appsec",
@@ -3664,7 +3664,7 @@
       "name": "bug-hunter",
       "url": "https://github.com/codexstar69/bug-hunter",
       "lang": "JavaScript",
-      "stars": 578,
+      "stars": 580,
       "topics": [
         "adversarial-ai",
         "ai-code-review",
@@ -3715,7 +3715,7 @@
       "name": "claude-shorts",
       "url": "https://github.com/AgriciDaniel/claude-shorts",
       "lang": "Python",
-      "stars": 536,
+      "stars": 552,
       "topics": [
         "ai",
         "ai-content",
@@ -3758,7 +3758,7 @@
       "name": "take-one",
       "url": "https://github.com/talsiach/take-one",
       "lang": "HTML",
-      "stars": 475,
+      "stars": 480,
       "topics": [
         "agent-skills",
         "ai-agents",
@@ -3802,7 +3802,7 @@
       "name": "claude-code-owasp",
       "url": "https://github.com/agamm/claude-code-owasp",
       "lang": "JavaScript",
-      "stars": 464,
+      "stars": 463,
       "topics": [
         "ai-security",
         "appsec",
@@ -3885,7 +3885,7 @@
       "name": "claude-drawing-skill",
       "url": "https://github.com/cloveric/claude-drawing-skill",
       "lang": "Python",
-      "stars": 417,
+      "stars": 428,
       "topics": [
         "agent-skills",
         "anime",
@@ -3939,7 +3939,7 @@
       "name": "remake",
       "url": "https://github.com/rubenhassid1/remake",
       "lang": "JavaScript",
-      "stars": 387,
+      "stars": 390,
       "topics": [
         "claude-code",
         "claude-code-plugin",
@@ -3979,7 +3979,7 @@
       "name": "vbsec",
       "url": "https://github.com/tanviet12/vbsec",
       "lang": "Python",
-      "stars": 339,
+      "stars": 340,
       "topics": [
         "agent-skills",
         "ai-code-review",
@@ -4072,7 +4072,7 @@
       "name": "motionforge",
       "url": "https://github.com/aykutucesai/motionforge",
       "lang": "HTML",
-      "stars": 249,
+      "stars": 261,
       "topics": [],
       "starredAt": "2026-11-22T15:50:47Z",
       "links": [],
@@ -4260,7 +4260,7 @@
       "name": "hermes-agent",
       "url": "https://github.com/NousResearch/hermes-agent",
       "lang": "Python",
-      "stars": 266205,
+      "stars": 266493,
       "topics": [
         "ai",
         "ai-agent",
@@ -4308,7 +4308,7 @@
       "name": "awesome-llm-apps",
       "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
       "lang": "Python",
-      "stars": 145761,
+      "stars": 145889,
       "topics": [
         "agents",
         "llms",
@@ -4343,7 +4343,7 @@
       "name": "orca",
       "url": "https://github.com/stablyai/orca",
       "lang": "TypeScript",
-      "stars": 139105,
+      "stars": 141396,
       "topics": [
         "agent-ide",
         "ai-agents",
@@ -4402,7 +4402,7 @@
       "name": "paperclip",
       "url": "https://github.com/paperclipai/paperclip",
       "lang": "TypeScript",
-      "stars": 117189,
+      "stars": 117460,
       "topics": [
         "acpx",
         "agent-orchestration",
@@ -4461,7 +4461,7 @@
       "name": "career-ops",
       "url": "https://github.com/career-ops-hq/career-ops",
       "lang": "JavaScript",
-      "stars": 84930,
+      "stars": 85124,
       "topics": [
         "agent-skills",
         "ai-agent",
@@ -4516,7 +4516,7 @@
       "name": "ruflo",
       "url": "https://github.com/ruvnet/ruflo",
       "lang": "TypeScript",
-      "stars": 82439,
+      "stars": 82525,
       "topics": [
         "agent-memory",
         "agent-orchestration",
@@ -4575,7 +4575,7 @@
       "name": "ai-job-search",
       "url": "https://github.com/ai-job-search-dev/ai-job-search",
       "lang": "Python",
-      "stars": 73543,
+      "stars": 73668,
       "topics": [
         "ai",
         "ai-agents",
@@ -4616,7 +4616,7 @@
       "name": "cline",
       "url": "https://github.com/cline/cline",
       "lang": "TypeScript",
-      "stars": 71910,
+      "stars": 71938,
       "topics": [],
       "starredAt": "2025-01-25T01:44:03Z",
       "links": [
@@ -4649,7 +4649,7 @@
       "name": "oh-my-openagent",
       "url": "https://github.com/code-yeongyu/oh-my-openagent",
       "lang": "TypeScript",
-      "stars": 71128,
+      "stars": 71150,
       "topics": [
         "ai",
         "ai-agents",
@@ -4703,7 +4703,7 @@
       "name": "DeepTutor",
       "url": "https://github.com/HKUDS/DeepTutor",
       "lang": "Python",
-      "stars": 62975,
+      "stars": 63582,
       "topics": [
         "ai-agents",
         "ai-tutor",
@@ -4757,7 +4757,7 @@
       "name": "CLIProxyAPI",
       "url": "https://github.com/router-for-me/CLIProxyAPI",
       "lang": "Go",
-      "stars": 59509,
+      "stars": 59577,
       "topics": [
         "antigravity",
         "claude",
@@ -4801,7 +4801,7 @@
       "name": "multica",
       "url": "https://github.com/multica-ai/multica",
       "lang": "Go",
-      "stars": 58018,
+      "stars": 58146,
       "topics": [],
       "starredAt": "2026-11-16T01:45:01Z",
       "links": [
@@ -4843,7 +4843,7 @@
       "name": "herdr",
       "url": "https://github.com/herdrdev/herdr",
       "lang": "Rust",
-      "stars": 52953,
+      "stars": 53137,
       "topics": [
         "agent",
         "agent-orchestration",
@@ -4896,7 +4896,7 @@
       "name": "oh-my-claudecode",
       "url": "https://github.com/Yeachan-Heo/oh-my-claudecode",
       "lang": "TypeScript",
-      "stars": 41077,
+      "stars": 41093,
       "topics": [
         "agentic-coding",
         "ai-agents",
@@ -4949,7 +4949,7 @@
       "name": "laya",
       "url": "https://github.com/NandhaKishorM/laya",
       "lang": "Python",
-      "stars": 35977,
+      "stars": 35999,
       "topics": [
         "calibration",
         "classification",
@@ -5002,7 +5002,7 @@
       "name": "openclaude",
       "url": "https://github.com/Twigpine/openclaude",
       "lang": "TypeScript",
-      "stars": 34548,
+      "stars": 34557,
       "topics": [
         "ai",
         "ai-agent",
@@ -5046,7 +5046,7 @@
       "name": "oh-my-codex",
       "url": "https://github.com/Yeachan-Heo/oh-my-codex",
       "lang": "TypeScript",
-      "stars": 33856,
+      "stars": 33854,
       "topics": [],
       "starredAt": "2026-04-09T15:25:09Z",
       "links": [
@@ -5080,7 +5080,7 @@
       "name": "mastra",
       "url": "https://github.com/mastra-ai/mastra",
       "lang": "TypeScript",
-      "stars": 29827,
+      "stars": 29852,
       "topics": [
         "agents",
         "ai",
@@ -5132,7 +5132,7 @@
       "name": "cmux",
       "url": "https://github.com/manaflow-ai/cmux",
       "lang": "Swift",
-      "stars": 28978,
+      "stars": 28987,
       "topics": [
         "amp",
         "claude-code",
@@ -5187,7 +5187,7 @@
       "name": "claude-task-master",
       "url": "https://github.com/eyaltoledano/claude-task-master",
       "lang": "JavaScript",
-      "stars": 28552,
+      "stars": 28560,
       "topics": [
         "ai",
         "cursor",
@@ -5238,7 +5238,7 @@
       "name": "OpenMausBot",
       "url": "https://github.com/milind-soni/OpenMausBot",
       "lang": "TypeScript",
-      "stars": 27962,
+      "stars": 28329,
       "topics": [
         "ai-agents",
         "claude-code",
@@ -5284,7 +5284,7 @@
       "name": "12-factor-agents",
       "url": "https://github.com/humanlayer/12-factor-agents",
       "lang": "TypeScript",
-      "stars": 27433,
+      "stars": 27449,
       "topics": [
         "12-factor",
         "12-factor-agents",
@@ -5321,7 +5321,7 @@
       "name": "openbot",
       "url": "https://github.com/nightly-labs/openbot",
       "lang": "TypeScript",
-      "stars": 10988,
+      "stars": 11446,
       "topics": [
         "ai-agents",
         "bun",
@@ -5363,7 +5363,7 @@
       "name": "munder-difflin",
       "url": "https://github.com/HarnessMD/munder-difflin",
       "lang": "TypeScript",
-      "stars": 9849,
+      "stars": 10012,
       "topics": [
         "agent-harness",
         "agent-orchestration",
@@ -5417,7 +5417,7 @@
       "name": "rakazo",
       "url": "https://github.com/elie222/rakazo",
       "lang": "TypeScript",
-      "stars": 9821,
+      "stars": 9936,
       "topics": [
         "ai-agents",
         "ai-assistant",
@@ -5464,7 +5464,7 @@
       "name": "Ghostex",
       "url": "https://github.com/maddada/Ghostex",
       "lang": "Rust",
-      "stars": 1752,
+      "stars": 1759,
       "topics": [],
       "starredAt": "2026-10-31T01:41:14Z",
       "links": [
@@ -5576,49 +5576,12 @@
       "hasNotes": true
     },
     {
-      "slug": "yt-dlp/yt-dlp",
-      "owner": "yt-dlp",
-      "name": "yt-dlp",
-      "url": "https://github.com/yt-dlp/yt-dlp",
-      "lang": "Python",
-      "stars": 210835,
-      "topics": [
-        "cli",
-        "downloader",
-        "python",
-        "sponsorblock",
-        "youtube-dl",
-        "youtube-downloader",
-        "yt-dlp"
-      ],
-      "starredAt": "2026-09-19T12:38:22Z",
-      "links": [],
-      "oneLiner": "Download video/audio from YouTube and 1000+ sites",
-      "what": "Command-line audio/video downloader, the maintained fork of youtube-dl. Works with YouTube and over a thousand other sites, supports playlists, formats, subtitles and SponsorBlock.",
-      "howTo": [
-        {
-          "type": "code",
-          "lang": "bash",
-          "value": "pip install yt-dlp            # or: brew install yt-dlp\nyt-dlp \"https://www.youtube.com/watch?v=VIDEO_ID\"\nyt-dlp -x --audio-format mp3 \"URL\"   # audio only (needs ffmpeg)\nyt-dlp -F \"URL\"                      # list available formats"
-        }
-      ],
-      "reachFor": "you need to save a video, audio track or playlist locally.",
-      "categories": [
-        "scraping-browser-osint"
-      ],
-      "primaryCategory": "scraping-browser-osint",
-      "group": {
-        "scraping-browser-osint": "Scraping & data extraction"
-      },
-      "hasNotes": true
-    },
-    {
       "slug": "firecrawl/firecrawl",
       "owner": "firecrawl",
       "name": "firecrawl",
       "url": "https://github.com/firecrawl/firecrawl",
       "lang": "TypeScript",
-      "stars": 210392,
+      "stars": 211214,
       "topics": [
         "ai",
         "ai-agents",
@@ -5672,12 +5635,49 @@
       "hasNotes": true
     },
     {
+      "slug": "yt-dlp/yt-dlp",
+      "owner": "yt-dlp",
+      "name": "yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
+      "lang": "Python",
+      "stars": 211078,
+      "topics": [
+        "cli",
+        "downloader",
+        "python",
+        "sponsorblock",
+        "youtube-dl",
+        "youtube-downloader",
+        "yt-dlp"
+      ],
+      "starredAt": "2026-09-19T12:38:22Z",
+      "links": [],
+      "oneLiner": "Download video/audio from YouTube and 1000+ sites",
+      "what": "Command-line audio/video downloader, the maintained fork of youtube-dl. Works with YouTube and over a thousand other sites, supports playlists, formats, subtitles and SponsorBlock.",
+      "howTo": [
+        {
+          "type": "code",
+          "lang": "bash",
+          "value": "pip install yt-dlp            # or: brew install yt-dlp\nyt-dlp \"https://www.youtube.com/watch?v=VIDEO_ID\"\nyt-dlp -x --audio-format mp3 \"URL\"   # audio only (needs ffmpeg)\nyt-dlp -F \"URL\"                      # list available formats"
+        }
+      ],
+      "reachFor": "you need to save a video, audio track or playlist locally.",
+      "categories": [
+        "scraping-browser-osint"
+      ],
+      "primaryCategory": "scraping-browser-osint",
+      "group": {
+        "scraping-browser-osint": "Scraping & data extraction"
+      },
+      "hasNotes": true
+    },
+    {
       "slug": "browser-use/browser-use",
       "owner": "browser-use",
       "name": "browser-use",
       "url": "https://github.com/browser-use/browser-use",
       "lang": "Python",
-      "stars": 122110,
+      "stars": 122185,
       "topics": [
         "ai-agents",
         "ai-tools",
@@ -5738,7 +5738,7 @@
       "name": "Agent-Reach",
       "url": "https://github.com/Panniantong/Agent-Reach",
       "lang": "Python",
-      "stars": 114834,
+      "stars": 115182,
       "topics": [
         "agent-infrastructure",
         "ai-agent",
@@ -5784,7 +5784,7 @@
       "name": "Scrapling",
       "url": "https://github.com/D4Vinci/Scrapling",
       "lang": "Python",
-      "stars": 105882,
+      "stars": 106112,
       "topics": [
         "ai",
         "ai-scraping",
@@ -5844,7 +5844,7 @@
       "name": "gods-eye-view",
       "url": "https://github.com/bilawalsidhu/gods-eye-view",
       "lang": "JavaScript",
-      "stars": 66927,
+      "stars": 67102,
       "topics": [
         "3d-globe",
         "cesium",
@@ -5893,7 +5893,7 @@
       "name": "chrome-devtools-mcp",
       "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
       "lang": "TypeScript",
-      "stars": 59412,
+      "stars": 59553,
       "topics": [
         "browser",
         "chrome",
@@ -5942,7 +5942,7 @@
       "name": "agent-browser",
       "url": "https://github.com/vercel-labs/agent-browser",
       "lang": "Rust",
-      "stars": 54043,
+      "stars": 54234,
       "topics": [],
       "starredAt": "2026-10-28T11:56:06Z",
       "links": [
@@ -5976,7 +5976,7 @@
       "name": "obscura",
       "url": "https://github.com/h4ckf0r0day/obscura",
       "lang": "Rust",
-      "stars": 37437,
+      "stars": 37611,
       "topics": [
         "antidetect",
         "antidetect-browser",
@@ -6024,7 +6024,7 @@
       "name": "CloakBrowser",
       "url": "https://github.com/CloakHQ/CloakBrowser",
       "lang": "Python",
-      "stars": 33078,
+      "stars": 33100,
       "topics": [
         "ai-agents",
         "anti-detect",
@@ -6083,7 +6083,7 @@
       "name": "open-seo",
       "url": "https://github.com/every-app/open-seo",
       "lang": "TypeScript",
-      "stars": 28933,
+      "stars": 29027,
       "topics": [
         "backlink-analysis",
         "google-search-console-mcp",
@@ -6135,7 +6135,7 @@
       "name": "ego-lite",
       "url": "https://github.com/citrolabs/ego-lite",
       "lang": "JavaScript",
-      "stars": 24596,
+      "stars": 24748,
       "topics": [
         "agent-skills",
         "ai-agent",
@@ -6179,7 +6179,7 @@
       "name": "gallery-dl",
       "url": "https://github.com/mikf/gallery-dl",
       "lang": "Python",
-      "stars": 20647,
+      "stars": 20657,
       "topics": [
         "danbooru",
         "deviantart",
@@ -6223,7 +6223,7 @@
       "name": "maxun",
       "url": "https://github.com/getmaxun/maxun",
       "lang": "TypeScript",
-      "stars": 18564,
+      "stars": 18572,
       "topics": [
         "agents",
         "api",
@@ -6275,7 +6275,7 @@
       "name": "apify-mcp-server",
       "url": "https://github.com/apify/apify-mcp-server",
       "lang": "TypeScript",
-      "stars": 17940,
+      "stars": 18102,
       "topics": [
         "agents",
         "ai",
@@ -6316,7 +6316,7 @@
       "name": "web-ui",
       "url": "https://github.com/browser-use/web-ui",
       "lang": "Python",
-      "stars": 16668,
+      "stars": 16671,
       "topics": [
         "ai-agent",
         "browser-automation",
@@ -6350,7 +6350,7 @@
       "name": "twint",
       "url": "https://github.com/twintproject/twint",
       "lang": "Python",
-      "stars": 16414,
+      "stars": 16413,
       "topics": [
         "elasticsearch",
         "kibana",
@@ -6393,7 +6393,7 @@
       "name": "holehe",
       "url": "https://github.com/megadose/holehe",
       "lang": "Python",
-      "stars": 15770,
+      "stars": 15774,
       "topics": [
         "ebay",
         "email",
@@ -6440,7 +6440,7 @@
       "name": "playwright-cli",
       "url": "https://github.com/microsoft/playwright-cli",
       "lang": "TypeScript",
-      "stars": 15479,
+      "stars": 15497,
       "topics": [
         "playwright"
       ],
@@ -6476,7 +6476,7 @@
       "name": "instagrapi",
       "url": "https://github.com/subzeroid/instagrapi",
       "lang": "Python",
-      "stars": 7195,
+      "stars": 7198,
       "topics": [
         "instabot",
         "instagram",
@@ -6536,7 +6536,7 @@
       "name": "reverse-api-engineer",
       "url": "https://github.com/kalil0321/reverse-api-engineer",
       "lang": "Python",
-      "stars": 4342,
+      "stars": 4416,
       "topics": [],
       "starredAt": "2026-10-17T02:31:39Z",
       "links": [
@@ -6572,7 +6572,7 @@
       "name": "zotero-scihub",
       "url": "https://github.com/ethanwillis/zotero-scihub",
       "lang": "TypeScript",
-      "stars": 4199,
+      "stars": 4203,
       "topics": [
         "openscience",
         "scihub",
@@ -6604,7 +6604,7 @@
       "name": "OpenOSINT",
       "url": "https://github.com/OpenOSINT/OpenOSINT",
       "lang": "Python",
-      "stars": 1971,
+      "stars": 1973,
       "topics": [
         "agent-skills",
         "ai-agent",
@@ -6696,7 +6696,7 @@
       "name": "context7",
       "url": "https://github.com/upstash/context7",
       "lang": "TypeScript",
-      "stars": 65488,
+      "stars": 65533,
       "topics": [
         "llm",
         "mcp",
@@ -6735,7 +6735,7 @@
       "name": "codebase-memory-mcp",
       "url": "https://github.com/DeusData/codebase-memory-mcp",
       "lang": "C",
-      "stars": 49185,
+      "stars": 49234,
       "topics": [
         "aider",
         "ast",
@@ -6790,7 +6790,7 @@
       "name": "mcp-for-blender",
       "url": "https://github.com/ahujasid/mcp-for-blender",
       "lang": "Python",
-      "stars": 35853,
+      "stars": 35961,
       "topics": [
         "3d-modeling",
         "ai",
@@ -6838,7 +6838,7 @@
       "name": "github-mcp-server",
       "url": "https://github.com/github/github-mcp-server",
       "lang": "Go",
-      "stars": 34769,
+      "stars": 34796,
       "topics": [
         "github",
         "mcp",
@@ -6871,7 +6871,7 @@
       "name": "serena",
       "url": "https://github.com/oraios/serena",
       "lang": "Python",
-      "stars": 31720,
+      "stars": 31740,
       "topics": [
         "agent",
         "ai",
@@ -6922,7 +6922,7 @@
       "name": "composio",
       "url": "https://github.com/ComposioHQ/composio",
       "lang": "TypeScript",
-      "stars": 31304,
+      "stars": 31319,
       "topics": [
         "agentic-ai",
         "agents",
@@ -6978,7 +6978,7 @@
       "name": "n8n-mcp",
       "url": "https://github.com/czlonkowski/n8n-mcp",
       "lang": "TypeScript",
-      "stars": 23313,
+      "stars": 23316,
       "topics": [
         "mcp",
         "mcp-server",
@@ -7021,7 +7021,7 @@
       "name": "Figma-Context-MCP",
       "url": "https://github.com/GLips/Figma-Context-MCP",
       "lang": "TypeScript",
-      "stars": 16315,
+      "stars": 16326,
       "topics": [
         "ai",
         "cursor",
@@ -7065,7 +7065,7 @@
       "name": "cursor-talk-to-figma-mcp",
       "url": "https://github.com/grab/cursor-talk-to-figma-mcp",
       "lang": "JavaScript",
-      "stars": 7132,
+      "stars": 7134,
       "topics": [
         "agent",
         "agentic",
@@ -7120,7 +7120,7 @@
       "name": "bla",
       "url": "https://github.com/qybaihe/bla",
       "lang": "TypeScript",
-      "stars": 6923,
+      "stars": 7034,
       "topics": [
         "adversarial-ai",
         "ai-security",
@@ -7176,7 +7176,7 @@
       "name": "mcp-atlassian",
       "url": "https://github.com/sooperset/mcp-atlassian",
       "lang": "Python",
-      "stars": 6160,
+      "stars": 6164,
       "topics": [
         "atlassian",
         "confluence",
@@ -7215,7 +7215,7 @@
       "name": "earshot",
       "url": "https://github.com/Leonxlnx/earshot",
       "lang": "Python",
-      "stars": 5842,
+      "stars": 5921,
       "topics": [
         "ai-agents",
         "audio",
@@ -7254,7 +7254,7 @@
       "name": "figma-console-mcp",
       "url": "https://github.com/southleft/figma-console-mcp",
       "lang": "TypeScript",
-      "stars": 3439,
+      "stars": 3450,
       "topics": [
         "ai",
         "design-systems",
@@ -7295,7 +7295,7 @@
       "name": "shadcn-ui-mcp-server",
       "url": "https://github.com/Jpisnice/shadcn-ui-mcp-server",
       "lang": "TypeScript",
-      "stars": 3110,
+      "stars": 3113,
       "topics": [
         "ai",
         "expo",
@@ -7377,7 +7377,7 @@
       "name": "mcp-server",
       "url": "https://github.com/danielgallen/mcp-server",
       "lang": "Kotlin",
-      "stars": 1275,
+      "stars": 1276,
       "topics": [
         "extension"
       ],
@@ -7444,7 +7444,7 @@
       "name": "base-mcp-legacy",
       "url": "https://github.com/base/base-mcp-legacy",
       "lang": "TypeScript",
-      "stars": 352,
+      "stars": 353,
       "topics": [],
       "starredAt": "2026-04-08T04:42:40Z",
       "links": [
@@ -7477,7 +7477,7 @@
       "name": "ProxmoxMCP",
       "url": "https://github.com/canvrno/ProxmoxMCP",
       "lang": "Python",
-      "stars": 300,
+      "stars": 299,
       "topics": [],
       "starredAt": "2026-08-03T12:25:06Z",
       "links": [],
@@ -7510,7 +7510,7 @@
       "name": "mcp",
       "url": "https://github.com/magicuidesign/mcp",
       "lang": "TypeScript",
-      "stars": 231,
+      "stars": 232,
       "topics": [
         "ai",
         "magicui",
@@ -7581,7 +7581,7 @@
       "name": "markitdown",
       "url": "https://github.com/microsoft/markitdown",
       "lang": "Python",
-      "stars": 198534,
+      "stars": 198668,
       "topics": [
         "autogen",
         "autogen-extension",
@@ -7618,7 +7618,7 @@
       "name": "open-webui",
       "url": "https://github.com/open-webui/open-webui",
       "lang": "Svelte",
-      "stars": 159596,
+      "stars": 159668,
       "topics": [
         "ai",
         "llm",
@@ -7668,7 +7668,7 @@
       "name": "graphify",
       "url": "https://github.com/Graphify-Labs/graphify",
       "lang": "Python",
-      "stars": 153540,
+      "stars": 153994,
       "topics": [
         "ai-agents",
         "antigravity",
@@ -7725,7 +7725,7 @@
       "name": "claude-mem",
       "url": "https://github.com/thedotmack/claude-mem",
       "lang": "TypeScript",
-      "stars": 119849,
+      "stars": 120072,
       "topics": [
         "ai",
         "ai-agents",
@@ -7780,7 +7780,7 @@
       "name": "ragflow",
       "url": "https://github.com/infiniflow/ragflow",
       "lang": "Go",
-      "stars": 94746,
+      "stars": 94815,
       "topics": [
         "agent-harness",
         "agent-native-database",
@@ -7831,7 +7831,7 @@
       "name": "DeepSeek-R1",
       "url": "https://github.com/deepseek-ai/DeepSeek-R1",
       "lang": null,
-      "stars": 92060,
+      "stars": 92057,
       "topics": [],
       "starredAt": "2025-01-25T01:44:12Z",
       "links": [],
@@ -7859,7 +7859,7 @@
       "name": "OmniRoute",
       "url": "https://github.com/cheaper-inference/OmniRoute",
       "lang": "TypeScript",
-      "stars": 90405,
+      "stars": 90622,
       "topics": [
         "a2a",
         "ai-agents",
@@ -7914,7 +7914,7 @@
       "name": "rtk",
       "url": "https://github.com/rtk-ai/rtk",
       "lang": "Rust",
-      "stars": 87878,
+      "stars": 87988,
       "topics": [
         "agentic-coding",
         "ai-coding",
@@ -7962,7 +7962,7 @@
       "name": "headroom",
       "url": "https://github.com/headroomlabs-ai/headroom",
       "lang": "Python",
-      "stars": 80896,
+      "stars": 80966,
       "topics": [
         "agent",
         "ai",
@@ -8017,7 +8017,7 @@
       "name": "mem0",
       "url": "https://github.com/mem0ai/mem0",
       "lang": "Python",
-      "stars": 69492,
+      "stars": 69528,
       "topics": [
         "agentic-memory",
         "agentic-memory-system",
@@ -8066,7 +8066,7 @@
       "name": "litellm",
       "url": "https://github.com/BerriAI/litellm",
       "lang": "Python",
-      "stars": 63936,
+      "stars": 64004,
       "topics": [
         "ai-gateway",
         "anthropic",
@@ -8117,7 +8117,7 @@
       "name": "nanochat",
       "url": "https://github.com/karpathy/nanochat",
       "lang": "Python",
-      "stars": 60904,
+      "stars": 60933,
       "topics": [],
       "starredAt": "2026-05-19T09:49:02Z",
       "links": [],
@@ -8145,7 +8145,7 @@
       "name": "llama_index",
       "url": "https://github.com/run-llama/llama_index",
       "lang": "Python",
-      "stars": 53015,
+      "stars": 53022,
       "topics": [
         "agents",
         "application",
@@ -8190,7 +8190,7 @@
       "name": "LocalAI",
       "url": "https://github.com/mudler/LocalAI",
       "lang": "Go",
-      "stars": 50554,
+      "stars": 50574,
       "topics": [
         "agents",
         "ai",
@@ -8242,7 +8242,7 @@
       "name": "OpenViking",
       "url": "https://github.com/volcengine/OpenViking",
       "lang": "Python",
-      "stars": 42832,
+      "stars": 42904,
       "topics": [
         "agent-context",
         "agent-memory",
@@ -8288,7 +8288,7 @@
       "name": "marker",
       "url": "https://github.com/datalab-to/marker",
       "lang": "Python",
-      "stars": 41086,
+      "stars": 41088,
       "topics": [
         "deep-learning",
         "document-conversion",
@@ -8338,7 +8338,7 @@
       "name": "PageIndex",
       "url": "https://github.com/VectifyAI/PageIndex",
       "lang": "Python",
-      "stars": 40791,
+      "stars": 40801,
       "topics": [
         "agentic-ai",
         "agents",
@@ -8385,7 +8385,7 @@
       "name": "langfuse",
       "url": "https://github.com/langfuse/langfuse",
       "lang": "TypeScript",
-      "stars": 37868,
+      "stars": 37909,
       "topics": [
         "ai-gateway",
         "analytics",
@@ -8440,7 +8440,7 @@
       "name": "cognee",
       "url": "https://github.com/topoteretes/cognee",
       "lang": "Python",
-      "stars": 33630,
+      "stars": 33663,
       "topics": [
         "agent-memory",
         "agent-skills",
@@ -8494,7 +8494,7 @@
       "name": "supermemory",
       "url": "https://github.com/supermemoryai/supermemory",
       "lang": "TypeScript",
-      "stars": 31783,
+      "stars": 31864,
       "topics": [
         "agent-memory",
         "ai-memory",
@@ -8545,7 +8545,7 @@
       "name": "qmd",
       "url": "https://github.com/tobi/qmd",
       "lang": "TypeScript",
-      "stars": 31617,
+      "stars": 31644,
       "topics": [],
       "starredAt": "2026-07-12T06:31:44Z",
       "links": [],
@@ -8576,7 +8576,7 @@
       "name": "repomix",
       "url": "https://github.com/yamadashy/repomix",
       "lang": "TypeScript",
-      "stars": 29440,
+      "stars": 29468,
       "topics": [
         "ai",
         "anthropic",
@@ -8633,7 +8633,7 @@
       "name": "RAG-Anything",
       "url": "https://github.com/HKUDS/RAG-Anything",
       "lang": "Python",
-      "stars": 24828,
+      "stars": 24854,
       "topics": [
         "multi-modal-rag",
         "retrieval-augmented-generation"
@@ -8669,7 +8669,7 @@
       "name": "llm-engineer-toolkit",
       "url": "https://github.com/KalyanKS-NLP/llm-engineer-toolkit",
       "lang": null,
-      "stars": 11094,
+      "stars": 11095,
       "topics": [
         "ai-engineer",
         "generative-ai",
@@ -8700,7 +8700,7 @@
       "name": "treg",
       "url": "https://github.com/superdesigndev/treg",
       "lang": "Python",
-      "stars": 9238,
+      "stars": 9658,
       "topics": [
         "agents",
         "api-keys",
@@ -8746,7 +8746,7 @@
       "name": "latitude-llm",
       "url": "https://github.com/latitude-dev/latitude-llm",
       "lang": "TypeScript",
-      "stars": 4760,
+      "stars": 4761,
       "topics": [
         "agent-monitoring",
         "agent-observability",
@@ -8789,7 +8789,7 @@
       "name": "lean-ctx",
       "url": "https://github.com/yvgude/lean-ctx",
       "lang": "Rust",
-      "stars": 3964,
+      "stars": 3963,
       "topics": [
         "agentic-coding",
         "ai",
@@ -8843,7 +8843,7 @@
       "name": "attu",
       "url": "https://github.com/zilliztech/attu",
       "lang": "Shell",
-      "stars": 3242,
+      "stars": 3243,
       "topics": [
         "attu",
         "milvus",
@@ -8906,7 +8906,7 @@
       "name": "langfuse-python",
       "url": "https://github.com/langfuse/langfuse-python",
       "lang": "Python",
-      "stars": 519,
+      "stars": 520,
       "topics": [
         "decorators",
         "langfuse",
@@ -8946,7 +8946,7 @@
       "name": "ComfyUI",
       "url": "https://github.com/Comfy-Org/ComfyUI",
       "lang": "Python",
-      "stars": 148670,
+      "stars": 148832,
       "topics": [
         "ai",
         "comfy",
@@ -8991,7 +8991,7 @@
       "name": "VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
       "lang": "Python",
-      "stars": 118608,
+      "stars": 119086,
       "topics": [
         "ai",
         "audiobook",
@@ -9049,7 +9049,7 @@
       "name": "hyperframes",
       "url": "https://github.com/heygen-com/hyperframes",
       "lang": "TypeScript",
-      "stars": 90395,
+      "stars": 91128,
       "topics": [
         "agent-skills",
         "ai",
@@ -9104,7 +9104,7 @@
       "name": "OpenMontage",
       "url": "https://github.com/OpenMontageInc/OpenMontage",
       "lang": "Python",
-      "stars": 83458,
+      "stars": 83738,
       "topics": [
         "agent",
         "agentic-ai",
@@ -9162,7 +9162,7 @@
       "name": "voicebox",
       "url": "https://github.com/jamiepine/voicebox",
       "lang": "Python",
-      "stars": 61337,
+      "stars": 61365,
       "topics": [
         "ai",
         "cuda",
@@ -9209,7 +9209,7 @@
       "name": "VoxCPM",
       "url": "https://github.com/OpenBMB/VoxCPM",
       "lang": "Python",
-      "stars": 42993,
+      "stars": 43028,
       "topics": [
         "audio",
         "deeplearning",
@@ -9262,7 +9262,7 @@
       "name": "openscreen",
       "url": "https://github.com/siddharthvaddem/openscreen",
       "lang": "TypeScript",
-      "stars": 40034,
+      "stars": 40036,
       "topics": [
         "electron",
         "open-source",
@@ -9301,7 +9301,7 @@
       "name": "GFPGAN",
       "url": "https://github.com/TencentARC/GFPGAN",
       "lang": "Python",
-      "stars": 37735,
+      "stars": 37739,
       "topics": [
         "deep-learning",
         "face-restoration",
@@ -9344,7 +9344,7 @@
       "name": "video-use",
       "url": "https://github.com/browser-use/video-use",
       "lang": "Python",
-      "stars": 31601,
+      "stars": 31657,
       "topics": [],
       "starredAt": "2026-04-29T08:13:47Z",
       "links": [
@@ -9382,7 +9382,7 @@
       "name": "hypit",
       "url": "https://github.com/hypit-ai/hypit",
       "lang": "TypeScript",
-      "stars": 31560,
+      "stars": 31626,
       "topics": [
         "agentic-ai",
         "ai",
@@ -9437,7 +9437,7 @@
       "name": "GSAP",
       "url": "https://github.com/greensock/GSAP",
       "lang": "JavaScript",
-      "stars": 31278,
+      "stars": 31343,
       "topics": [
         "animation",
         "gsap",
@@ -9474,12 +9474,66 @@
       "hasNotes": true
     },
     {
+      "slug": "zhouxiaoka/autoclip",
+      "owner": "zhouxiaoka",
+      "name": "autoclip",
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "lang": "Python",
+      "stars": 17279,
+      "topics": [
+        "ai-agent",
+        "ai-video-editor",
+        "claude-code",
+        "content-repurposing",
+        "desktop-app",
+        "douyin",
+        "instagram-reels",
+        "local-first",
+        "mcp",
+        "mcp-server",
+        "open-source",
+        "opusclip-alternative",
+        "podcast",
+        "subtitles",
+        "tiktok",
+        "video-clipping",
+        "video-editing-software",
+        "whisper",
+        "xiaohongshu",
+        "youtube-shorts"
+      ],
+      "starredAt": "2026-11-22T04:25:06Z",
+      "links": [
+        {
+          "label": "homepage",
+          "url": "https://zhouxiaoka.github.io/autoclip_intro/"
+        }
+      ],
+      "oneLiner": "Paste a link to a long video, get captioned shorts with post copy",
+      "what": "Desktop app (also Docker, CLI and MCP) that takes a link to a long interview, podcast or course and cuts it into short clips for Douyin, Xiaohongshu, TikTok, Reels, Shorts, Bilibili and YouTube, with captions, speaker framing, a cover, title and post copy. Editing and rendering run locally; the analysis model is a cloud or local (Ollama / LM Studio) model you pick. Chinese-first README, English version available.",
+      "howTo": [
+        {
+          "type": "text",
+          "value": "Download the macOS Apple Silicon .dmg or Windows installer from Releases, add a model provider and key in settings, try the bundled example project, then paste your own video link and choose a platform. Intel Macs and Linux use Docker or the CLI."
+        }
+      ],
+      "reachFor": "You want to turn long talk-style videos into a batch of ready-to-post shorts with little manual editing.",
+      "categories": [
+        "ai-media-video-voice-image"
+      ],
+      "primaryCategory": "ai-media-video-voice-image",
+      "group": {
+        "ai-media-video-voice-image": "Video & audio apps"
+      },
+      "hasNotes": true
+    },
+    {
       "slug": "yihui-dev/awesome-opus5-5-videos",
       "owner": "yihui-dev",
       "name": "awesome-opus5-5-videos",
       "url": "https://github.com/yihui-dev/awesome-opus5-5-videos",
       "lang": null,
-      "stars": 16538,
+      "stars": 16611,
       "topics": [
         "ai-video",
         "awesome",
@@ -9512,61 +9566,12 @@
       "hasNotes": true
     },
     {
-      "slug": "zhouxiaoka/autoclip",
-      "owner": "zhouxiaoka",
-      "name": "autoclip",
-      "url": "https://github.com/zhouxiaoka/autoclip",
-      "lang": "Python",
-      "stars": 16529,
-      "topics": [
-        "ai-agent",
-        "ai-video-editor",
-        "content-repurposing",
-        "desktop-app",
-        "douyin",
-        "instagram-reels",
-        "mcp",
-        "open-source",
-        "podcast",
-        "subtitles",
-        "tiktok",
-        "video-clipping",
-        "video-editing-software",
-        "xiaohongshu",
-        "youtube-shorts"
-      ],
-      "starredAt": "2026-11-22T04:25:06Z",
-      "links": [
-        {
-          "label": "homepage",
-          "url": "https://zhouxiaoka.github.io/autoclip_intro/"
-        }
-      ],
-      "oneLiner": "Paste a link to a long video, get captioned shorts with post copy",
-      "what": "Desktop app (also Docker, CLI and MCP) that takes a link to a long interview, podcast or course and cuts it into short clips for Douyin, Xiaohongshu, TikTok, Reels, Shorts, Bilibili and YouTube, with captions, speaker framing, a cover, title and post copy. Editing and rendering run locally; the analysis model is a cloud or local (Ollama / LM Studio) model you pick. Chinese-first README, English version available.",
-      "howTo": [
-        {
-          "type": "text",
-          "value": "Download the macOS Apple Silicon .dmg or Windows installer from Releases, add a model provider and key in settings, try the bundled example project, then paste your own video link and choose a platform. Intel Macs and Linux use Docker or the CLI."
-        }
-      ],
-      "reachFor": "You want to turn long talk-style videos into a batch of ready-to-post shorts with little manual editing.",
-      "categories": [
-        "ai-media-video-voice-image"
-      ],
-      "primaryCategory": "ai-media-video-voice-image",
-      "group": {
-        "ai-media-video-voice-image": "Video & audio apps"
-      },
-      "hasNotes": true
-    },
-    {
       "slug": "palmier-io/palmier-pro",
       "owner": "palmier-io",
       "name": "palmier-pro",
       "url": "https://github.com/palmier-io/palmier-pro",
       "lang": "Swift",
-      "stars": 14811,
+      "stars": 14813,
       "topics": [
         "ai-video",
         "claude",
@@ -9612,7 +9617,7 @@
       "name": "openwhispr",
       "url": "https://github.com/OpenWhispr/openwhispr",
       "lang": "JavaScript",
-      "stars": 12236,
+      "stars": 12304,
       "topics": [
         "ai",
         "anthropic",
@@ -9666,7 +9671,7 @@
       "name": "pdoom-video",
       "url": "https://github.com/mexicat/pdoom-video",
       "lang": "TypeScript",
-      "stars": 4012,
+      "stars": 4019,
       "topics": [],
       "starredAt": "2026-10-23T01:35:18Z",
       "links": [],
@@ -9695,7 +9700,7 @@
       "name": "mg-styles-15",
       "url": "https://github.com/Vincentwei1021/mg-styles-15",
       "lang": "Python",
-      "stars": 3967,
+      "stars": 4002,
       "topics": [],
       "starredAt": "2026-10-23T01:37:27Z",
       "links": [
@@ -9728,7 +9733,7 @@
       "name": "ClaudeAnimationBase",
       "url": "https://github.com/JohnHeibel/ClaudeAnimationBase",
       "lang": "JavaScript",
-      "stars": 3264,
+      "stars": 3290,
       "topics": [],
       "starredAt": "2026-10-23T01:37:43Z",
       "links": [],
@@ -9761,7 +9766,7 @@
       "name": "PDoomVideo",
       "url": "https://github.com/JohnHeibel/PDoomVideo",
       "lang": "JavaScript",
-      "stars": 3003,
+      "stars": 3008,
       "topics": [],
       "starredAt": "2026-10-23T01:35:33Z",
       "links": [],
@@ -9790,7 +9795,7 @@
       "name": "awesome-claude-5-5-videos",
       "url": "https://github.com/athemeroy/awesome-claude-5-5-videos",
       "lang": "Python",
-      "stars": 1052,
+      "stars": 1055,
       "topics": [
         "ai-video",
         "awesome",
@@ -9897,7 +9902,7 @@
       "name": "luna",
       "url": "https://github.com/miqdadbadjuber/luna",
       "lang": "Python",
-      "stars": 131,
+      "stars": 180,
       "topics": [],
       "starredAt": "2026-11-20T00:09:29Z",
       "links": [],
@@ -9930,7 +9935,7 @@
       "name": "ohmyzsh",
       "url": "https://github.com/ohmyzsh/ohmyzsh",
       "lang": "Shell",
-      "stars": 190900,
+      "stars": 190937,
       "topics": [
         "cli",
         "cli-app",
@@ -9984,7 +9989,7 @@
       "name": "Understand-Anything",
       "url": "https://github.com/Egonex-AI/Understand-Anything",
       "lang": "TypeScript",
-      "stars": 94535,
+      "stars": 94649,
       "topics": [
         "antigravity-skills",
         "business-knowledge",
@@ -10046,7 +10051,7 @@
       "name": "Mole",
       "url": "https://github.com/tw93/Mole",
       "lang": "Shell",
-      "stars": 76259,
+      "stars": 76381,
       "topics": [
         "analyzer",
         "appcleaner",
@@ -10101,7 +10106,7 @@
       "name": "alacritty",
       "url": "https://github.com/alacritty/alacritty",
       "lang": "Rust",
-      "stars": 66305,
+      "stars": 66323,
       "topics": [
         "bsd",
         "gpu",
@@ -10145,7 +10150,7 @@
       "name": "ghostty",
       "url": "https://github.com/ghostty-org/ghostty",
       "lang": "Zig",
-      "stars": 64477,
+      "stars": 64521,
       "topics": [],
       "starredAt": "2025-03-07T10:21:16Z",
       "links": [
@@ -10178,7 +10183,7 @@
       "name": "typst",
       "url": "https://github.com/typst/typst",
       "lang": "Rust",
-      "stars": 57427,
+      "stars": 57455,
       "topics": [
         "compiler",
         "markup",
@@ -10221,7 +10226,7 @@
       "name": "insomnia",
       "url": "https://github.com/Kong/insomnia",
       "lang": "TypeScript",
-      "stars": 40192,
+      "stars": 40197,
       "topics": [
         "api",
         "api-client",
@@ -10265,7 +10270,7 @@
       "name": "UTM",
       "url": "https://github.com/utmapp/UTM",
       "lang": "Swift",
-      "stars": 37070,
+      "stars": 37093,
       "topics": [
         "apple",
         "emulation",
@@ -10308,7 +10313,7 @@
       "name": "vorssaint-utils",
       "url": "https://github.com/vorssaint/vorssaint-utils",
       "lang": "Swift",
-      "stars": 36421,
+      "stars": 36612,
       "topics": [
         "alt-tab",
         "app-uninstaller",
@@ -10358,7 +10363,7 @@
       "name": "husky",
       "url": "https://github.com/typicode/husky",
       "lang": "JavaScript",
-      "stars": 35405,
+      "stars": 35403,
       "topics": [
         "commit",
         "git",
@@ -10401,7 +10406,7 @@
       "name": "squoosh",
       "url": "https://github.com/GoogleChromeLabs/squoosh",
       "lang": "TypeScript",
-      "stars": 26228,
+      "stars": 26231,
       "topics": [],
       "starredAt": "2026-11-16T05:19:59Z",
       "links": [
@@ -10434,7 +10439,7 @@
       "name": "biome",
       "url": "https://github.com/biomejs/biome",
       "lang": "Rust",
-      "stars": 26217,
+      "stars": 26226,
       "topics": [
         "css",
         "formatter",
@@ -10478,7 +10483,7 @@
       "name": "Ghost-Downloader-3",
       "url": "https://github.com/XiaoYouChR/Ghost-Downloader-3",
       "lang": "Python",
-      "stars": 18620,
+      "stars": 19484,
       "topics": [
         "async",
         "asyncio",
@@ -10531,7 +10536,7 @@
       "name": "semgrep",
       "url": "https://github.com/semgrep/semgrep",
       "lang": "C",
-      "stars": 17965,
+      "stars": 18001,
       "topics": [
         "c",
         "go",
@@ -10581,7 +10586,7 @@
       "name": "ast-grep",
       "url": "https://github.com/ast-grep/ast-grep",
       "lang": "Rust",
-      "stars": 16708,
+      "stars": 16733,
       "topics": [
         "ast",
         "babel",
@@ -10631,7 +10636,7 @@
       "name": "kiri",
       "url": "https://github.com/libracoder/kiri",
       "lang": "Rust",
-      "stars": 13587,
+      "stars": 13924,
       "topics": [
         "containers",
         "docker",
@@ -10677,7 +10682,7 @@
       "name": "knip",
       "url": "https://github.com/webpro-nl/knip",
       "lang": "TypeScript",
-      "stars": 12733,
+      "stars": 12736,
       "topics": [
         "deadcode",
         "dependency-analysis",
@@ -10761,7 +10766,7 @@
       "name": "jscpd",
       "url": "https://github.com/kucherenko/jscpd",
       "lang": "Rust",
-      "stars": 6623,
+      "stars": 6628,
       "topics": [
         "ai",
         "cli",
@@ -10816,7 +10821,7 @@
       "name": "fallow",
       "url": "https://github.com/fallow-rs/fallow",
       "lang": "Rust",
-      "stars": 5410,
+      "stars": 5417,
       "topics": [
         "architecture",
         "circular-dependencies",
@@ -10869,7 +10874,7 @@
       "name": "opengrep",
       "url": "https://github.com/opengrep/opengrep",
       "lang": "OCaml",
-      "stars": 3403,
+      "stars": 3409,
       "topics": [],
       "starredAt": "2026-10-27T09:57:28Z",
       "links": [
@@ -10909,7 +10914,7 @@
       "name": "nextjs-starter-kit",
       "url": "https://github.com/michaelshimeles/nextjs-starter-kit",
       "lang": "TypeScript",
-      "stars": 3047,
+      "stars": 3048,
       "topics": [
         "nextjs",
         "nextjs-boilerplate",
@@ -10949,7 +10954,7 @@
       "name": "pikepdf",
       "url": "https://github.com/pikepdf/pikepdf",
       "lang": "Python",
-      "stars": 2830,
+      "stars": 2829,
       "topics": [
         "existing-pdfs",
         "pdf",
@@ -10997,7 +11002,7 @@
       "name": "rollup-plugin-visualizer",
       "url": "https://github.com/btd/rollup-plugin-visualizer",
       "lang": "TypeScript",
-      "stars": 2428,
+      "stars": 2429,
       "topics": [
         "bundle",
         "chart",
@@ -11043,7 +11048,7 @@
       "name": "Insomnia",
       "url": "https://github.com/krishhgg/Insomnia",
       "lang": "Swift",
-      "stars": 2162,
+      "stars": 2163,
       "topics": [
         "ai-agents",
         "amphetamine-alternative",
@@ -11090,7 +11095,7 @@
       "name": "crab",
       "url": "https://github.com/lemonadesaltbagel/crab",
       "lang": "Python",
-      "stars": 464,
+      "stars": 475,
       "topics": [
         "ai-agents",
         "behavioral-testing",
@@ -11181,7 +11186,7 @@
       "name": "open-design",
       "url": "https://github.com/nexu-io/open-design",
       "lang": "TypeScript",
-      "stars": 109576,
+      "stars": 109731,
       "topics": [
         "agent-skills",
         "ai-design",
@@ -11240,7 +11245,7 @@
       "name": "react-bits",
       "url": "https://github.com/DavidHDev/react-bits",
       "lang": "JavaScript",
-      "stars": 52734,
+      "stars": 52809,
       "topics": [
         "3d",
         "animations",
@@ -11291,7 +11296,7 @@
       "name": "ai-website-cloner-template",
       "url": "https://github.com/JCodesMore/ai-website-cloner-template",
       "lang": "TypeScript",
-      "stars": 39801,
+      "stars": 39843,
       "topics": [
         "ai",
         "ai-agents",
@@ -11396,7 +11401,7 @@
       "name": "Sortable",
       "url": "https://github.com/SortableJS/Sortable",
       "lang": "JavaScript",
-      "stars": 31212,
+      "stars": 31213,
       "topics": [
         "drag",
         "drag-and-drop",
@@ -11446,7 +11451,7 @@
       "name": "awesome-shadcn-ui",
       "url": "https://github.com/birobirobiro/awesome-shadcn-ui",
       "lang": "TypeScript",
-      "stars": 20868,
+      "stars": 20874,
       "topics": [
         "awesome",
         "awesome-list",
@@ -11483,7 +11488,7 @@
       "name": "lenis",
       "url": "https://github.com/darkroomengineering/lenis",
       "lang": "TypeScript",
-      "stars": 17481,
+      "stars": 17505,
       "topics": [
         "darkroom-engineering",
         "performance",
@@ -11532,7 +11537,7 @@
       "name": "openui",
       "url": "https://github.com/thesysdev/openui",
       "lang": "TypeScript",
-      "stars": 15510,
+      "stars": 15535,
       "topics": [
         "ag-ui",
         "agent",
@@ -11577,7 +11582,7 @@
       "name": "fumadocs",
       "url": "https://github.com/fuma-nama/fumadocs",
       "lang": "TypeScript",
-      "stars": 13717,
+      "stars": 13726,
       "topics": [
         "app-router",
         "content-collections",
@@ -11624,7 +11629,7 @@
       "name": "canvas-confetti",
       "url": "https://github.com/catdad/canvas-confetti",
       "lang": "JavaScript",
-      "stars": 12873,
+      "stars": 12876,
       "topics": [
         "animation",
         "burst",
@@ -11674,7 +11679,7 @@
       "name": "liquid-glass-react",
       "url": "https://github.com/rdev/liquid-glass-react",
       "lang": "TypeScript",
-      "stars": 6798,
+      "stars": 6807,
       "topics": [],
       "starredAt": "2026-02-15T00:18:03Z",
       "links": [],
@@ -11707,7 +11712,7 @@
       "name": "figcraft",
       "url": "https://github.com/storytold/figcraft",
       "lang": "Rust",
-      "stars": 5432,
+      "stars": 5456,
       "topics": [
         "design",
         "rust",
@@ -11791,7 +11796,7 @@
       "name": "anatomy",
       "url": "https://github.com/thebuggeddev/anatomy",
       "lang": "TypeScript",
-      "stars": 3946,
+      "stars": 3951,
       "topics": [],
       "starredAt": "2026-08-30T15:59:55Z",
       "links": [
@@ -11865,7 +11870,7 @@
       "name": "blocks",
       "url": "https://github.com/tailark/blocks",
       "lang": "TypeScript",
-      "stars": 2346,
+      "stars": 2347,
       "topics": [],
       "starredAt": "2025-03-15T05:28:39Z",
       "links": [
@@ -11944,7 +11949,7 @@
       "name": "dialkit",
       "url": "https://github.com/joshpuckett/dialkit",
       "lang": "TypeScript",
-      "stars": 1396,
+      "stars": 1398,
       "topics": [],
       "starredAt": "2026-11-11T07:16:13Z",
       "links": [],
@@ -12171,7 +12176,7 @@
       "name": "Liquid-Glass",
       "url": "https://github.com/zakisheriff/Liquid-Glass",
       "lang": "TypeScript",
-      "stars": 332,
+      "stars": 333,
       "topics": [
         "apple",
         "apple-liquid-glass",
@@ -12220,7 +12225,7 @@
       "name": "extract-design-system",
       "url": "https://github.com/arvindrk/extract-design-system",
       "lang": "TypeScript",
-      "stars": 317,
+      "stars": 326,
       "topics": [
         "agent-skills",
         "automation",
@@ -12543,7 +12548,7 @@
       "name": "OpenMAIC",
       "url": "https://github.com/THU-MAIC/OpenMAIC",
       "lang": "TypeScript",
-      "stars": 44464,
+      "stars": 44795,
       "topics": [],
       "starredAt": "2026-11-11T09:20:03Z",
       "links": [],
@@ -12574,7 +12579,7 @@
       "name": "awesome-ai-research-writing",
       "url": "https://github.com/Leey21/awesome-ai-research-writing",
       "lang": null,
-      "stars": 36346,
+      "stars": 36377,
       "topics": [],
       "starredAt": "2026-11-16T05:19:49Z",
       "links": [],
@@ -12597,7 +12602,7 @@
       "name": "storm",
       "url": "https://github.com/stanford-oval/storm",
       "lang": "Python",
-      "stars": 31957,
+      "stars": 31974,
       "topics": [
         "agentic-rag",
         "deep-research",
@@ -12645,7 +12650,7 @@
       "name": "paper-orchestra",
       "url": "https://github.com/google-research/paper-orchestra",
       "lang": "Python",
-      "stars": 6461,
+      "stars": 6553,
       "topics": [
         "ai-research-assistant",
         "multi-agent-systems"
@@ -12682,7 +12687,7 @@
       "name": "excalidraw",
       "url": "https://github.com/excalidraw/excalidraw",
       "lang": "TypeScript",
-      "stars": 136334,
+      "stars": 136387,
       "topics": [
         "canvas",
         "collaboration",
@@ -12733,7 +12738,7 @@
       "name": "mermaid",
       "url": "https://github.com/mermaid-js/mermaid",
       "lang": "TypeScript",
-      "stars": 91260,
+      "stars": 91279,
       "topics": [
         "diagrams",
         "diagrams-as-code",
@@ -12928,7 +12933,7 @@
       "name": "n8n",
       "url": "https://github.com/n8n-io/n8n",
       "lang": "TypeScript",
-      "stars": 212183,
+      "stars": 212376,
       "topics": [
         "ai",
         "apis",
@@ -12983,7 +12988,7 @@
       "name": "uptime-kuma",
       "url": "https://github.com/louislam/uptime-kuma",
       "lang": "JavaScript",
-      "stars": 94907,
+      "stars": 94946,
       "topics": [
         "docker",
         "monitor",
@@ -13030,7 +13035,7 @@
       "name": "coolify",
       "url": "https://github.com/coollabsio/coolify",
       "lang": "PHP",
-      "stars": 66482,
+      "stars": 66637,
       "topics": [
         "coolify",
         "databases",
@@ -13091,7 +13096,7 @@
       "name": "odoo",
       "url": "https://github.com/odoo/odoo",
       "lang": "Python",
-      "stars": 56111,
+      "stars": 56144,
       "topics": [
         "apps",
         "business",
@@ -13137,7 +13142,7 @@
       "name": "kubernetes-the-hard-way",
       "url": "https://github.com/kelseyhightower/kubernetes-the-hard-way",
       "lang": null,
-      "stars": 50787,
+      "stars": 50794,
       "topics": [],
       "starredAt": "2026-08-17T02:29:33Z",
       "links": [],
@@ -13162,7 +13167,7 @@
       "name": "metabase",
       "url": "https://github.com/metabase/metabase",
       "lang": "Clojure",
-      "stars": 50557,
+      "stars": 50608,
       "topics": [
         "analytics",
         "bi",
@@ -13215,7 +13220,7 @@
       "name": "paperless-ngx",
       "url": "https://github.com/paperless-ngx/paperless-ngx",
       "lang": "Python",
-      "stars": 48647,
+      "stars": 48691,
       "topics": [
         "ai",
         "angular",
@@ -13266,7 +13271,7 @@
       "name": "postiz-app",
       "url": "https://github.com/gitroomhq/postiz-app",
       "lang": "TypeScript",
-      "stars": 42437,
+      "stars": 42508,
       "topics": [
         "nextjs",
         "open-source",
@@ -13310,7 +13315,7 @@
       "name": "chatwoot",
       "url": "https://github.com/chatwoot/chatwoot",
       "lang": "Ruby",
-      "stars": 40588,
+      "stars": 40664,
       "topics": [
         "actioncable",
         "chat-widget",
@@ -13365,7 +13370,7 @@
       "name": "umami",
       "url": "https://github.com/umami-software/umami",
       "lang": "TypeScript",
-      "stars": 40367,
+      "stars": 40425,
       "topics": [
         "analytics",
         "audience-segmentation",
@@ -13409,7 +13414,7 @@
       "name": "portainer",
       "url": "https://github.com/portainer/portainer",
       "lang": "TypeScript",
-      "stars": 38915,
+      "stars": 38919,
       "topics": [
         "docker",
         "docker-compose",
@@ -13494,7 +13499,7 @@
       "name": "cli",
       "url": "https://github.com/googleworkspace/cli",
       "lang": "Rust",
-      "stars": 32505,
+      "stars": 32542,
       "topics": [
         "agent-skills",
         "ai-agent",
@@ -13545,7 +13550,7 @@
       "name": "budibase",
       "url": "https://github.com/Budibase/budibase",
       "lang": "TypeScript",
-      "stars": 28451,
+      "stars": 28454,
       "topics": [
         "ai-app-builder",
         "ai-applications",
@@ -13599,7 +13604,7 @@
       "name": "dub.link",
       "url": "https://github.com/dubinc/dub.link",
       "lang": "TypeScript",
-      "stars": 25233,
+      "stars": 25236,
       "topics": [
         "clickhouse",
         "mysql",
@@ -13644,7 +13649,7 @@
       "name": "openobserve",
       "url": "https://github.com/openobserve/openobserve",
       "lang": "TypeScript",
-      "stars": 23191,
+      "stars": 23194,
       "topics": [
         "analytics",
         "apm",
@@ -13699,7 +13704,7 @@
       "name": "iii",
       "url": "https://github.com/iii-hq/iii",
       "lang": "Rust",
-      "stars": 18975,
+      "stars": 18977,
       "topics": [
         "agents",
         "ai",
@@ -13751,7 +13756,7 @@
       "name": "postal",
       "url": "https://github.com/postalserver/postal",
       "lang": "Ruby",
-      "stars": 16981,
+      "stars": 16984,
       "topics": [
         "mail",
         "mail-server",
@@ -13790,7 +13795,7 @@
       "name": "trigger.dev",
       "url": "https://github.com/triggerdotdev/trigger.dev",
       "lang": "TypeScript",
-      "stars": 16824,
+      "stars": 16831,
       "topics": [
         "ai",
         "ai-agent-framework",
@@ -13843,7 +13848,7 @@
       "name": "opensre",
       "url": "https://github.com/Tracer-Cloud/opensre",
       "lang": "Python",
-      "stars": 15630,
+      "stars": 15954,
       "topics": [
         "alerting",
         "ci-cd",
@@ -13897,7 +13902,7 @@
       "name": "mailcow-dockerized",
       "url": "https://github.com/mailcow/mailcow-dockerized",
       "lang": "PHP",
-      "stars": 13879,
+      "stars": 13883,
       "topics": [
         "acme",
         "clamav",
@@ -13949,7 +13954,7 @@
       "name": "komodo",
       "url": "https://github.com/moghtech/komodo",
       "lang": "Rust",
-      "stars": 13026,
+      "stars": 13034,
       "topics": [],
       "starredAt": "2025-02-13T07:20:43Z",
       "links": [
@@ -14021,7 +14026,7 @@
       "name": "pg-boss",
       "url": "https://github.com/timgit/pg-boss",
       "lang": "TypeScript",
-      "stars": 4160,
+      "stars": 4164,
       "topics": [
         "job",
         "node",
@@ -14067,7 +14072,7 @@
       "name": "brightbean-studio",
       "url": "https://github.com/brightbeanxyz/brightbean-studio",
       "lang": "Python",
-      "stars": 2674,
+      "stars": 2679,
       "topics": [
         "agpl",
         "buffer-alternative",
@@ -14153,7 +14158,7 @@
       "name": "every-app",
       "url": "https://github.com/every-app/every-app",
       "lang": "TypeScript",
-      "stars": 1152,
+      "stars": 1162,
       "topics": [
         "ai-agents",
         "claude-code",
@@ -14274,7 +14279,7 @@
       "name": "filament",
       "url": "https://github.com/filamentphp/filament",
       "lang": "PHP",
-      "stars": 32579,
+      "stars": 32586,
       "topics": [
         "admin",
         "alpine-js",
@@ -14403,7 +14408,7 @@
       "name": "lav_sms",
       "url": "https://github.com/4jean/lav_sms",
       "lang": "PHP",
-      "stars": 1190,
+      "stars": 1191,
       "topics": [
         "education",
         "manage-exams",
@@ -14492,7 +14497,7 @@
       "name": "awesome",
       "url": "https://github.com/sindresorhus/awesome",
       "lang": null,
-      "stars": 543022,
+      "stars": 543639,
       "topics": [
         "awesome",
         "awesome-list",
@@ -14521,7 +14526,7 @@
       "name": "public-apis",
       "url": "https://github.com/public-apis/public-apis",
       "lang": "Python",
-      "stars": 501546,
+      "stars": 501722,
       "topics": [
         "api",
         "apis",
@@ -14558,7 +14563,7 @@
       "name": "awesome-python",
       "url": "https://github.com/vinta/awesome-python",
       "lang": "Python",
-      "stars": 337212,
+      "stars": 337423,
       "topics": [
         "awesome",
         "awesome-list",
@@ -14593,7 +14598,7 @@
       "name": "Python",
       "url": "https://github.com/TheAlgorithms/Python",
       "lang": "Python",
-      "stars": 226480,
+      "stars": 226496,
       "topics": [
         "algorithm",
         "algorithm-competitions",
@@ -14636,7 +14641,7 @@
       "name": "javascript-algorithms",
       "url": "https://github.com/trekhleb/javascript-algorithms",
       "lang": "JavaScript",
-      "stars": 196769,
+      "stars": 196763,
       "topics": [
         "algorithm",
         "algorithms",
@@ -14668,7 +14673,7 @@
       "name": "awesome-go",
       "url": "https://github.com/avelino/awesome-go",
       "lang": "Go",
-      "stars": 196037,
+      "stars": 196233,
       "topics": [
         "awesome",
         "awesome-list",
@@ -14703,7 +14708,7 @@
       "name": "awesome-mac",
       "url": "https://github.com/jaywcjlove/awesome-mac",
       "lang": "Swift",
-      "stars": 119407,
+      "stars": 119619,
       "topics": [
         "app",
         "apple",
@@ -14752,7 +14757,7 @@
       "name": "ML-For-Beginners",
       "url": "https://github.com/microsoft/ML-For-Beginners",
       "lang": "Jupyter Notebook",
-      "stars": 92497,
+      "stars": 92511,
       "topics": [
         "data-science",
         "education",
@@ -14790,7 +14795,7 @@
       "name": "awesome-interview-questions",
       "url": "https://github.com/DopplerHQ/awesome-interview-questions",
       "lang": null,
-      "stars": 85775,
+      "stars": 85788,
       "topics": [
         "android-interview-questions",
         "angularjs-interview-questions",
@@ -14828,7 +14833,7 @@
       "name": "open-source-mac-os-apps",
       "url": "https://github.com/serhii-londar/open-source-mac-os-apps",
       "lang": null,
-      "stars": 51555,
+      "stars": 51571,
       "topics": [
         "applications",
         "apps",
@@ -14875,7 +14880,7 @@
       "name": "Data-Science-For-Beginners",
       "url": "https://github.com/microsoft/Data-Science-For-Beginners",
       "lang": "Jupyter Notebook",
-      "stars": 38140,
+      "stars": 38144,
       "topics": [
         "data-analysis",
         "data-science",
@@ -14907,7 +14912,7 @@
       "name": "JavaScript",
       "url": "https://github.com/TheAlgorithms/JavaScript",
       "lang": "JavaScript",
-      "stars": 34265,
+      "stars": 34267,
       "topics": [
         "algorithm",
         "algorithm-challenges",
@@ -14950,7 +14955,7 @@
       "name": "CheatSheetSeries",
       "url": "https://github.com/OWASP/CheatSheetSeries",
       "lang": "JavaScript",
-      "stars": 34208,
+      "stars": 34220,
       "topics": [
         "application-security",
         "appsec",
@@ -14988,7 +14993,7 @@
       "name": "py",
       "url": "https://github.com/codebasics/py",
       "lang": "Jupyter Notebook",
-      "stars": 7353,
+      "stars": 7354,
       "topics": [
         "jupyter",
         "jupyter-notebook",
@@ -15077,7 +15082,7 @@
       "name": "awesome-remote-mcp-servers",
       "url": "https://github.com/punkpeye/awesome-remote-mcp-servers",
       "lang": null,
-      "stars": 4122,
+      "stars": 4220,
       "topics": [
         "mcp"
       ],
@@ -15168,7 +15173,7 @@
       "name": "AI-Red-Teaming-Guide",
       "url": "https://github.com/requie/AI-Red-Teaming-Guide",
       "lang": null,
-      "stars": 1068,
+      "stars": 1069,
       "topics": [
         "ai",
         "ai-red-team",
@@ -15362,7 +15367,7 @@
       "name": "lynx",
       "url": "https://github.com/lynx-family/lynx",
       "lang": "C++",
-      "stars": 15282,
+      "stars": 15283,
       "topics": [
         "cross-platform",
         "lynx",
@@ -15400,7 +15405,7 @@
       "name": "fl_chart",
       "url": "https://github.com/imaNNeo/fl_chart",
       "lang": "Dart",
-      "stars": 7593,
+      "stars": 7596,
       "topics": [
         "barchart",
         "candlestick",
@@ -15596,7 +15601,7 @@
       "name": "whatsapp-web.js",
       "url": "https://github.com/wwebjs/whatsapp-web.js",
       "lang": "JavaScript",
-      "stars": 22972,
+      "stars": 22981,
       "topics": [
         "api",
         "bot",
@@ -15640,7 +15645,7 @@
       "name": "rasa",
       "url": "https://github.com/RasaHQ/rasa",
       "lang": "Python",
-      "stars": 21402,
+      "stars": 21401,
       "topics": [
         "bot",
         "bot-framework",
@@ -15695,7 +15700,7 @@
       "name": "Baileys",
       "url": "https://github.com/WhiskeySockets/Baileys",
       "lang": "JavaScript",
-      "stars": 11743,
+      "stars": 11749,
       "topics": [
         "bun",
         "deno",
@@ -15737,7 +15742,7 @@
       "name": "whatsmeow",
       "url": "https://github.com/tulir/whatsmeow",
       "lang": "Go",
-      "stars": 7945,
+      "stars": 7951,
       "topics": [
         "go",
         "golang",
@@ -15775,7 +15780,7 @@
       "name": "waha",
       "url": "https://github.com/devlikeapro/waha",
       "lang": "TypeScript",
-      "stars": 7937,
+      "stars": 7943,
       "topics": [
         "ai-bot",
         "bot",
@@ -15825,7 +15830,7 @@
       "name": "go-whatsapp-web-multidevice",
       "url": "https://github.com/aldinokemal/go-whatsapp-web-multidevice",
       "lang": "Go",
-      "stars": 5089,
+      "stars": 5093,
       "topics": [
         "bot",
         "go",
@@ -15872,7 +15877,7 @@
       "name": "BetterDiscordAddons",
       "url": "https://github.com/zerebos/BetterDiscordAddons",
       "lang": "TypeScript",
-      "stars": 612,
+      "stars": 611,
       "topics": [
         "betterdiscord",
         "css",
@@ -15972,7 +15977,7 @@
       "name": "rea",
       "url": "https://github.com/morluto/rea",
       "lang": "TypeScript",
-      "stars": 478938,
+      "stars": 480321,
       "topics": [
         "agent-skills",
         "ai",
@@ -16027,7 +16032,7 @@
       "name": "ghidra",
       "url": "https://github.com/NationalSecurityAgency/ghidra",
       "lang": "Java",
-      "stars": 101388,
+      "stars": 101476,
       "topics": [
         "disassembler",
         "reverse-engineering",
@@ -16059,7 +16064,7 @@
       "name": "strix",
       "url": "https://github.com/usestrix/strix",
       "lang": "Python",
-      "stars": 77657,
+      "stars": 77868,
       "topics": [
         "agents",
         "ai-hacking",
@@ -16114,7 +16119,7 @@
       "name": "shannon",
       "url": "https://github.com/KeygraphHQ/shannon",
       "lang": "TypeScript",
-      "stars": 52332,
+      "stars": 52369,
       "topics": [
         "ai-penetration-testing",
         "ai-security",
@@ -16169,7 +16174,7 @@
       "name": "heretic",
       "url": "https://github.com/p-e-w/heretic",
       "lang": "Python",
-      "stars": 43235,
+      "stars": 43384,
       "topics": [
         "abliteration",
         "anti-censorship",
@@ -16211,7 +16216,7 @@
       "name": "pentagi",
       "url": "https://github.com/vxcontrol/pentagi",
       "lang": "Go",
-      "stars": 35065,
+      "stars": 35140,
       "topics": [
         "ai-agents",
         "ai-security-tool",
@@ -16264,7 +16269,7 @@
       "name": "nuclei",
       "url": "https://github.com/projectdiscovery/nuclei",
       "lang": "Go",
-      "stars": 33307,
+      "stars": 33351,
       "topics": [
         "attack-surface",
         "cve-scanner",
@@ -16310,7 +16315,7 @@
       "name": "trufflehog",
       "url": "https://github.com/trufflesecurity/trufflehog",
       "lang": "Go",
-      "stars": 29686,
+      "stars": 29720,
       "topics": [
         "credentials",
         "devsecops",
@@ -16357,7 +16362,7 @@
       "name": "promptfoo",
       "url": "https://github.com/promptfoo/promptfoo",
       "lang": "TypeScript",
-      "stars": 27699,
+      "stars": 27735,
       "topics": [
         "ci",
         "ci-cd",
@@ -16410,7 +16415,7 @@
       "name": "juice-shop",
       "url": "https://github.com/juice-shop/juice-shop",
       "lang": "TypeScript",
-      "stars": 14548,
+      "stars": 14565,
       "topics": [
         "24pullrequests",
         "application-security",
@@ -16459,7 +16464,7 @@
       "name": "codex-security",
       "url": "https://github.com/openai/codex-security",
       "lang": "TypeScript",
-      "stars": 14381,
+      "stars": 14421,
       "topics": [
         "ai-security",
         "application-security",
@@ -16509,7 +16514,7 @@
       "name": "DVWA",
       "url": "https://github.com/digininja/DVWA",
       "lang": "PHP",
-      "stars": 14094,
+      "stars": 14101,
       "topics": [
         "dvwa",
         "hacking",
@@ -16546,7 +16551,7 @@
       "name": "AiSOC",
       "url": "https://github.com/beenuar/AiSOC",
       "lang": "Python",
-      "stars": 7958,
+      "stars": 8169,
       "topics": [
         "agentic-ai",
         "ai-security",
@@ -16605,7 +16610,7 @@
       "name": "AI-Infra-Guard",
       "url": "https://github.com/Tencent/AI-Infra-Guard",
       "lang": "Python",
-      "stars": 7760,
+      "stars": 7778,
       "topics": [
         "agent",
         "agent-security",
@@ -16660,7 +16665,7 @@
       "name": "clamav",
       "url": "https://github.com/Cisco-Talos/clamav",
       "lang": "C",
-      "stars": 7740,
+      "stars": 7755,
       "topics": [
         "antivirus",
         "clamav",
@@ -16699,7 +16704,7 @@
       "name": "claude-code-security-review",
       "url": "https://github.com/anthropics/claude-code-security-review",
       "lang": "Python",
-      "stars": 7114,
+      "stars": 7145,
       "topics": [],
       "starredAt": "2026-10-28T11:34:53Z",
       "links": [],
@@ -16728,7 +16733,7 @@
       "name": "Decepticon",
       "url": "https://github.com/BitterSecurity/Decepticon",
       "lang": "Python",
-      "stars": 6780,
+      "stars": 6856,
       "topics": [
         "agent",
         "ai",
@@ -16770,12 +16775,56 @@
       "hasNotes": true
     },
     {
+      "slug": "jiwoochris/artex-global",
+      "owner": "jiwoochris",
+      "name": "artex-global",
+      "url": "https://github.com/jiwoochris/artex-global",
+      "lang": "Go",
+      "stars": 5147,
+      "topics": [
+        "ai-agent",
+        "autonomous-agents",
+        "blue-team",
+        "cybersecurity",
+        "detection-engineering",
+        "i18n",
+        "korean",
+        "llm",
+        "penetration-testing",
+        "security",
+        "security-research",
+        "security-tools",
+        "sigma-rules",
+        "threat-detection"
+      ],
+      "starredAt": "2026-10-28T09:46:56Z",
+      "links": [],
+      "oneLiner": "ARTEX multi-agent AI pentest platform, English edition",
+      "what": "Global (English-default) build of ARTEX: LLM agents plan and run a penetration test, execute real tools and record assets and findings in a graph. Single Go binary with an embedded web UI and Postgres.",
+      "howTo": [
+        {
+          "type": "code",
+          "lang": "bash",
+          "value": "git clone https://github.com/jiwoochris/artex-global.git\ncd artex-global\ncp .env.example .env   # set POSTGRES_PASSWORD, optionally ANTHROPIC_API_KEY\ndocker compose up -d\n# open http://localhost:8787"
+        }
+      ],
+      "reachFor": "You want an AI-driven pentest of infrastructure you own or are authorized to test, with a web UI and report output.",
+      "categories": [
+        "cybersecurity"
+      ],
+      "primaryCategory": "cybersecurity",
+      "group": {
+        "cybersecurity": "AI pentest agents"
+      },
+      "hasNotes": true
+    },
+    {
       "slug": "microsoft/PyRIT",
       "owner": "microsoft",
       "name": "PyRIT",
       "url": "https://github.com/microsoft/PyRIT",
       "lang": "Python",
-      "stars": 5101,
+      "stars": 5136,
       "topics": [
         "ai-attacks",
         "ai-evals",
@@ -16829,56 +16878,12 @@
       "hasNotes": true
     },
     {
-      "slug": "jiwoochris/artex-global",
-      "owner": "jiwoochris",
-      "name": "artex-global",
-      "url": "https://github.com/jiwoochris/artex-global",
-      "lang": "Go",
-      "stars": 5049,
-      "topics": [
-        "ai-agent",
-        "autonomous-agents",
-        "blue-team",
-        "cybersecurity",
-        "detection-engineering",
-        "i18n",
-        "korean",
-        "llm",
-        "penetration-testing",
-        "security",
-        "security-research",
-        "security-tools",
-        "sigma-rules",
-        "threat-detection"
-      ],
-      "starredAt": "2026-10-28T09:46:56Z",
-      "links": [],
-      "oneLiner": "ARTEX multi-agent AI pentest platform, English edition",
-      "what": "Global (English-default) build of ARTEX: LLM agents plan and run a penetration test, execute real tools and record assets and findings in a graph. Single Go binary with an embedded web UI and Postgres.",
-      "howTo": [
-        {
-          "type": "code",
-          "lang": "bash",
-          "value": "git clone https://github.com/jiwoochris/artex-global.git\ncd artex-global\ncp .env.example .env   # set POSTGRES_PASSWORD, optionally ANTHROPIC_API_KEY\ndocker compose up -d\n# open http://localhost:8787"
-        }
-      ],
-      "reachFor": "You want an AI-driven pentest of infrastructure you own or are authorized to test, with a web UI and report output.",
-      "categories": [
-        "cybersecurity"
-      ],
-      "primaryCategory": "cybersecurity",
-      "group": {
-        "cybersecurity": "AI pentest agents"
-      },
-      "hasNotes": true
-    },
-    {
       "slug": "CyberStrikeus/CyberStrike",
       "owner": "CyberStrikeus",
       "name": "CyberStrike",
       "url": "https://github.com/CyberStrikeus/CyberStrike",
       "lang": "TypeScript",
-      "stars": 3739,
+      "stars": 3758,
       "topics": [
         "agents",
         "ai-hacking",
@@ -16933,7 +16938,7 @@
       "name": "redamon",
       "url": "https://github.com/samugit83/redamon",
       "lang": "Python",
-      "stars": 3501,
+      "stars": 3510,
       "topics": [
         "agentic-ai",
         "ai",
@@ -16988,7 +16993,7 @@
       "name": "pentestagent",
       "url": "https://github.com/GH05TCREW/pentestagent",
       "lang": "Python",
-      "stars": 3341,
+      "stars": 3343,
       "topics": [
         "ai",
         "ai-agents",
@@ -17033,7 +17038,7 @@
       "name": "deepteam",
       "url": "https://github.com/confident-ai/deepteam",
       "lang": "Python",
-      "stars": 3126,
+      "stars": 3127,
       "topics": [
         "llm-guardrails",
         "llm-red-teaming",
@@ -17073,7 +17078,7 @@
       "name": "ARTEX",
       "url": "https://github.com/RuoJi6/ARTEX",
       "lang": "Go",
-      "stars": 2641,
+      "stars": 2693,
       "topics": [
         "agent",
         "artex",
@@ -17111,7 +17116,7 @@
       "name": "NodeGoat",
       "url": "https://github.com/OWASP/NodeGoat",
       "lang": "HTML",
-      "stars": 2090,
+      "stars": 2091,
       "topics": [
         "docker",
         "heroku",
@@ -17154,7 +17159,7 @@
       "name": "crAPI",
       "url": "https://github.com/OWASP/crAPI",
       "lang": "Java",
-      "stars": 1646,
+      "stars": 1648,
       "topics": [
         "api",
         "apisecurity",
@@ -17187,7 +17192,7 @@
       "name": "scopeweaver",
       "url": "https://github.com/cskwork/scopeweaver",
       "lang": "Go",
-      "stars": 1188,
+      "stars": 1198,
       "topics": [],
       "starredAt": "2026-10-28T09:46:33Z",
       "links": [
@@ -17278,7 +17283,7 @@
       "name": "antares",
       "url": "https://github.com/enowdev/antares",
       "lang": "Go",
-      "stars": 96,
+      "stars": 97,
       "topics": [
         "ai",
         "ai-agent",
@@ -17331,7 +17336,7 @@
       "name": "ARTIFEX",
       "url": "https://github.com/sebastian93921/ARTIFEX",
       "lang": "Go",
-      "stars": 72,
+      "stars": 73,
       "topics": [],
       "starredAt": "2026-10-28T09:46:40Z",
       "links": [],
@@ -17472,7 +17477,7 @@
       "name": "reflex",
       "url": "https://github.com/reflex-dev/reflex",
       "lang": "Python",
-      "stars": 29049,
+      "stars": 29051,
       "topics": [
         "dashboard",
         "data-analysis",
@@ -17517,7 +17522,7 @@
       "name": "CustomTkinter",
       "url": "https://github.com/TomSchimansky/CustomTkinter",
       "lang": "Python",
-      "stars": 13625,
+      "stars": 13627,
       "topics": [
         "custom",
         "dark-mode",
@@ -17620,7 +17625,7 @@
       "name": "auto-py-to-exe",
       "url": "https://github.com/brentvollebregt/auto-py-to-exe",
       "lang": "JavaScript",
-      "stars": 5004,
+      "stars": 5005,
       "topics": [
         "automation",
         "bundle",
@@ -17685,7 +17690,7 @@
       "name": "PyOneDark_Qt_Widgets_Modern_GUI",
       "url": "https://github.com/Wanderson-Magalhaes/PyOneDark_Qt_Widgets_Modern_GUI",
       "lang": "Python",
-      "stars": 1142,
+      "stars": 1143,
       "topics": [],
       "starredAt": "2021-08-13T22:25:21Z",
       "links": [],
@@ -17902,7 +17907,7 @@
       "name": "yolov5",
       "url": "https://github.com/ultralytics/yolov5",
       "lang": "Python",
-      "stars": 58311,
+      "stars": 58317,
       "topics": [
         "computer-vision",
         "coreml",
@@ -17995,7 +18000,7 @@
       "name": "pandas_exercises",
       "url": "https://github.com/guipsamora/pandas_exercises",
       "lang": "Jupyter Notebook",
-      "stars": 13382,
+      "stars": 13384,
       "topics": [
         "jupyter-notebooks",
         "pandas",
@@ -18723,7 +18728,7 @@
       "name": "misterdownloadmanager",
       "url": "https://github.com/anefzaoui/misterdownloadmanager",
       "lang": "Rust",
-      "stars": 18307,
+      "stars": 18705,
       "topics": [
         "bittorrent-client",
         "debrid",
@@ -18782,7 +18787,7 @@
       "name": "swarm-cursors",
       "url": "https://github.com/DhvanilPatel/swarm-cursors",
       "lang": "JavaScript",
-      "stars": 3789,
+      "stars": 3838,
       "topics": [],
       "starredAt": "2026-11-24T10:30:59Z",
       "links": [
@@ -18937,7 +18942,7 @@
       "name": "0security",
       "url": "https://github.com/0sec-labs/0security",
       "lang": "TypeScript",
-      "stars": 1628,
+      "stars": 1634,
       "topics": [
         "ai-agents",
         "application-security",
@@ -18959,7 +18964,7 @@
           "url": "https://0.security"
         }
       ],
-      "oneLiner": "Open-source AI security agents that continuously find, prove and fix security risks. CLI, web console and GitHub Action. Bring your own model.",
+      "oneLiner": "Open-source AI and code security that continuously find, prove and fix vulnerabilities. CLI, web console and GitHub Action. Bring your own model.",
       "what": "",
       "howTo": [],
       "reachFor": "",
